@@ -3,8 +3,10 @@
   <category categoryName="Main">
     <menu header ="Start Here..."
 					page="/Pages/StartHere.xaml" />
-   <menu header ="Image Editor"
-					page="/Pages/ImageEditorPage.xaml" />
+   <menu header ="Shapes"
+					page="/Pages/ShapesPage.xaml" />
+    <menu header ="Animated Curve"
+					page="/Pages/BezierPage.xaml" />
 
     <menu header ="Splash Page"
 					page="/Pages/splashpage.xaml" />
