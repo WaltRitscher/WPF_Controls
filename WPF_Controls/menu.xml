@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menus>
+  <category categoryName="Main">
+    <menu header ="Start Here..."
+					page="/Pages/StartHere.xaml" />
+   <menu header ="Image Editor"
+					page="/Pages/ImageEditorPage.xaml" />
+
+    <menu header ="Splash Page"
+					page="/Pages/splashpage.xaml" />
+    
+  </category>
+  <category categoryName="Other">
+    <menu header ="Page 1"
+					page="/Pages/Page1.xaml">
+    </menu>
+   
+  </category>
+
+  
+</menus>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D8931E1C-35B4-4BE0-955A-82FFF8F02FA7}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WPF_Controls</RootNamespace>
-    <AssemblyName>WPF_Controls</AssemblyName>
+    <RootNamespace>WpfControls</RootNamespace>
+    <AssemblyName>WpfControls</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,6 +54,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Effects\ColorToneEffect.cs" />
+    <Compile Include="Effects\MonochromeEffect.cs" />
+    <Compile Include="Effects\ToonShaderEffect.cs" />
+    <Compile Include="Pages\ImageEditorPage.xaml.cs">
+      <DependentUpon>ImageEditorPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SplashPage.xaml.cs">
+      <DependentUpon>SplashPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StartHere.xaml.cs">
+      <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SplashBackground.xaml.cs">
+      <DependentUpon>SplashBackground.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Star.xaml.cs">
+      <DependentUpon>Star.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="XmlMenu\XmlCategory.cs" />
+    <Compile Include="XmlMenu\XmlExtraFile.cs" />
+    <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\AutoFillTreeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -62,10 +91,29 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="UserControls\AutoFillTreeView.xaml.cs">
+      <DependentUpon>AutoFillTreeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\ImageEditorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SplashPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\SplashBackground.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Star.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -85,6 +133,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Class Diagrams\BasicElements.cd" />
+    <Resource Include="Effects\ColorToneEffect.ps" />
+    <Resource Include="Effects\MonochromeEffect.ps" />
+    <Resource Include="Effects\ToonShaderEffect.ps" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -93,5 +145,14 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\FullScreenHS.png" />
+    <Resource Include="Images\River.jpg" />
+    <Resource Include="Images\Splash.png" />
+    <Content Include="menu.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
