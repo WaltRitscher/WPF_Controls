@@ -10,6 +10,8 @@
 
     <menu header ="Bullet Decorator"
 					page="/Pages/BulletDecoratorPage.xaml" />
+      <menu header ="Basic Adorner"
+					page="/Pages/UseAdornerPage.xaml" />
     
   </category>
   <category categoryName="Other">

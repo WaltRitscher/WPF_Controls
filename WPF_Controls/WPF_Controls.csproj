@@ -56,6 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Adorners\ResizeAdorner.cs" />
+    <Compile Include="Adorners\ArrowAdorner.cs" />
     <Compile Include="Pages\BezierPage.xaml.cs">
       <DependentUpon>BezierPage.xaml</DependentUpon>
     </Compile>
@@ -67,6 +69,9 @@
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\UseAdornerPage.xaml.cs">
+      <DependentUpon>UseAdornerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
@@ -84,6 +89,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\UseAdornerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
