@@ -8,8 +8,8 @@
     <menu header ="Animated Curve"
 					page="/Pages/BezierPage.xaml" />
 
-    <menu header ="Splash Page"
-					page="/Pages/splashpage.xaml" />
+    <menu header ="Bullet Decorator"
+					page="/Pages/BulletDecoratorPage.xaml" />
     
   </category>
   <category categoryName="Other">

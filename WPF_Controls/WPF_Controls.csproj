@@ -59,6 +59,9 @@
     <Compile Include="Pages\BezierPage.xaml.cs">
       <DependentUpon>BezierPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BulletDecoratorPage.xaml.cs">
+      <DependentUpon>BulletDecoratorPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ShapesPage.xaml.cs">
       <DependentUpon>ShapesPage.xaml</DependentUpon>
     </Compile>
@@ -69,6 +72,10 @@
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
     <Page Include="Pages\BezierPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BulletDecoratorPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
