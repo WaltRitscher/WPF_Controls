@@ -135,6 +135,10 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Class Diagrams\BasicElements.cd" />
+    <None Include="Class Diagrams\Control.cd" />
+    <None Include="Class Diagrams\Decorators.cd" />
+    <None Include="Class Diagrams\FrameworkElement.cd" />
+    <None Include="Class Diagrams\Shape.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

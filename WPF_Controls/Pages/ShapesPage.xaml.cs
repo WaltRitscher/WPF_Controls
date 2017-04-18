@@ -23,6 +23,7 @@ namespace WpfControls.Pages
     public ShapesPage()
     {
       InitializeComponent();
+     
     }
 
     private void Ellipse_MouseEnter(object sender, MouseEventArgs e)
