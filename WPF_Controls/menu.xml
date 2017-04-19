@@ -11,7 +11,11 @@
     
   </category>
   <category categoryName="Other">
-    <menu header ="Page 1"
+    <menu header ="Example A"
+					page="/Pages/Page1.xaml">
+    </menu>
+
+    <menu header ="Example B"
 					page="/Pages/Page1.xaml">
     </menu>
    
