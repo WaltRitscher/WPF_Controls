@@ -60,6 +60,9 @@
     <Compile Include="Pages\ImageEditorPage.xaml.cs">
       <DependentUpon>ImageEditorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SimplePage.xaml.cs">
+      <DependentUpon>SimplePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\SplashPage.xaml.cs">
       <DependentUpon>SplashPage.xaml</DependentUpon>
     </Compile>
@@ -75,6 +78,10 @@
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\SimplePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StartHere.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
