@@ -1,0 +1,289 @@
+﻿<Page x:Class="WpfControls.Pages.Template1Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="Template1Page"
+      d:DesignHeight="600"
+      d:DesignWidth="600"
+      mc:Ignorable="d">
+  <Page.Resources>
+
+    <Style x:Key="AutumnRepeatButton"
+           TargetType="RepeatButton">
+      <Setter Property="Focusable" Value="false" />
+      <Setter Property="IsTabStop" Value="false" />
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="RepeatButton">
+            <Border Height="3"
+                    Background="Black"
+                    BorderBrush="Black"
+                    BorderThickness="1" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="AutumnRepeatButton1"
+           TargetType="RepeatButton">
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="RepeatButton">
+            <Border Height="3"
+                    Background="Orange"
+                    BorderBrush="DarkOrange"
+                    BorderThickness="1"
+                    SnapsToDevicePixels="True" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <Style x:Key="AutumnThumb"
+           TargetType="Thumb">
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Thumb">
+            <Grid>
+              <Ellipse Width="16"
+                       Height="12"
+                       Fill="Orange"
+                       Stroke="DarkOrange"
+                       StrokeThickness="3" />
+            </Grid>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+    <ControlTemplate x:Key="AutumnSlider"
+                     TargetType="Slider">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto"
+                         MinHeight="{TemplateBinding MinHeight}" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Track x:Name="PART_Track"
+               Grid.Row="1">
+          <Track.DecreaseRepeatButton>
+            <RepeatButton Command="Slider.DecreaseLarge"
+                          Style="{StaticResource AutumnRepeatButton1}" />
+          </Track.DecreaseRepeatButton>
+          <Track.Thumb>
+            <Thumb Style="{StaticResource AutumnThumb}" />
+          </Track.Thumb>
+          <Track.IncreaseRepeatButton>
+            <RepeatButton Command="Slider.IncreaseLarge"
+                          Style="{StaticResource AutumnRepeatButton}" />
+          </Track.IncreaseRepeatButton>
+        </Track>
+      </Grid>
+    </ControlTemplate>
+    <Style x:Key="Basics"
+           TargetType="Slider">
+      <Setter Property="IsSnapToTickEnabled" Value="True" />
+      <Setter Property="LargeChange" Value="2" />
+      <Setter Property="Margin" Value="50,0,50,0" />
+      <Setter Property="Maximum" Value="75" />
+      <Setter Property="Minimum" Value="25" />
+      <Setter Property="SmallChange" Value="1" />
+      <Setter Property="Value" Value="41" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+      <Setter Property="Width" Value="300" />
+    </Style>
+    <Style x:Key="AutumnSliderStyle"
+           BasedOn="{StaticResource Basics}"
+           TargetType="Slider">
+      <Setter Property="Focusable" Value="False" />
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Style.Triggers>
+        <Trigger Property="Orientation" Value="Horizontal">
+          <Setter Property="MinHeight" Value="21" />
+          <Setter Property="MinWidth" Value="104" />
+          <Setter Property="Template" Value="{StaticResource AutumnSlider}" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+    <!--  Another style  -->
+
+    <Style x:Key="SpringSliderRepeatButton"
+           TargetType="RepeatButton">
+      <Setter Property="Focusable" Value="false" />
+      <Setter Property="IsTabStop" Value="false" />
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="RepeatButton">
+            <Border Background="Transparent" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Style x:Key="SpringSliderRepeatButton1"
+           TargetType="RepeatButton">
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="RepeatButton">
+            <Border Height="3"
+                    Background="YellowGreen"
+                    BorderBrush="YellowGreen"
+                    BorderThickness="1"
+                    SnapsToDevicePixels="True" />
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Style x:Key="SpringSliderStyle"
+           TargetType="Thumb">
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Thumb">
+            <StackPanel Orientation="Vertical">
+              <Path Margin="-2,0,0,0"
+                    Data="M 0 0 L 8 0 L 4 6 Z"
+                    Fill="YellowGreen"
+                    Stroke="YellowGreen"
+                    StrokeThickness="2" />
+              <Line Margin="2,0,0,0"
+                    Stroke="Gray"
+                    StrokeDashArray="1.5,1.5"
+                    StrokeThickness="1"
+                    X1="0"
+                    X2="0"
+                    Y1="0"
+                    Y2="7" />
+              <TextBlock Margin="-2,30,0,0"
+                         FontFamily="Consolas"
+                         Foreground="Black"
+                         Text="{Binding Value, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type Slider}}}" />
+            </StackPanel>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="Slider"
+                     TargetType="Slider">
+      <Grid>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto"
+                         MinHeight="{TemplateBinding MinHeight}" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <TickBar x:Name="TopTick"
+                 Grid.Row="0"
+                 Height="5"
+                 VerticalAlignment="Top"
+                 Fill="LightGray"
+                 Placement="Top"
+                 SnapsToDevicePixels="True"
+                 Visibility="Visible" />
+        <Border BorderBrush="LightGray"
+                BorderThickness="0,0,0,1" />
+        <Border x:Name="TrackBackground"
+                Grid.Row="1"
+                Height="3"
+                Margin="0,-10,0,0"
+                VerticalAlignment="Center"
+                Background="Green"
+                BorderBrush="DarkGreen"
+                BorderThickness="1"  />
+        <Track x:Name="PART_Track"
+               Grid.Row="1"
+               Margin="0,-10,0,0">
+          <Track.DecreaseRepeatButton>
+            <RepeatButton Command="Slider.DecreaseLarge"
+                          Style="{StaticResource SpringSliderRepeatButton1}" />
+          </Track.DecreaseRepeatButton>
+          <Track.Thumb>
+            <Thumb Margin="0,-20,0,0"
+                   Style="{StaticResource SpringSliderStyle}" />
+          </Track.Thumb>
+          <Track.IncreaseRepeatButton>
+            <RepeatButton Command="Slider.IncreaseLarge"
+                          Style="{StaticResource SpringSliderRepeatButton}" />
+          </Track.IncreaseRepeatButton>
+        </Track>
+        <TextBlock Grid.Row="1"
+                   Margin="0,15,0,0"
+                   Text="0" />
+        <TickBar x:Name="BottomTick"
+                 Grid.Row="2"
+                 Height="4"
+                 Fill="LightGray"
+                 Placement="Bottom"
+                 SnapsToDevicePixels="True"
+                 Visibility="Collapsed" />
+      </Grid>
+      <ControlTemplate.Triggers>
+        <Trigger Property="TickPlacement" Value="TopLeft">
+          <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+        </Trigger>
+        <Trigger Property="TickPlacement" Value="BottomRight">
+          <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+        </Trigger>
+        <Trigger Property="TickPlacement" Value="Both">
+          <Setter TargetName="BottomTick" Property="Visibility" Value="Visible" />
+          <Setter TargetName="TopTick" Property="Visibility" Value="Visible" />
+        </Trigger>
+      </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style x:Key="Horizontal_Slider"
+           BasedOn="{StaticResource Basics}"
+           TargetType="Slider">
+      <Setter Property="Focusable" Value="False" />
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="SnapsToDevicePixels" Value="true" />
+      <Style.Triggers>
+        <Trigger Property="Orientation" Value="Horizontal">
+          <Setter Property="MinHeight" Value="21" />
+          <Setter Property="MinWidth" Value="104" />
+          <Setter Property="Template" Value="{StaticResource Slider}" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Page.Resources>
+  <StackPanel>
+    <TextBlock Margin="20"
+               Text="Un-templated Slider" />
+    <TextBlock x:Name="MessageTextBlock1"
+               Margin="20,0"
+               HorizontalAlignment="Center"
+               Text="{Binding Value, ElementName=Slider1}" />
+    <Slider x:Name="Slider1"
+            Width="300"
+            Style="{StaticResource Basics}" />
+    <TextBlock Margin="20"
+               Text="Templated Slider 1" />
+    <TextBlock x:Name="MessageTextBlock2"
+               Margin="20,0"
+               HorizontalAlignment="Center"
+               Text="{Binding Value, ElementName=Slider2}" />
+
+    <Slider x:Name="Slider2"
+            Style="{StaticResource AutumnSliderStyle}" />
+
+    <TextBlock Margin="20"
+               Text="Templated Slider 2" />
+
+    <Slider x:Name="Slider3"
+            Style="{StaticResource Horizontal_Slider}" />
+  </StackPanel>
+</Page>

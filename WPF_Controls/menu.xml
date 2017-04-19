@@ -3,26 +3,20 @@
   <category categoryName="Main">
     <menu header ="Start Here..."
 					page="/Pages/StartHere.xaml" />
-   <menu header ="Add Elements in XAML"
-					page="/Pages/AddElements.xaml" />
+    <menu header ="Add Elements in XAML"
+           page="/Pages/AddElements.xaml" />
     <menu header ="Add Elements in Code"
 					page="/Pages/AddInCode.xaml" />
-
-    <menu header ="Bullet Decorator"
-					page="/Pages/BulletDecoratorPage.xaml" />
-      <menu header ="Basic Adorner"
-					page="/Pages/UseAdornerPage.xaml" />
-    
   </category>
-  <category categoryName="Styles and Templates">
-    <menu header ="Review Styles"
-					page="/Pages/StylesPage.xaml">
-    </menu>
-    <menu header ="Review Templates"
-					page="/Pages/TemplatesPage.xaml">
-    </menu>
-   
-  </category>
+  <category categoryName="Review Styles and Templates">
+    <menu header ="Implicit Styles"
+					page="/Pages/Styles1Page.xaml" />
 
-  
+    <menu header ="Explicit Styles"
+					page="/Pages/Styles2Page.xaml" />
+    <menu header ="Control Template - Slider"
+					page="/Pages/Template1Page.xaml" />
+   <menu header ="Control Template - ProgressBar"
+					page="/Pages/Template2Page.xaml" />
+  </category>
 </menus>

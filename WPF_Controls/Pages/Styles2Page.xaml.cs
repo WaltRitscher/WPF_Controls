@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for BulletDecoratorPage.xaml
+  /// Interaction logic for Styles2Page.xaml
   /// </summary>
-  public partial class BulletDecoratorPage : Page
+  public partial class Styles2Page : Page
   {
-    public BulletDecoratorPage()
+    public Styles2Page()
     {
       InitializeComponent();
     }

@@ -62,17 +62,20 @@
     <Compile Include="Pages\AddInCode.xaml.cs">
       <DependentUpon>AddInCode.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BulletDecoratorPage.xaml.cs">
-      <DependentUpon>BulletDecoratorPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\InteractionModesShapesPage.xaml.cs">
-      <DependentUpon>InteractionModesShapesPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ShapesPage.xaml.cs">
-      <DependentUpon>ShapesPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Styles2Page.xaml.cs">
+      <DependentUpon>Styles2Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Styles1Page.xaml.cs">
+      <DependentUpon>Styles1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Template1Page.xaml.cs">
+      <DependentUpon>Template1Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Template2Page.xaml.cs">
+      <DependentUpon>Template2Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
@@ -85,19 +88,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\BulletDecoratorPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\InteractionModesShapesPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Pages\ShapesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Styles2Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Styles1Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Template1Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Template2Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,43 @@
+﻿<Page x:Class="WpfControls.Pages.Styles2Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="Styles2Page"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d">
+  <Page.Resources>
+
+    <Style x:Key="BigAndBold"
+           TargetType="TextBlock">
+      <Setter Property="FontSize" Value="24" />
+      <Setter Property="FontWeight" Value="Bold" />
+      <Setter Property="Foreground" Value="Orange" />
+    </Style>
+
+    <Style x:Key="SmallPrint"
+           TargetType="TextBlock">
+      <Setter Property="FontSize" Value="8" />
+
+      <Setter Property="Foreground" Value="SteelBlue" />
+      <Setter Property="Margin" Value="20,6" />
+      <Setter Property="TextWrapping" Value="Wrap" />
+    </Style>
+  </Page.Resources>
+  <StackPanel>
+
+    <TextBlock Style="{StaticResource BigAndBold}"
+               Text="Cedar" />
+
+    
+
+    <TextBlock Style="{StaticResource SmallPrint}"
+               Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem quam, accumsan sed vulputate sodales, semper at lacus. Maecenas ac sem ante. Etiam finibus diam vitae ante ornare, at semper risus scelerisque. Maecenas dignissim vel augue in fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." />
+    <TextBlock Style="{StaticResource BigAndBold}"
+               Text="Pine" />
+    <TextBlock Style="{StaticResource SmallPrint}"
+               Text="Ut dictum placerat ex, ut volutpat dolor bibendum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem massa, posuere eget luctus vitae, tempus id odio. Aliquam erat volutpat. Nam vestibulum dui sem, id lobortis nisl eleifend eget. In ultricies semper felis id luctus. Etiam pretium convallis nisi feugiat eleifend. Nam at erat convallis, vehicula felis lobortis, congue quam." />
+  </StackPanel>
+</Page>
