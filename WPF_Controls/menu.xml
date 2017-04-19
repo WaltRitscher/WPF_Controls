@@ -3,10 +3,10 @@
   <category categoryName="Main">
     <menu header ="Start Here..."
 					page="/Pages/StartHere.xaml" />
-   <menu header ="Shapes"
-					page="/Pages/ShapesPage.xaml" />
-    <menu header ="Animated Curve"
-					page="/Pages/BezierPage.xaml" />
+   <menu header ="Add Elements in XAML"
+					page="/Pages/AddElements.xaml" />
+    <menu header ="Add Elements in Code"
+					page="/Pages/AddInCode.xaml" />
 
     <menu header ="Bullet Decorator"
 					page="/Pages/BulletDecoratorPage.xaml" />
@@ -14,12 +14,12 @@
 					page="/Pages/UseAdornerPage.xaml" />
     
   </category>
-  <category categoryName="Interaction">
-    <menu header ="Interaction Modes"
-					page="/Pages/InteractionModesPage.xaml">
+  <category categoryName="Styles and Templates">
+    <menu header ="Review Styles"
+					page="/Pages/StylesPage.xaml">
     </menu>
-    <menu header ="Interaction Shapes"
-					page="/Pages/InteractionModesShapesPage.xaml">
+    <menu header ="Review Templates"
+					page="/Pages/TemplatesPage.xaml">
     </menu>
    
   </category>

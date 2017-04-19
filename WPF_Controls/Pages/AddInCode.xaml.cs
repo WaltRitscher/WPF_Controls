@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for InteractionMode.xaml
+  /// Interaction logic for AddInCode.xaml
   /// </summary>
-  public partial class InteractionModesPage : Page
+  public partial class AddInCode : Page
   {
-    public InteractionModesPage()
+    public AddInCode()
     {
       InitializeComponent();
     }

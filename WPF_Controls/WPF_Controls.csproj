@@ -56,10 +56,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Adorners\ResizeAdorner.cs" />
-    <Compile Include="Adorners\ArrowAdorner.cs" />
-    <Compile Include="Pages\BezierPage.xaml.cs">
-      <DependentUpon>BezierPage.xaml</DependentUpon>
+    <Compile Include="Pages\AddElements.xaml.cs">
+      <DependentUpon>AddElements.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AddInCode.xaml.cs">
+      <DependentUpon>AddInCode.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\BulletDecoratorPage.xaml.cs">
       <DependentUpon>BulletDecoratorPage.xaml</DependentUpon>
@@ -67,22 +68,20 @@
     <Compile Include="Pages\InteractionModesShapesPage.xaml.cs">
       <DependentUpon>InteractionModesShapesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\InteractionModesPage.xaml.cs">
-      <DependentUpon>InteractionModesPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\ShapesPage.xaml.cs">
       <DependentUpon>ShapesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\UseAdornerPage.xaml.cs">
-      <DependentUpon>UseAdornerPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
-    <Page Include="Pages\BezierPage.xaml">
+    <Page Include="Pages\AddElements.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AddInCode.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,19 +93,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\InteractionModesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\ShapesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\StartHere.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\UseAdornerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,11 +139,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="Class Diagrams\BasicElements.cd" />
-    <None Include="Class Diagrams\Control.cd" />
-    <None Include="Class Diagrams\Decorators.cd" />
-    <None Include="Class Diagrams\FrameworkElement.cd" />
-    <None Include="Class Diagrams\Shape.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -169,6 +155,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Class Diagrams\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

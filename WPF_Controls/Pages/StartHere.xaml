@@ -42,7 +42,7 @@
                VerticalAlignment='Center'
                FontSize='127'
                Margin='2,60'
-               Text='...'
+               Text='Work with Elements'
                HorizontalAlignment='Center'
                Foreground='PowderBlue' />
   </Grid>
