@@ -77,6 +77,9 @@
     <Compile Include="Pages\Template2Page.xaml.cs">
       <DependentUpon>Template2Page.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Template3Page.xaml.cs">
+      <DependentUpon>Template3Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
@@ -105,6 +108,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Template2Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Template3Page.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

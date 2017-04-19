@@ -1,0 +1,56 @@
+﻿<Page x:Class="WpfControls.Pages.Template3Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="Templates3Page"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d">
+  <Page.Resources>
+
+    <Style x:Key="SimpleTemplate"
+           TargetType="Button">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="Button">
+
+
+
+            <Grid Margin="4">
+              <Ellipse Width="60"
+                       Height="60"
+                       Fill="Orange"
+                       Stroke="DarkOrange"
+                       StrokeThickness="3" />
+              <!--
+                Use a ContentPresenter to display the Content of
+                the Button.
+              -->
+              <ContentPresenter Margin="4,5,4,4"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+
+            </Grid>
+
+
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+  </Page.Resources>
+  <StackPanel>
+    <Button Margin="20"
+            Content="Un-templated Button" />
+    <Button Margin="20"
+            Click="Button_Click"
+            Content="Button1"
+            Style="{StaticResource SimpleTemplate}" />
+    <TextBlock x:Name="MessageTextBlock"
+               Margin="20"
+               HorizontalAlignment="Center" />
+
+  </StackPanel>
+</Page>

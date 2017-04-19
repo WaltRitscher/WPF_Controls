@@ -18,5 +18,7 @@
 					page="/Pages/Template1Page.xaml" />
    <menu header ="Control Template - ProgressBar"
 					page="/Pages/Template2Page.xaml" />
+   <menu header ="Control Template - Button"
+					page="/Pages/Template3Page.xaml" />
   </category>
 </menus>
