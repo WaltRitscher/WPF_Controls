@@ -14,9 +14,12 @@
 					page="/Pages/UseAdornerPage.xaml" />
     
   </category>
-  <category categoryName="Other">
-    <menu header ="Page 1"
-					page="/Pages/Page1.xaml">
+  <category categoryName="Interaction">
+    <menu header ="Interaction Modes"
+					page="/Pages/InteractionModesPage.xaml">
+    </menu>
+    <menu header ="Interaction Shapes"
+					page="/Pages/InteractionModesShapesPage.xaml">
     </menu>
    
   </category>

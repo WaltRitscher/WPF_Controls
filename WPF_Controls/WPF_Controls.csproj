@@ -64,6 +64,12 @@
     <Compile Include="Pages\BulletDecoratorPage.xaml.cs">
       <DependentUpon>BulletDecoratorPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\InteractionModesShapesPage.xaml.cs">
+      <DependentUpon>InteractionModesShapesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\InteractionModesPage.xaml.cs">
+      <DependentUpon>InteractionModesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ShapesPage.xaml.cs">
       <DependentUpon>ShapesPage.xaml</DependentUpon>
     </Compile>
@@ -81,6 +87,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\BulletDecoratorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\InteractionModesShapesPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\InteractionModesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
