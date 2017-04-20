@@ -1,0 +1,96 @@
+﻿<Page x:Class="WpfControls.ComplexShapesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="ComplexShapesPage"
+      d:DesignHeight="600"
+      d:DesignWidth="600"
+      mc:Ignorable="d">
+
+  <Viewbox>
+    <Canvas Canvas.Left="0"
+            Canvas.Top="0"
+            Width="800"
+            Height="600">
+      <Path Canvas.Left="223.872"
+            Canvas.Top="141.127"
+            Width="341.333"
+            Height="341.335"
+            Data="M 223.872,311.795C 223.872,217.536 300.281,141.127 394.539,141.127C 488.797,141.127 565.205,217.536 565.205,311.795C 565.205,406.052 488.797,482.461 394.539,482.461C 300.281,482.461 223.872,406.052 223.872,311.795 Z "
+            Fill="#FF003300"
+            Stretch="Fill" />
+      <Path Canvas.Left="232.407"
+            Canvas.Top="149.661"
+            Width="324.265"
+            Height="324.265"
+            Data="M 232.407,311.793C 232.407,222.249 304.995,149.661 394.539,149.661C 484.084,149.661 556.672,222.249 556.672,311.793C 556.672,401.339 484.084,473.927 394.539,473.927C 304.995,473.927 232.407,401.339 232.407,311.793 Z "
+            Stretch="Fill">
+        <Path.Fill>
+          <LinearGradientBrush StartPoint="0.499999,-1.50581e-006" EndPoint="0.499999,1">
+            <LinearGradientBrush.GradientStops>
+              <GradientStop Offset="0" Color="#FF00FF00" />
+              <GradientStop Offset="0.432129" Color="#FF076E0B" />
+              <GradientStop Offset="0.87439" Color="#FF00CC00" />
+              <GradientStop Offset="0.98999" Color="#FF46AF59" />
+              <GradientStop Offset="1" Color="#FF46AF59" />
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </Path.Fill>
+      </Path>
+      <Path Canvas.Left="231.456"
+            Canvas.Top="150.223"
+            Width="278.872"
+            Height="250.051"
+            Data="F1 M 257.339,400.273C 240.963,374.945 231.456,344.76 231.456,312.356C 231.456,222.811 304.044,150.223 393.588,150.223C 439.375,150.223 480.728,169.2 510.328,199.72C 372.593,242.488 288.261,309.341 257.339,400.273 Z "
+            Stretch="Fill">
+
+        <Path.Fill>
+
+          <LinearGradientBrush StartPoint="0.585771,0.123176" EndPoint="0.326985,0.837523">
+            <LinearGradientBrush.GradientStops>
+              <GradientStop Offset="0" Color="#FFDAF7D4" />
+              <GradientStop Offset="0.738556" Color="#FF00CC00" />
+              <GradientStop Offset="0.825607" Color="#FF46AF59" />
+              <GradientStop Offset="1" Color="#FF46AF59" />
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </Path.Fill>
+      </Path>
+      <Path x:Name="CheckOutlinePath"
+            Canvas.Left="253.732"
+            Canvas.Top="197.825"
+            Width="252.118"
+            Height="256.547"
+            Data="F1 M 296.427,315.809L 297.529,315.767C 319.557,325.888 338.565,346.024 353.392,364.195C 376.973,310.397 415.231,252.62 448.981,205.887C 463.32,190.424 513.451,196.329 504.868,231.24C 461.984,298.204 423.076,366.785 387.209,437.753C 376.123,456.528 360.055,458.467 341.933,448.217L 254.785,354.227C 248.297,324.028 272.948,316.736 296.427,315.809 Z "
+            Fill="#FF606160"
+            Stretch="Fill">
+        <Path.RenderTransform>
+          <RotateTransform x:Name="CheckOutlineRotateTransform" CenterX="120" CenterY="120" />
+        </Path.RenderTransform>
+      </Path>
+      <Path x:Name="CheckPath"
+            Canvas.Left="259.095"
+            Canvas.Top="202.919"
+            Width="242.775"
+            Height="246.861"
+            Data="M 259.912,351.948C 255.633,332.035 268.16,321.5 297.493,320.343C 314.928,328.355 334.26,345.913 355.487,373.019C 374.267,327.916 406.853,273.247 453.243,209.013C 472.893,193.161 505.917,211.193 501.461,229.324C 459.649,294.611 420.513,363.328 384.055,435.471C 374.992,450.812 362.211,453.817 345.712,444.485L 259.912,351.948 Z "
+            MouseEnter="CheckPath_MouseEnter"
+            MouseLeave="CheckPath_MouseLeave"
+            Stretch="Fill">
+        <Path.RenderTransform>
+          <RotateTransform x:Name="CheckRotateTransform" CenterX="120" CenterY="120" />
+        </Path.RenderTransform>
+        <Path.Fill>
+          <LinearGradientBrush StartPoint="0.176953,0.0452557" EndPoint="0.973391,0.801637">
+            <LinearGradientBrush.GradientStops>
+              <GradientStop Offset="0" Color="#FFF7FFFF" />
+              <GradientStop x:Name="CheckGradientStop" Offset="1" Color="#FFDAF7D4" />
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </Path.Fill>
+      </Path>
+    </Canvas>
+  </Viewbox>
+</Page>

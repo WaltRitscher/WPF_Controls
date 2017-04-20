@@ -58,6 +58,9 @@
     </ApplicationDefinition>
     <Compile Include="Adorners\ResizeAdorner.cs" />
     <Compile Include="Adorners\ArrowAdorner.cs" />
+    <Compile Include="Pages\ComplexShapesPage.xaml.cs">
+      <DependentUpon>ComplexShapesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\BezierPage.xaml.cs">
       <DependentUpon>BezierPage.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\ComplexShapesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\BezierPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

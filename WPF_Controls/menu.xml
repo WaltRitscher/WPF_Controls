@@ -5,8 +5,8 @@
 					page="/Pages/StartHere.xaml" />
    <menu header ="Shapes"
 					page="/Pages/ShapesPage.xaml" />
-    <menu header ="Animated Curve"
-					page="/Pages/BezierPage.xaml" />
+    <menu header ="Combine Shapes"
+					page="/Pages/ComplexShapesPage.xaml" />
 
     <menu header ="Bullet Decorator"
 					page="/Pages/BulletDecoratorPage.xaml" />
