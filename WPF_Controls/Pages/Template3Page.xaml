@@ -7,6 +7,7 @@
       Title="Templates3Page"
       d:DesignHeight="300"
       d:DesignWidth="300"
+      FontSize="18"
       mc:Ignorable="d">
   <Page.Resources>
 
@@ -15,26 +16,20 @@
       <Setter Property="Template">
         <Setter.Value>
           <ControlTemplate TargetType="Button">
-
-
-
             <Grid Margin="4">
-              <Ellipse Width="60"
-                       Height="60"
+              <Ellipse Width="110"
+                       Height="110"
                        Fill="Orange"
                        Stroke="DarkOrange"
                        StrokeThickness="3" />
+
               <!--
-                Use a ContentPresenter to display the Content of
+                Use a ContentPresenter to
+                display the Content of
                 the Button.
               -->
-              <ContentPresenter Margin="4,5,4,4"
-                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
 
             </Grid>
-
-
           </ControlTemplate>
         </Setter.Value>
       </Setter>
@@ -46,8 +41,7 @@
             Content="Un-templated Button" />
     <Button Margin="20"
             Click="Button_Click"
-            Content="Button1"
-             />
+            Content="Custom" />
     <TextBlock x:Name="MessageTextBlock"
                Margin="20"
                HorizontalAlignment="Center" />

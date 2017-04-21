@@ -31,5 +31,7 @@ namespace WpfControls.Pages
       MessageTextBlock.Text = $"Clicked the templated button {_dots}";
       _dots += ".";
     }
-  }
+
+		
+	}
 }
