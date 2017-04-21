@@ -41,7 +41,11 @@ namespace WpfControls.Pages
     private void Rect1_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
     {
       e.Handled = true;
-      _parentLayer.Add(_rectAdorner);
+			if (_parentLayer.GetAdorners(Rect1) == null)
+			{
+				 _parentLayer.Add(_rectAdorner);
+			}
+     
     }
 
     private void MainGrid_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
