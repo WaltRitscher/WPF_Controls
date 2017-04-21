@@ -23,6 +23,19 @@ namespace WpfControls.Pages
     public Template1Page()
     {
       InitializeComponent();
+		
     }
-  }
+
+		
+
+		private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e) {
+
+			if ( SizableEllipse != null)
+			{
+				SizableEllipse.Width = (sender as Slider).Value;
+
+			}
+		
+		}
+	}
 }

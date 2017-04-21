@@ -203,7 +203,7 @@
                 VerticalAlignment="Center"
                 Background="Green"
                 BorderBrush="DarkGreen"
-                BorderThickness="1"  />
+                BorderThickness="1" />
         <Track x:Name="PART_Track"
                Grid.Row="1"
                Margin="0,-10,0,0">
@@ -263,27 +263,27 @@
   <StackPanel>
     <TextBlock Margin="20"
                Text="Un-templated Slider" />
-    <TextBlock x:Name="MessageTextBlock1"
-               Margin="20,0"
-               HorizontalAlignment="Center"
-               Text="{Binding Value, ElementName=Slider1}" />
     <Slider x:Name="Slider1"
             Width="300"
-            Style="{StaticResource Basics}" />
+            Style="{StaticResource Basics}"
+            ValueChanged="Slider_ValueChanged" />
     <TextBlock Margin="20"
                Text="Templated Slider 1" />
-    <TextBlock x:Name="MessageTextBlock2"
-               Margin="20,0"
-               HorizontalAlignment="Center"
-               Text="{Binding Value, ElementName=Slider2}" />
 
     <Slider x:Name="Slider2"
-            Style="{StaticResource AutumnSliderStyle}" />
+            Style="{StaticResource AutumnSliderStyle}"
+            ValueChanged="Slider_ValueChanged" />
 
     <TextBlock Margin="20"
                Text="Templated Slider 2" />
 
     <Slider x:Name="Slider3"
-            Style="{StaticResource Horizontal_Slider}" />
+            Style="{StaticResource Horizontal_Slider}"
+            ValueChanged="Slider_ValueChanged" />
+    <Ellipse x:Name="SizableEllipse"
+             Width=" 41"
+             Height="41"
+             Margin="0,20"
+             Fill="LightGreen" />
   </StackPanel>
 </Page>
