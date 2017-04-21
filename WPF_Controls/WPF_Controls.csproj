@@ -54,12 +54,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\FadeElementPage.xaml.cs">
+      <DependentUpon>FadeElementPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OpacityPage.xaml.cs">
+      <DependentUpon>OpacityPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
     </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\FadeElementPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OpacityPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StartHere.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -116,8 +130,11 @@
     <Resource Include="Images\FullScreenHS.png" />
     <Resource Include="Images\River.jpg" />
     <Resource Include="Images\Splash.png" />
+    <Resource Include="Images\TreeBackground.jpg" />
+    <Resource Include="Images\RedButtonFull.jpg" />
     <Content Include="menu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup />

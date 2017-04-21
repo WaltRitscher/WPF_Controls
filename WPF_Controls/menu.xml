@@ -9,7 +9,9 @@
 					page="/Pages/Page1.xaml">
     </menu>
     <menu header ="Opacity"
-             page="/Pages/ImageEditorPage.xaml" />
+             page="/Pages/OpacityPage.xaml" />
+    <menu header ="Fade Element by Opacity"
+            page="/Pages/FadeElementPage.xaml" />
 
     <menu header ="Visibility"
 					page="/Pages/splashpage.xaml" />
