@@ -28,7 +28,7 @@
                 display the Content of
                 the Button.
               -->
-              <ContentPresenter />
+
             </Grid>
           </ControlTemplate>
         </Setter.Value>
