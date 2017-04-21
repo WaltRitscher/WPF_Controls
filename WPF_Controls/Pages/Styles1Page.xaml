@@ -32,14 +32,7 @@
     </Style>
   </Page.Resources>
   <Canvas>
-    <Rectangle x:Name="Rect1"
-               Canvas.Left="112"
-               Canvas.Top="390"
-               StrokeThickness="5" />
-    <Rectangle x:Name="Rect3"
-               Canvas.Left="112"
-               Canvas.Top="578"
-               StrokeThickness="5" />
+    
 
     <Ellipse x:Name="Ellipse1"
              Canvas.Left="112"
@@ -52,5 +45,14 @@
     <Ellipse x:Name="Ellipse2"
              Canvas.Left="353"
              Canvas.Top="64" />
+
+    <Rectangle x:Name="Rect1"
+               Canvas.Left="112"
+               Canvas.Top="390"
+               StrokeThickness="5" />
+    <Rectangle x:Name="Rect3"
+               Canvas.Left="112"
+               Canvas.Top="578"
+               StrokeThickness="5" />
   </Canvas>
 </Page>
