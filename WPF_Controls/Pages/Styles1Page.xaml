@@ -10,32 +10,24 @@
       mc:Ignorable="d">
   <Page.Resources>
     <Style x:Key="ShapeConstants">
-      <Setter Property="Shape.Stroke"
-              Value="PaleVioletRed" />
-      <Setter Property="Shape.StrokeThickness"
-              Value="5" />
+      <Setter Property="Shape.Stroke" Value="PaleVioletRed" />
+      <Setter Property="Shape.StrokeThickness" Value="5" />
     </Style>
 
     <!--  Apply to all rectangles within this page.  -->
     <Style BasedOn="{StaticResource ShapeConstants}"
            TargetType="Rectangle">
-      <Setter Property="Fill"
-              Value="DarkOrange" />
+      <Setter Property="Fill" Value="DarkOrange" />
 
-      <Setter Property="Height"
-              Value="120" />
-      <Setter Property="Width"
-              Value="160" />
+      <Setter Property="Height" Value="120" />
+      <Setter Property="Width" Value="160" />
 
     </Style>
     <Style BasedOn="{StaticResource ShapeConstants}"
            TargetType="Ellipse">
-      <Setter Property="Fill"
-              Value="LightSteelBlue" />
-      <Setter Property="Height"
-              Value="190" />
-      <Setter Property="Width"
-              Value="190" />
+      <Setter Property="Fill" Value="LightSteelBlue" />
+      <Setter Property="Height" Value="190" />
+      <Setter Property="Width" Value="190" />
     </Style>
   </Page.Resources>
   <Canvas>
@@ -49,14 +41,14 @@
                StrokeThickness="5" />
     <Ellipse x:Name="Ellipse1"
              Canvas.Left="369"
-             Canvas.Top="39" />
-    <Ellipse x:Name="Ellipse2"
-             Canvas.Left="369"
-             Canvas.Top="308"
+             Canvas.Top="39"
              Width="190"
              Height="190"
              Fill="LightSteelBlue"
              Stroke="PaleVioletRed"
              StrokeThickness="5" />
+    <Ellipse x:Name="Ellipse2"
+             Canvas.Left="369"
+             Canvas.Top="308" />
   </Canvas>
 </Page>
