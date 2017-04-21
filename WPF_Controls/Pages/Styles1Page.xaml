@@ -14,6 +14,13 @@
       <Setter Property="Shape.StrokeThickness" Value="5" />
     </Style>
 
+    <!--  Apply to all Ellipses within this page.  -->
+    <Style BasedOn="{StaticResource ShapeConstants}"
+           TargetType="Ellipse">
+      <Setter Property="Fill" Value="LightSteelBlue" />
+      <Setter Property="Height" Value="190" />
+      <Setter Property="Width" Value="190" />
+    </Style>
     <!--  Apply to all rectangles within this page.  -->
     <Style BasedOn="{StaticResource ShapeConstants}"
            TargetType="Rectangle">
@@ -23,32 +30,27 @@
       <Setter Property="Width" Value="160" />
 
     </Style>
-    <Style BasedOn="{StaticResource ShapeConstants}"
-           TargetType="Ellipse">
-      <Setter Property="Fill" Value="LightSteelBlue" />
-      <Setter Property="Height" Value="190" />
-      <Setter Property="Width" Value="190" />
-    </Style>
   </Page.Resources>
   <Canvas>
     <Rectangle x:Name="Rect1"
-               Canvas.Left="24"
-               Canvas.Top="39"
+               Canvas.Left="112"
+               Canvas.Top="390"
                StrokeThickness="5" />
     <Rectangle x:Name="Rect3"
-               Canvas.Left="24"
-               Canvas.Top="209"
+               Canvas.Left="112"
+               Canvas.Top="578"
                StrokeThickness="5" />
+
     <Ellipse x:Name="Ellipse1"
-             Canvas.Left="369"
-             Canvas.Top="39"
+             Canvas.Left="112"
+             Canvas.Top="64"
              Width="190"
              Height="190"
              Fill="LightSteelBlue"
              Stroke="PaleVioletRed"
              StrokeThickness="5" />
     <Ellipse x:Name="Ellipse2"
-             Canvas.Left="369"
-             Canvas.Top="308" />
+             Canvas.Left="353"
+             Canvas.Top="64" />
   </Canvas>
 </Page>
