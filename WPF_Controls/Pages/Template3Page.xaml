@@ -47,7 +47,7 @@
     <Button Margin="20"
             Click="Button_Click"
             Content="Button1"
-            Style="{StaticResource SimpleTemplate}" />
+             />
     <TextBlock x:Name="MessageTextBlock"
                Margin="20"
                HorizontalAlignment="Center" />
