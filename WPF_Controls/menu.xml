@@ -21,15 +21,10 @@
     <menu header ="Hide Animation"
         page="/Pages/HideAnimationPage.xaml" />
   </category>
-  <category categoryName="Methods">
-    <menu header ="SetFocus"
-					page="/Pages/Page1.xaml">
-    </menu>
-  </category>
-
+ 
   <category categoryName="Events">
     <menu header ="Mouse"
-					page="/Pages/Page1.xaml">
+					page="/Pages/MouseEventsPage.xaml">
     </menu>
     <menu header ="Key"
          page="/Pages/Page1.xaml">

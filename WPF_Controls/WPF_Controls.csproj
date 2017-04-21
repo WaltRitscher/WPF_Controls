@@ -63,6 +63,9 @@
     <Compile Include="Pages\HitTestPage.xaml.cs">
       <DependentUpon>HitTestPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MouseEventsPage.xaml.cs">
+      <DependentUpon>MouseEventsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OpacityPage.xaml.cs">
       <DependentUpon>OpacityPage.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\HitTestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MouseEventsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
