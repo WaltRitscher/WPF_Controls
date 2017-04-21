@@ -12,10 +12,10 @@
   <Page.Resources>
 
     <Style x:Key="SimpleTemplate"
-           TargetType="Button" >
-      <Setter Property="Template" >
+           TargetType="Button">
+      <Setter Property="Template">
         <Setter.Value>
-          <ControlTemplate TargetType='Button' >
+          <ControlTemplate TargetType="Button">
             <Grid Margin="4">
               <Ellipse Width="110"
                        Height="110"
@@ -41,7 +41,7 @@
             Content="Un-templated Button" />
     <Button Margin="20"
             Click="Button_Click"
-            Content="Custom"  Style='{StaticResource SimpleTemplate}' />
+            Content="Custom" />
     <TextBlock x:Name="MessageTextBlock"
                Margin="20"
                HorizontalAlignment="Center" />
