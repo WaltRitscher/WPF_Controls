@@ -12,10 +12,10 @@
   <Page.Resources>
 
     <Style x:Key="SimpleTemplate"
-           TargetType="Button" TargetType='Button'>
-      <Setter Property="Template">
+           TargetType="Button" >
+      <Setter Property="Template" >
         <Setter.Value>
-          <ControlTemplate >
+          <ControlTemplate TargetType='Button' >
             <Grid Margin="4">
               <Ellipse Width="110"
                        Height="110"
