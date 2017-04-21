@@ -12,7 +12,7 @@
   <Page.Resources>
 
     <Style x:Key="SimpleTemplate"
-           TargetType="Button">
+           TargetType="Button" TargetType='Button'>
       <Setter Property="Template">
         <Setter.Value>
           <ControlTemplate >
@@ -28,7 +28,7 @@
                 display the Content of
                 the Button.
               -->
-
+              <ContentPresenter />
             </Grid>
           </ControlTemplate>
         </Setter.Value>
@@ -41,7 +41,7 @@
             Content="Un-templated Button" />
     <Button Margin="20"
             Click="Button_Click"
-            Content="Custom"  />
+            Content="Custom"  Style='{StaticResource SimpleTemplate}' />
     <TextBlock x:Name="MessageTextBlock"
                Margin="20"
                HorizontalAlignment="Center" />
