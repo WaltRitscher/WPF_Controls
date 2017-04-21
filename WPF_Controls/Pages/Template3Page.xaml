@@ -19,7 +19,7 @@
             <Grid Margin="4">
               <Ellipse Width="110"
                        Height="110"
-                       Fill="Orange"
+                       Fill="{TemplateBinding Background}"
                        Stroke="DarkOrange"
                        StrokeThickness="3" />
 
@@ -28,7 +28,8 @@
                 display the Content of
                 the Button.
               -->
-
+              <ContentPresenter HorizontalAlignment="Center"
+                                VerticalAlignment="Center" />
             </Grid>
           </ControlTemplate>
         </Setter.Value>
@@ -38,10 +39,13 @@
   </Page.Resources>
   <StackPanel>
     <Button Margin="20"
+            Background="LightGreen"
             Content="Un-templated Button" />
     <Button Margin="20"
+            Background="LightGreen"
             Click="Button_Click"
-            Content="Custom" />
+            Content="Goodbye" 
+            Style="{StaticResource SimpleTemplate}" />
     <TextBlock x:Name="MessageTextBlock"
                Margin="20"
                HorizontalAlignment="Center" />
