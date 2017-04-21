@@ -14,7 +14,12 @@
             page="/Pages/FadeElementPage.xaml" />
 
     <menu header ="Visibility"
-					page="/Pages/splashpage.xaml" />
+					page="/Pages/VisibilityPage.xaml" />
+    <menu header ="Hit Test"
+         page="/Pages/HitTestPage.xaml" />
+
+    <menu header ="Hide Animation"
+        page="/Pages/HideAnimationPage.xaml" />
   </category>
   <category categoryName="Methods">
     <menu header ="SetFocus"

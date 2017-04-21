@@ -57,11 +57,20 @@
     <Compile Include="Pages\FadeElementPage.xaml.cs">
       <DependentUpon>FadeElementPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HideAnimationPage.xaml.cs">
+      <DependentUpon>HideAnimationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HitTestPage.xaml.cs">
+      <DependentUpon>HitTestPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\OpacityPage.xaml.cs">
       <DependentUpon>OpacityPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\VisibilityPage.xaml.cs">
+      <DependentUpon>VisibilityPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
@@ -70,11 +79,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\HideAnimationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HitTestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\OpacityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\VisibilityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
