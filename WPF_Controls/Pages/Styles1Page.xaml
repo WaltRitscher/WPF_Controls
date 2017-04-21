@@ -51,10 +51,10 @@
     <Rectangle x:Name="Rect1"
                Canvas.Left="82"
                Canvas.Top="387"
-               StrokeThickness="5" />
+                />
     <Rectangle x:Name="Rect3"
                Canvas.Left="82"
                Canvas.Top="575"
-               StrokeThickness="5" />
+                />
   </Canvas>
 </Page>
