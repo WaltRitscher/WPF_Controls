@@ -172,6 +172,8 @@
     <Resource Include="Images\FullScreenHS.png" />
     <Resource Include="Images\River.jpg" />
     <Resource Include="Images\Splash.png" />
+    <Resource Include="Images\Leaf1.jpg" />
+    <Resource Include="Images\Leaf2.jpg" />
     <Content Include="menu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

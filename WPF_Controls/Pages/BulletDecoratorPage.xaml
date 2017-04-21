@@ -7,25 +7,27 @@
       Title="BulletDecoratorPage"
       d:DesignHeight="300"
       d:DesignWidth="300"
-      mc:Ignorable="d" FontSize='18'>
+      mc:Ignorable="d"
+      FontSize='18'>
 
   <StackPanel Margin="30">
-    <BulletDecorator Margin="0,5,0,0">
+   
+    <BulletDecorator Margin="0,5,0,0" >
       <BulletDecorator.Bullet>
-        <Ellipse Width="10"
-                 Height="10"
-                 Fill="Blue" />
+        <Image Source='/WpfControls;component/Images/Leaf2.jpg'
+               Width='56'
+               Stretch='Fill' />
       </BulletDecorator.Bullet>
       <TextBlock Margin="10,0"
-                 Text="Example Text" />
+                 Text="Maple"  VerticalAlignment='Center'/>
     </BulletDecorator>
+
     <BulletDecorator Margin="0,5,0,0">
       <BulletDecorator.Bullet>
-        <TextBlock FontFamily="Segoe UI Symbol"
-                   Text="⏩" />
+      <Image Source='/WpfControls;component/Images/Leaf1.jpg' Width='56' Stretch='Fill' />
       </BulletDecorator.Bullet>
-      <TextBlock Margin="10,0"
-                 Text="Example Text" />
+      <TextBlock Margin="10,0" VerticalAlignment='Center'
+                 Text="Elm" />
     </BulletDecorator>
   </StackPanel>
 </Page>
