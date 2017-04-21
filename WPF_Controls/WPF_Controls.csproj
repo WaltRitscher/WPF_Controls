@@ -54,23 +54,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Effects\ColorToneEffect.cs" />
-    <Compile Include="Effects\MonochromeEffect.cs" />
-    <Compile Include="Effects\ToonShaderEffect.cs" />
-    <Compile Include="Pages\ImageEditorPage.xaml.cs">
-      <DependentUpon>ImageEditorPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\SplashPage.xaml.cs">
       <DependentUpon>SplashPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\SplashBackground.xaml.cs">
-      <DependentUpon>SplashBackground.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\Star.xaml.cs">
-      <DependentUpon>Star.xaml</DependentUpon>
     </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
@@ -98,21 +86,9 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\ImageEditorPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\SplashPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UserControls\SplashBackground.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="UserControls\Star.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -134,9 +110,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Class Diagrams\BasicElements.cd" />
-    <Resource Include="Effects\ColorToneEffect.ps" />
-    <Resource Include="Effects\MonochromeEffect.ps" />
-    <Resource Include="Effects\ToonShaderEffect.ps" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
