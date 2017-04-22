@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\DragDropPage.xaml.cs">
+      <DependentUpon>DragDropPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\FadeElementPage.xaml.cs">
       <DependentUpon>FadeElementPage.xaml</DependentUpon>
     </Compile>
@@ -84,6 +87,10 @@
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\DragDropPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\FadeElementPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

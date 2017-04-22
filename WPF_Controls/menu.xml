@@ -33,7 +33,7 @@
          page="/Pages/TouchEventsPage.xaml">
     </menu>
     <menu header ="Drag"
-        page="/Pages/Page1.xaml">
+        page="/Pages/DragDropPage.xaml">
     </menu>
   </category>
 </menus>

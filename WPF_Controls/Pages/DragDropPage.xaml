@@ -1,0 +1,50 @@
+﻿<Page x:Class="WpfControls.Pages.DragDropPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="DragDropPage"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d">
+  <Page.Resources>
+    <Style TargetType="Ellipse">
+      <Setter Property="Height" Value="80" />
+      <Setter Property="Stroke" Value="DarkGray" />
+      <Setter Property="StrokeThickness" Value="5" />
+      <Setter Property="Width" Value="80" />
+    </Style>
+    <Style TargetType="TextBlock">
+      <Setter Property="FontSize" Value="24" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
+      <Setter Property="VerticalAlignment" Value="Center" />
+    </Style>
+  </Page.Resources>
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="5" />
+      <ColumnDefinition Width="1*" />
+
+    </Grid.ColumnDefinitions>
+    <StackPanel Background="LightGray">
+      <Ellipse x:Name="BlueEllipse"
+               Fill="SteelBlue"
+               MouseDown="Ellipse_MouseDown" />
+      <Ellipse x:Name="RedEllipse"
+               Fill="LightCoral"
+               MouseDown="Ellipse_MouseDown" />
+      <TextBlock Text="Sample Text in TextBlock" MouseDown="TextBlock_MouseDown"/>
+    </StackPanel>
+    <UniformGrid x:Name="TargetGrid"
+                 Grid.Column="2"
+                 AllowDrop="True"
+                 Background="LightGray"
+                 Columns="3"
+                 DragEnter="TargetGrid_DragEnter"
+                 DragLeave="TargetGrid_DragLeave"
+                 Drop="TargetGrid_Drop"
+                 Rows="4" />
+  </Grid>
+</Page>
