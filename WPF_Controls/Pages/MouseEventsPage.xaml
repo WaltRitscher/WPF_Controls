@@ -10,22 +10,15 @@
       mc:Ignorable="d">
   <Page.Resources>
     <Style TargetType="Ellipse">
-      <Setter Property="Height"
-              Value="110" />
-      <Setter Property="Stroke"
-              Value="DarkGray" />
-      <Setter Property="StrokeThickness"
-              Value="5" />
-      <Setter Property="Width"
-              Value="110" />
+      <Setter Property="Height" Value="110" />
+      <Setter Property="Stroke" Value="DarkGray" />
+      <Setter Property="StrokeThickness" Value="5" />
+      <Setter Property="Width" Value="110" />
     </Style>
     <Style TargetType="TextBlock">
-      <Setter Property="FontSize"
-              Value="18" />
-      <Setter Property="HorizontalAlignment"
-              Value="Center" />
-      <Setter Property="VerticalAlignment"
-              Value="Bottom" />
+      <Setter Property="FontSize" Value="18" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
+      <Setter Property="VerticalAlignment" Value="Bottom" />
     </Style>
   </Page.Resources>
   <Grid>
@@ -60,26 +53,25 @@
       <Grid x:Name="GridE"
             MouseEnter="GridE_MouseEnter"
             MouseLeave="GridE_MouseLeave">
-        <Ellipse Fill="LightCoral"
-                 x:Name="Ellipse1" />
+        <Ellipse x:Name="Ellipse1"
+                 Fill="LightCoral" />
         <TextBlock Text="Enter-Leave" />
       </Grid>
       <Grid x:Name="GridF"
-            MouseWheel="GridF_MouseWheel"
+            HorizontalAlignment="Center"
             MouseEnter="GridE_MouseEnter"
             MouseLeave="GridE_MouseLeave"
-            HorizontalAlignment="Center">
+            MouseWheel="GridF_MouseWheel">
         <Ellipse Fill="LightSteelBlue" />
         <TextBlock Text="Mouse Wheel" />
         <Grid.RenderTransform>
           <ScaleTransform x:Name="GridScaleTransform" />
         </Grid.RenderTransform>
       </Grid>
-      <Grid x:Name="GridG" >
+      <Grid x:Name="GridG">
         <Ellipse Fill="LightCoral" />
         <TextBlock Text="Other" />
       </Grid>
-
     </UniformGrid>
     <TextBlock x:Name="MessageTextBlock"
                Grid.Row="1"

@@ -13,7 +13,6 @@
 
     <SolidColorBrush x:Key="middle"
                      Color="LightSteelBlue">
-
     </SolidColorBrush>
 
     <Style TargetType='Border'
@@ -30,9 +29,7 @@
               Value='5' />
       <Setter Property='Background'
               Value='{StaticResource middle}' />
-
     </Style>
-
   </Window.Resources>
   <Grid>
     <DockPanel>
@@ -67,7 +64,6 @@
                                      DockPanel.Dock='Top'
                                      MinHeight='600'
                                      SelectedAutoTreeItemChanged="AutoTree_SelectedAutoTreeItemChanged" />
-
           </DockPanel>
         </Expander>
       </Border>
@@ -102,12 +98,10 @@
                 <TextBlock Margin='0,10'>Location within project for the files for this demo.</TextBlock>
 
                 <StackPanel  x:Name='FileIndexStackPanel'>
-
                 </StackPanel>
               </StackPanel>
             </TabItem>
           </TabControl>
-
         </DockPanel>
       </Border>
     </DockPanel>

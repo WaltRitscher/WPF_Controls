@@ -15,7 +15,6 @@
       <Setter Property="MaxWidth" Value="120" />
       <Setter Property="TextAlignment" Value="Center" />
       <Setter Property="TextWrapping" Value="Wrap" />
-
     </Style>
   </Page.Resources>
   <DockPanel x:Name="mainDock"
@@ -26,7 +25,6 @@
                   Stretch="UniformToFill" />
     </DockPanel.Background>
 
-   
     <StackPanel Margin="0,20,0,10"
                 HorizontalAlignment="Center"
                 DockPanel.Dock="Top"
@@ -82,7 +80,5 @@
         <TextBlock Text="Opacity=0" />
       </StackPanel>
     </StackPanel>
-   
-
   </DockPanel>
 </Page>

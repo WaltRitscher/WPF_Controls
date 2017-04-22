@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfControls.Pages
@@ -24,7 +16,9 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
-    Dictionary<TouchDevice, Ellipse> _orbs = new Dictionary<TouchDevice, Ellipse>();
+
+    private Dictionary<TouchDevice, Ellipse> _orbs = new Dictionary<TouchDevice, Ellipse>();
+
     private void MainRectangle_TouchDown(object sender, TouchEventArgs e)
     {
       Ellipse orb = CreateOrb();
@@ -35,9 +29,8 @@ namespace WpfControls.Pages
       // add to dictionary
       _orbs[e.TouchDevice] = orb;
 
-      // add to grid 
+      // add to grid
       MainGrid.Children.Add(orb);
-
     }
 
     private static Ellipse CreateOrb()
@@ -55,8 +48,6 @@ namespace WpfControls.Pages
 
     private void MainRectangle_TouchMove(object sender, TouchEventArgs e)
     {
-
-
       Ellipse orb = _orbs[e.TouchDevice];
       TranslateTransform transform = orb.RenderTransform as TranslateTransform;
 
@@ -64,12 +55,7 @@ namespace WpfControls.Pages
 
       transform.X = point.Position.X;
       transform.Y = point.Position.Y;
-
     }
-
-   
-
-
 
     private void MainRectangle_TouchUp(object sender, TouchEventArgs e)
     {

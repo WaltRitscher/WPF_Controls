@@ -7,26 +7,18 @@
       Title="VisibilityPage"
       d:DesignHeight="300"
       d:DesignWidth="300"
-     
       mc:Ignorable="d">
   <Page.Resources>
     <Style TargetType="Ellipse">
-      <Setter Property="Width"
-              Value="80" />
-      <Setter Property="Height"
-              Value="80" />
-      <Setter Property="Stroke"
-              Value="DarkGray" />
-      <Setter Property="StrokeThickness"
-              Value="5" />
+      <Setter Property="Height" Value="80" />
+      <Setter Property="Stroke" Value="DarkGray" />
+      <Setter Property="StrokeThickness" Value="5" />
+      <Setter Property="Width" Value="80" />
     </Style>
     <Style TargetType="TextBlock">
-      <Setter Property="HorizontalAlignment"
-              Value="Center" />
-      <Setter Property="VerticalAlignment"
-              Value="Center" />
-      <Setter Property="FontSize"
-              Value="24" />
+      <Setter Property="FontSize" Value="24" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
+      <Setter Property="VerticalAlignment" Value="Center" />
     </Style>
   </Page.Resources>
   <Grid>
@@ -41,7 +33,7 @@
         <Ellipse Fill="LightSteelBlue" />
         <TextBlock Text="A" />
       </Grid>
-      <Grid x:Name="Grid2" >
+      <Grid x:Name="Grid2">
         <Ellipse Fill="LightCoral" />
         <TextBlock Text="B" />
       </Grid>

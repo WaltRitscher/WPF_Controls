@@ -22,7 +22,5 @@
                TouchUp="MainRectangle_TouchUp" />
     <Rectangle Grid.Column="2"
                Fill="LightCoral" />
-
-   
   </Grid>
 </Page>

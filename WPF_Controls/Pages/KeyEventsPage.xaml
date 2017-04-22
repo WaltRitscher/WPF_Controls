@@ -8,7 +8,8 @@
       d:DesignHeight="600"
       d:DesignWidth="600"
       Background="#FF301606"
-      mc:Ignorable="d" FontSize="20">
+      FontSize="20"
+      mc:Ignorable="d">
 
   <StackPanel x:Name="mainGrid"
               Margin="20"
@@ -40,7 +41,6 @@
                  FontSize="20"
                  Foreground="white"
                  Text="Very Weak" />
-
     </Grid>
     <TextBlock x:Name="PointerTextBlock"
                Margin="10,0"

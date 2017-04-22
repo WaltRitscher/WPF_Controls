@@ -26,7 +26,6 @@
       <ColumnDefinition Width="1*" />
       <ColumnDefinition Width="5" />
       <ColumnDefinition Width="1*" />
-
     </Grid.ColumnDefinitions>
     <StackPanel Background="LightGray">
       <Ellipse x:Name="BlueEllipse"
@@ -35,7 +34,8 @@
       <Ellipse x:Name="RedEllipse"
                Fill="LightCoral"
                MouseDown="Ellipse_MouseDown" />
-      <TextBlock Text="Sample Text in TextBlock" MouseDown="TextBlock_MouseDown"/>
+      <TextBlock MouseDown="TextBlock_MouseDown"
+                 Text="Sample Text in TextBlock" />
     </StackPanel>
     <UniformGrid x:Name="TargetGrid"
                  Grid.Column="2"

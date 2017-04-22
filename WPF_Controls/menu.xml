@@ -21,7 +21,7 @@
     <menu header ="Hide Animation"
         page="/Pages/HideAnimationPage.xaml" />
   </category>
- 
+
   <category categoryName="Events">
     <menu header ="Mouse"
 					page="/Pages/MouseEventsPage.xaml">
