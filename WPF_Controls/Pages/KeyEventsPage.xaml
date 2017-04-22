@@ -49,7 +49,7 @@
                Foreground="#FF007194"
                Text="↑">
       <TextBlock.RenderTransform>
-        <TranslateTransform x:Name="theTransform" />
+        <TranslateTransform x:Name="MoveTransform" />
       </TextBlock.RenderTransform>
     </TextBlock>
   </StackPanel>

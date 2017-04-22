@@ -1,0 +1,40 @@
+﻿<Page x:Class="WpfControls.Pages.KeyEventArgsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      Title="KeyEventArgsPage"
+      d:DesignHeight="500"
+      d:DesignWidth="500"
+      FontSize="18"
+      mc:Ignorable="d">
+
+  <StackPanel Background="#FFC0AEA3">
+    <TextBlock Text="Type, cut or paste text into the TextBox:" />
+    <TextBox TextChanged="TextBox_TextChanged" />
+    <TextBlock Text="Data from the Changes arg:" />
+
+    <TextBlock x:Name="resultsTextBlock" />
+    <StackPanel Orientation="Horizontal">
+      <TextBlock MinWidth=" 150"
+                 Text="Added Length: " />
+      <TextBlock x:Name="addedTextBlock"
+                 Foreground="#FFA15800" />
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal">
+      <TextBlock MinWidth=" 150"
+                 Text="Offset: " />
+      <TextBlock x:Name="offsetTextBlock"
+                 Foreground="#FFA15800" />
+    </StackPanel>
+
+    <StackPanel Orientation="Horizontal">
+      <TextBlock MinWidth=" 150"
+                 Text="Removed Length: " />
+      <TextBlock x:Name="removedTextBlock"
+                 Foreground="#FFA15800" />
+    </StackPanel>
+  </StackPanel>
+</Page>

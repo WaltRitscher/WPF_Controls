@@ -29,7 +29,7 @@ namespace WpfControls.Pages
     {
       var count = PasswordEvalBox.Text.Count();
 
-      theTransform.X = Math.Min(count * 10, 290);
+      MoveTransform.X = Math.Min(count * 10, 290);
 
       if (count < 8)
       {

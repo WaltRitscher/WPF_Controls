@@ -29,6 +29,9 @@
     <menu header ="Key"
          page="/Pages/KeyEventsPage.xaml">
     </menu>
+     <menu header ="KeyEventArgs"
+         page="/Pages/KeyEventArgsPage.xaml">
+    </menu>
      <menu header ="Touch"
          page="/Pages/TouchEventsPage.xaml">
     </menu>
