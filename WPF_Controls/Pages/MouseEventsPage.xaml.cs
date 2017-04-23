@@ -42,7 +42,7 @@ namespace WpfControls.Pages
     {
       // get the button state during move
       string positionMessage = $"X: {e.GetPosition(this).X.ToString("n0")}\nY: {e.GetPosition(this).Y.ToString("n0")}\n";
-      string buttonStateMessage = $"LeftButton: {e.LeftButton}\nMiddleButton: {e.MiddleButton}\nMiddleButton: {e.RightButton}";
+      string buttonStateMessage = $"LeftButton: {e.LeftButton}\nMiddleButton: {e.MiddleButton}\nRightButton: {e.RightButton}";
       MessageTextBlock.Text = positionMessage + buttonStateMessage;
     }
 
