@@ -57,6 +57,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AlignmentPage.xaml.cs">
+      <DependentUpon>AlignmentPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CursorsPage.xaml.cs">
       <DependentUpon>CursorsPage.xaml</DependentUpon>
     </Compile>
@@ -96,6 +99,10 @@
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\AlignmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CursorsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
