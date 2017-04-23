@@ -27,7 +27,6 @@ namespace WpfControls.Pages
         FadeInImage();
       }
 
-      e.Handled = true;
     }
 
     private void FadeOutImage()
