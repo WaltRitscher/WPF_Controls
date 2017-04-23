@@ -10,8 +10,8 @@
     </menu>
     <menu header ="Cursors"
              page="/Pages/CursorsPage.xaml" />
-    <menu header ="Fade Element by Opacity"
-            page="/Pages/FadeElementPage.xaml" />
+    <menu header ="Alignment"
+            page="/Pages/AlignmentPage.xaml" />
 
     <menu header ="Visibility"
 					page="/Pages/VisibilityPage.xaml" />

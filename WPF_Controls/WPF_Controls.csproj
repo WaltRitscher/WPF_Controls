@@ -81,6 +81,9 @@
     <Compile Include="Pages\KeyEventsPage.xaml.cs">
       <DependentUpon>KeyEventsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MarginPage.xaml.cs">
+      <DependentUpon>MarginPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\MouseEventsPage.xaml.cs">
       <DependentUpon>MouseEventsPage.xaml</DependentUpon>
     </Compile>
@@ -128,6 +131,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\KeyEventsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MarginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
