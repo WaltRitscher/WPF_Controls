@@ -20,6 +20,7 @@ namespace WpfControls.Pages {
 	public partial class CursorsPage : Page {
 		public CursorsPage() {
 			InitializeComponent();
-		}
+      CustomCursorGrid.Cursor = ((FrameworkElement)Resources["CursorBusy"]).Cursor;
+    }
 	}
 }
