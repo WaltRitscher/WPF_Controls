@@ -42,12 +42,16 @@
             Visibility="Visible">
         <Ellipse Fill="LightCoral" />
         <TextBlock Text="B" />
+        <Grid.LayoutTransform>
+          <ScaleTransform x:Name='GridTransform' />
+        </Grid.LayoutTransform>
       </Grid>
       <Grid x:Name="Grid3"
             Width="80"
             Height="80">
         <Ellipse Fill="LightSteelBlue" />
         <TextBlock Text="C" />
+       
       </Grid>
     </StackPanel>
   </Grid>

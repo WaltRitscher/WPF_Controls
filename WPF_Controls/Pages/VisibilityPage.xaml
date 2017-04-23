@@ -33,7 +33,7 @@
         <Ellipse Fill="LightSteelBlue" />
         <TextBlock Text="A" />
       </Grid>
-      <Grid x:Name="Grid2">
+      <Grid x:Name="Grid2" Visibility='Collapsed'>
         <Ellipse Fill="LightCoral" />
         <TextBlock Text="B" />
       </Grid>

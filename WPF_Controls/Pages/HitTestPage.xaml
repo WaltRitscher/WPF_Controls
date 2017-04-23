@@ -36,7 +36,7 @@
       </Grid>
       <Grid x:Name="Grid2"
             MouseUp="Grid2_MouseUp"
-            Visibility="Visible">
+            Visibility="Hidden">
         <Ellipse Fill="LightCoral" />
         <TextBlock Text="B" />
       </Grid>
@@ -52,7 +52,7 @@
         <Ellipse Fill="LightSteelBlue" />
         <TextBlock Text="A" />
       </Grid>
-      <Grid x:Name="Grid5"
+      <Grid x:Name="Grid5" Opacity='0'
             MouseUp="Grid5_MouseUp"
             Visibility="Visible">
         <Ellipse Fill="LightCoral" />

@@ -2,6 +2,7 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
+using System.Windows.Media;
 using System.Windows.Media.Animation;
 
 namespace WpfControls.Pages
@@ -36,7 +37,17 @@ namespace WpfControls.Pages
         Grid2.Visibility = Visibility.Collapsed;
       };
 
-      Grid2.BeginAnimation(UIElement.OpacityProperty, animation);
-    }
+			var sizeAnimation = new DoubleAnimation
+			{
+				From = 1,
+				To = 0,
+				Duration = TimeSpan.FromSeconds(2),
+				FillBehavior = FillBehavior.Stop
+			};
+
+			Grid2.BeginAnimation(UIElement.OpacityProperty, animation);
+			GridTransform.BeginAnimation(ScaleTransform.ScaleXProperty, sizeAnimation);
+			GridTransform.BeginAnimation(ScaleTransform.ScaleYProperty, sizeAnimation);
+		}
   }
 }
