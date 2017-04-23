@@ -60,11 +60,17 @@
     <Compile Include="Pages\AlignmentPage.xaml.cs">
       <DependentUpon>AlignmentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BasicTooltipPage.xaml.cs">
+      <DependentUpon>BasicTooltipPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CursorsPage.xaml.cs">
       <DependentUpon>CursorsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\DragDropPage.xaml.cs">
       <DependentUpon>DragDropPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EnhancedTooltipPage.xaml.cs">
+      <DependentUpon>EnhancedTooltipPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\FadeElementPage.xaml.cs">
       <DependentUpon>FadeElementPage.xaml</DependentUpon>
@@ -106,11 +112,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\BasicTooltipPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\CursorsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\DragDropPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EnhancedTooltipPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -198,7 +212,7 @@
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\BasicElements.cd" />
-    <None Include="Class Diagrams\UIElement.cd" />
+    <None Include="Class Diagrams\FrameworkElements.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
