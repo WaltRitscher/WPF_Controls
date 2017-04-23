@@ -175,6 +175,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Busy.ani" />
     <None Include="Class Diagrams\BasicElements.cd" />
     <None Include="Class Diagrams\UIElement.cd" />
     <None Include="Properties\Settings.settings">
