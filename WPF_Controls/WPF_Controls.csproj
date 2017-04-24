@@ -182,6 +182,7 @@
     <Resource Include="Images\Chat.png" />
     <Resource Include="Images\grapes.jpg" />
     <Resource Include="Images\Flowers.jpg" />
+    <Resource Include="Images\TravelLogo.jpg" />
     <Content Include="menu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>

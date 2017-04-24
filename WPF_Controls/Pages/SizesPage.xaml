@@ -1,57 +1,76 @@
 ﻿<Page x:Class="WpfControls.Pages.SizesPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
-      Title="SizesPage">
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300" d:DesignWidth="550"
+      mc:Ignorable="d"
+      Title="SizesPage"
+      FontSize="12">
   <Page.Resources>
-    <Style TargetType="Ellipse">
-
-      <Setter Property="Stroke"
-              Value="DarkGray" />
-      <Setter Property="StrokeThickness"
-              Value="5" />
-    </Style>
     <Style TargetType="TextBlock">
-      <Setter Property="FontSize"
-              Value="24" />
-      <Setter Property="HorizontalAlignment"
-              Value="Center" />
-      <Setter Property="VerticalAlignment"
-              Value="Center" />
+      <Setter Property="HorizontalAlignment" Value="Left" />
+      <Setter Property="Margin" Value="0,10" />
+    </Style>
+    <Style TargetType="Button">
+      <Setter Property="HorizontalAlignment" Value="Left" />
+      <Setter Property="Margin" Value="0,10" />
     </Style>
   </Page.Resources>
   <Grid>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="3" />
       <ColumnDefinition Width="1*" />
     </Grid.ColumnDefinitions>
-
+    <Rectangle Fill="LightSteelBlue" />
     <StackPanel Grid.Column="0">
 
-      <Grid x:Name="Grid1"
-            Width="80"
-            Height="80">
-        <Ellipse Fill="LightSteelBlue" />
-        <TextBlock Text="A" />
-      </Grid>
-      <Grid x:Name="Grid2"
-            Width="80"
-            Height="80"
-           
-            Visibility="Visible">
-        <Ellipse Fill="LightCoral" />
-        <TextBlock Text="B" />
-      </Grid>
-      <Grid x:Name="Grid3"
-            Width="80"
-            Height="80">
-        <Ellipse Fill="LightSteelBlue" />
-        <TextBlock Text="C" />
-      </Grid>
+      <TextBlock Width="120" Text="A short sentence." />
+      <TextBlock Width="120" Text="The quick onyx goblin jumps over the lazy dwarf." />
+
+      <Button Width="Auto" Height="Auto"
+              Content="A short action" FontSize="12" />
+      <Button x:Name="LeftActionButton"
+              Width="120" Height="30"
+              Click="LeftActionButton_Click">
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+
+          <Image HorizontalAlignment="Left"
+                 Source="/WpfControls;component/Images/TravelLogo.jpg"
+                 Stretch="None" />
+          <TextBlock Margin="7,0" VerticalAlignment="Center"
+                     Text="Global Travel Assistance" />
+
+        </StackPanel>
+      </Button>
+      <TextBlock x:Name="LeftMessage" TextWrapping="Wrap" />
+    </StackPanel >
+    <Rectangle Grid.Column="2" Fill="LightCoral" />
+
+    <StackPanel Grid.Column="2" >
+
+      <TextBlock Width="Auto" Text="A short sentence." />
+      <TextBlock Width="Auto" Text="The quick onyx goblin jumps over the lazy dwarf." />
+
+      <Button Width="Auto" Height="Auto"
+              Content="A short action" FontSize="12" />
+      <Button x:Name="RightActionButton"
+              Canvas.Left="20" Canvas.Top="150"
+              Width="Auto" Height="Auto"
+              Click="RightActionButton_Click">
+        <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+
+          <Image HorizontalAlignment="Left"
+                 Source="/WpfControls;component/Images/TravelLogo.jpg"
+                 Stretch="None" />
+          <TextBlock Margin="7,0" VerticalAlignment="Center"
+                     Text="Global Travel Assistance" />
+
+        </StackPanel>
+      </Button>
+      <TextBlock x:Name="RightMessage" TextWrapping="Wrap" />
     </StackPanel>
   </Grid>
 </Page>
