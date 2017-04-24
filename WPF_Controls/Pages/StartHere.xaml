@@ -26,7 +26,7 @@
     <TextBlock HorizontalAlignment="Center"
                VerticalAlignment="Center"
                FontFamily="Calibri"
-               FontSize="130"
+               FontSize="110"
                Foreground="Purple"
                Text="{Binding ElementName=titleText, Path=Text}"
                TextWrapping="Wrap">
@@ -39,9 +39,9 @@
                HorizontalAlignment="Center"
                VerticalAlignment="Center"
                FontFamily="Calibri"
-               FontSize="127"
+               FontSize="107"
                Foreground="PowderBlue"
-               Text="UIElement"
+               Text="FrameworkElement"
                TextWrapping="Wrap" />
   </Grid>
 </Page>

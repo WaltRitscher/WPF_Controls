@@ -22,7 +22,7 @@ namespace WpfControls.Pages
   {
     public SizesPage()
     {
-      InitializeComponent();
+      InitializeComponent(); this.DesiredSize
     }
   }
 }
