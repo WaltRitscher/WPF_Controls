@@ -60,8 +60,8 @@
     <Compile Include="Pages\AlignmentPage.xaml.cs">
       <DependentUpon>AlignmentPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BasicTooltipPage.xaml.cs">
-      <DependentUpon>BasicTooltipPage.xaml</DependentUpon>
+    <Compile Include="Pages\TooltipBasicPage.xaml.cs">
+      <DependentUpon>TooltipBasicPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\CursorsPage.xaml.cs">
       <DependentUpon>CursorsPage.xaml</DependentUpon>
@@ -69,8 +69,8 @@
     <Compile Include="Pages\DragDropPage.xaml.cs">
       <DependentUpon>DragDropPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\EnhancedTooltipPage.xaml.cs">
-      <DependentUpon>EnhancedTooltipPage.xaml</DependentUpon>
+    <Compile Include="Pages\TooltipEnhancedPage.xaml.cs">
+      <DependentUpon>TooltipEnhancedPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\FadeElementPage.xaml.cs">
       <DependentUpon>FadeElementPage.xaml</DependentUpon>
@@ -112,7 +112,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\BasicTooltipPage.xaml">
+    <Page Include="Pages\TooltipBasicPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,7 +124,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\EnhancedTooltipPage.xaml">
+    <Page Include="Pages\TooltipEnhancedPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -213,6 +213,7 @@
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\BasicElements.cd" />
     <None Include="Class Diagrams\FrameworkElements.cd" />
+    <None Include="Class Diagrams\TooltipService.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -227,6 +228,9 @@
     <Resource Include="Images\Splash.png" />
     <Resource Include="Images\TreeBackground.jpg" />
     <Resource Include="Images\RedButtonFull.jpg" />
+    <Resource Include="Images\Chat.png" />
+    <Resource Include="Images\grapes.jpg" />
+    <Resource Include="Images\Flowers.jpg" />
     <Content Include="menu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>

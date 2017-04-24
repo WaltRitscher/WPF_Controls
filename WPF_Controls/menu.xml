@@ -12,14 +12,13 @@
              page="/Pages/CursorsPage.xaml" />
     <menu header ="Alignment"
             page="/Pages/AlignmentPage.xaml" />
+    <menu header ="Margin"
+					page="/Pages/MarginPage.xaml" />
+    <menu header ="Basic Tooltip"
+         page="/Pages/TooltipBasicPage.xaml" />
 
-    <menu header ="Visibility"
-					page="/Pages/VisibilityPage.xaml" />
-    <menu header ="Hit Test"
-         page="/Pages/HitTestPage.xaml" />
-
-    <menu header ="Hide Animation"
-        page="/Pages/HideAnimationPage.xaml" />
+    <menu header ="Enhanced Tooltip"
+        page="/Pages/TooltipEnhancedPage.xaml" />
   </category>
 
   <category categoryName="Events">
@@ -29,11 +28,11 @@
     <menu header ="Key"
          page="/Pages/KeyEventsPage.xaml">
     </menu>
-     <menu header ="KeyEventArgs"
-         page="/Pages/KeyEventArgsPage.xaml">
+    <menu header ="KeyEventArgs"
+        page="/Pages/KeyEventArgsPage.xaml">
     </menu>
-     <menu header ="Touch"
-         page="/Pages/TouchEventsPage.xaml">
+    <menu header ="Touch"
+        page="/Pages/TouchEventsPage.xaml">
     </menu>
     <menu header ="Drag"
         page="/Pages/DragDropPage.xaml">
