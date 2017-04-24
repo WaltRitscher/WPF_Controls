@@ -60,41 +60,26 @@
     <Compile Include="Pages\AlignmentPage.xaml.cs">
       <DependentUpon>AlignmentPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MinMaxPage.xaml.cs">
+      <DependentUpon>MinMaxPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SizesPage.xaml.cs">
+      <DependentUpon>SizesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StoryboardPage.xaml.cs">
+      <DependentUpon>StoryboardPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\TooltipBasicPage.xaml.cs">
       <DependentUpon>TooltipBasicPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\CursorsPage.xaml.cs">
       <DependentUpon>CursorsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\DragDropPage.xaml.cs">
-      <DependentUpon>DragDropPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\TooltipEnhancedPage.xaml.cs">
       <DependentUpon>TooltipEnhancedPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\FadeElementPage.xaml.cs">
-      <DependentUpon>FadeElementPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\HideAnimationPage.xaml.cs">
-      <DependentUpon>HideAnimationPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\HitTestPage.xaml.cs">
-      <DependentUpon>HitTestPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\KeyEventArgsPage.xaml.cs">
-      <DependentUpon>KeyEventArgsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\KeyEventsPage.xaml.cs">
-      <DependentUpon>KeyEventsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\MarginPage.xaml.cs">
       <DependentUpon>MarginPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\MouseEventsPage.xaml.cs">
-      <DependentUpon>MouseEventsPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\OpacityPage.xaml.cs">
-      <DependentUpon>OpacityPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
@@ -102,13 +87,22 @@
     <Compile Include="Pages\TouchEventsPage.xaml.cs">
       <DependentUpon>TouchEventsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\VisibilityPage.xaml.cs">
-      <DependentUpon>VisibilityPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
     <Page Include="Pages\AlignmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MinMaxPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SizesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StoryboardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -120,43 +114,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\DragDropPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\TooltipEnhancedPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\FadeElementPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\HideAnimationPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\HitTestPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\KeyEventArgsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\KeyEventsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\MarginPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\MouseEventsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\OpacityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -165,10 +127,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\TouchEventsPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\VisibilityPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

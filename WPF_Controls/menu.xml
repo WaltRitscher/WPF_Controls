@@ -20,22 +20,22 @@
     <menu header ="Enhanced Tooltip"
         page="/Pages/TooltipEnhancedPage.xaml" />
   </category>
-
-  <category categoryName="Events">
-    <menu header ="Mouse"
-					page="/Pages/MouseEventsPage.xaml">
+ <category categoryName="Methods">
+   <menu header ="BeginStoryboard()"
+					page="/Pages/StoryboardPage.xaml">
     </menu>
-    <menu header ="Key"
-         page="/Pages/KeyEventsPage.xaml">
+ </category>
+  <category categoryName="Size Members">
+    
+    <menu header ="Size vs. Actual Size"
+         page="/Pages/SizesPage.xaml">
     </menu>
-    <menu header ="KeyEventArgs"
-        page="/Pages/KeyEventArgsPage.xaml">
+    <menu header ="Minimum and Maximum Size"
+        page="/Pages/MinMaxPage.xaml">
     </menu>
-    <menu header ="Touch"
-        page="/Pages/TouchEventsPage.xaml">
+    <menu header ="SizeChanged Event"
+        page="/Pages/SizeChangedPage.xaml">
     </menu>
-    <menu header ="Drag"
-        page="/Pages/DragDropPage.xaml">
-    </menu>
+    
   </category>
 </menus>
