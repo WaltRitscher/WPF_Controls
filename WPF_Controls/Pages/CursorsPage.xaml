@@ -7,6 +7,7 @@
       Title="CursorsPage"
       d:DesignHeight="300"
       d:DesignWidth="600"
+      FontSize="18"
       mc:Ignorable="d">
   <Page.Resources>
     <FrameworkElement x:Key="CursorBusy"
