@@ -56,8 +56,7 @@
         <Image Margin="10"
                Source="/WpfControls;component/Images/Flowers.jpg"
                ToolTip="Flower Painting"
-               ToolTipService.Placement="Bottom"
-               ToolTipService.PlacementTarget="{Binding ElementName=TargetTextBlock}" />
+               />
 
 
         <Button Grid.Column="1"
