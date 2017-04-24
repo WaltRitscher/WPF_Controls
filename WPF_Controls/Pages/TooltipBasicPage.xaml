@@ -30,11 +30,11 @@
         </Grid.ColumnDefinitions>
         <Image Margin="10"
                Source="/WpfControls;component/Images/grapes.jpg"
-               ToolTip="Grapes" />
+               />
         <Button Grid.Column="1"
                 Margin="10"
                 Content="Save Image"
-                ToolTip="Save your pictures to our secure folder" />
+                />
         <TextBlock Grid.Row="1"
                    Text="Set Tooltip Property on Image"
                    ToolTip="Save your pictures to our secure folder" />
