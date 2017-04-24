@@ -24,5 +24,19 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
+    private string _sourceText = "The quick onyx goblin jumps over the lazy dwarf. Jinxed wizards pluck ivy from the big quilt.";
+    private int _counter = 10;
+    private void AddLetters_Click(object sender, RoutedEventArgs e)
+    {
+      _counter += 10;
+      Button1.Content = Button2.Content = _sourceText.Substring(0, Math.Min(_counter, _sourceText.Length));
+
+    }
+
+    private void RemoveLetters_Click(object sender, RoutedEventArgs e)
+    {
+      _counter -= 10;
+      Button1.Content = Button2.Content = _sourceText.Substring(0, Math.Max(_counter, 0));
+    }
   }
 }

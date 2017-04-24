@@ -10,10 +10,7 @@
     </menu>
     <menu header ="Cursors"
              page="/Pages/CursorsPage.xaml" />
-    <menu header ="Alignment"
-            page="/Pages/AlignmentPage.xaml" />
-    <menu header ="Margin"
-					page="/Pages/MarginPage.xaml" />
+  
     <menu header ="Basic Tooltip"
          page="/Pages/TooltipBasicPage.xaml" />
 
@@ -29,7 +26,10 @@
     <menu header ="Minimum and Maximum Size"
         page="/Pages/MinMaxPage.xaml">
     </menu>
-   
+    <menu header ="Alignment"
+           page="/Pages/AlignmentPage.xaml" />
+    <menu header ="Margin"
+					page="/Pages/MarginPage.xaml" />
     
   </category>
 </menus>
