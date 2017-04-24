@@ -18,19 +18,16 @@
 
     </Style>
     <Style TargetType="TextBlock">
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
 
-      <Setter Property="VerticalAlignment"
-              Value="Bottom" />
-      <Setter Property="HorizontalAlignment"
-              Value="Center" />
-      <Setter Property="Foreground"
-              Value="White" />
+      <Setter Property="VerticalAlignment" Value="Bottom" />
 
     </Style>
   </Page.Resources>
   <UniformGrid Columns="5"
                Rows="4">
-    <!--  http://stackoverflow.com/questions/46805/custom-cursor-in-wpf  -->
+
     <Grid Cursor="AppStarting">
       <Rectangle Fill="SteelBlue" />
       <TextBlock Text="AppStarting" />
@@ -53,7 +50,7 @@
     </Grid>
     <Grid Cursor="Help">
       <Rectangle Fill="LightCoral" />
-      <TextBlock Text="Help" /> 
+      <TextBlock Text="Help" />
     </Grid>
 
     <Grid Cursor="IBeam">
@@ -91,8 +88,7 @@
       <TextBlock Text="Wait" />
     </Grid>
     <Grid x:Name="CustomCursorGrid">
-      <Rectangle 
-                 Fill="SteelBlue" />
+      <Rectangle Fill="SteelBlue" />
       <TextBlock Text="Custom" />
     </Grid>
   </UniformGrid>
