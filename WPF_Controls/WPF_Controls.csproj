@@ -66,9 +66,6 @@
     <Compile Include="Pages\SizesPage.xaml.cs">
       <DependentUpon>SizesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\StoryboardPage.xaml.cs">
-      <DependentUpon>StoryboardPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\TooltipBasicPage.xaml.cs">
       <DependentUpon>TooltipBasicPage.xaml</DependentUpon>
     </Compile>
@@ -99,10 +96,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SizesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\StoryboardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

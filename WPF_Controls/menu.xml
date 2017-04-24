@@ -20,11 +20,7 @@
     <menu header ="Enhanced Tooltip"
         page="/Pages/TooltipEnhancedPage.xaml" />
   </category>
- <category categoryName="Methods">
-   <menu header ="BeginStoryboard()"
-					page="/Pages/StoryboardPage.xaml">
-    </menu>
- </category>
+
   <category categoryName="Size Members">
     
     <menu header ="Size vs. Actual Size"
@@ -33,9 +29,7 @@
     <menu header ="Minimum and Maximum Size"
         page="/Pages/MinMaxPage.xaml">
     </menu>
-    <menu header ="SizeChanged Event"
-        page="/Pages/SizeChangedPage.xaml">
-    </menu>
+   
     
   </category>
 </menus>

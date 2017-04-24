@@ -41,7 +41,7 @@
       <Grid x:Name="Grid2"
             Width="80"
             Height="80"
-            MouseLeftButtonUp="Grid2_MouseLeftButtonUp"
+           
             Visibility="Visible">
         <Ellipse Fill="LightCoral" />
         <TextBlock Text="B" />
