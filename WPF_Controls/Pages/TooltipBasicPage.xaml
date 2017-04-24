@@ -15,7 +15,7 @@
       <Setter Property="TextWrapping" Value="Wrap" />
       <Setter Property="VerticalAlignment" Value="Top" />
     </Style>
-  </Page.Resources>
+  </Page.Resources> 
   <TabControl>
     <TabItem Header="ToolTip Property">
       <Grid>
@@ -30,11 +30,12 @@
         </Grid.ColumnDefinitions>
         <Image Margin="10"
                Source="/WpfControls;component/Images/grapes.jpg"
+              ToolTip='Grapes'
                />
         <Button Grid.Column="1"
                 Margin="10"
                 Content="Save Image"
-                />
+                ToolTip="Save your pictures to our secure folder"/>
         <TextBlock Grid.Row="1"
                    Text="Set Tooltip Property on Image"
                    ToolTip="Save your pictures to our secure folder" />
@@ -56,14 +57,16 @@
         <Image Margin="10"
                Source="/WpfControls;component/Images/Flowers.jpg"
                ToolTip="Flower Painting"
-               />
+               ToolTipService.Placement='Bottom'
+               ToolTipService.PlacementTarget='{Binding ElementName=TargetTextBlock}' />
 
 
         <Button Grid.Column="1"
                 Margin="10"
                 Content="Save Image"
                 ToolTip="Save your pictures to our secure folder"
-                ToolTipService.Placement="Top" />
+                ToolTipService.Placement="Top" 
+              />
         <TextBlock x:Name="TargetTextBlock"
                    Grid.Row="1"
                    Text="TooltipService.Placement Bottom" />
