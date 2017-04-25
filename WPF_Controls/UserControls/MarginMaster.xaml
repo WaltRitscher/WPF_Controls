@@ -1,0 +1,125 @@
+﻿<UserControl x:Class="WpfControls.UserControls.MarginMaster"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WpfControls.UserControls"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             d:DesignHeight="300"
+             d:DesignWidth="300"
+             mc:Ignorable="d"
+             FontSize="14">
+  <Grid>
+    <Rectangle x:Name="MarginHighlighter"
+               Opacity=".5"
+               RenderTransformOrigin="0.5,0.5">
+      <Rectangle.RenderTransform>
+        <TransformGroup>
+          <TranslateTransform x:Name="MarginTranslateTransform" />
+          <ScaleTransform x:Name="MarginScaleTransform"
+                          CenterX="0"
+                          CenterY="0" />
+        </TransformGroup>
+      </Rectangle.RenderTransform>
+    </Rectangle>
+    <DockPanel LastChildFill="True">
+      <StackPanel x:Name="TopPanel"
+                  HorizontalAlignment="Stretch"
+                  Background="#01FFFFFF"
+                  DockPanel.Dock="Top"
+                  MouseLeftButtonUp="TopPanel_MouseLeftButtonUp"
+                  MouseRightButtonUp="TopPanel_MouseRightButtonUp">
+        <TextBlock HorizontalAlignment="Center"
+                   FontFamily="Segoe UI Symbol"
+                   RenderTransformOrigin="0.5,0.5"
+                   Text="↑">
+          <TextBlock.RenderTransform>
+            <TransformGroup>
+              <ScaleTransform />
+              <SkewTransform />
+              <RotateTransform />
+              <TranslateTransform x:Name="TopTransform" Y="-5" />
+            </TransformGroup>
+          </TextBlock.RenderTransform>
+
+        </TextBlock>
+        <TextBlock x:Name="TopMessage"
+                   HorizontalAlignment="Center"
+                   FontFamily="Segoe"
+                   Foreground="Black"
+                   Text="0px" />
+      </StackPanel>
+      <StackPanel x:Name="LeftPanel"
+                  Margin="0,0,0,40"
+                  VerticalAlignment="Stretch"
+                  DockPanel.Dock="Left"
+                  MouseLeftButtonUp="LeftPanel_MouseLeftButtonUp"
+                  MouseRightButtonUp="LeftPanel_MouseRightButtonUp"
+                  Orientation="Horizontal">
+        <TextBlock HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   DockPanel.Dock="Left"
+                   FontFamily="Segoe"
+                   Text="←" />
+        <TextBlock x:Name="LeftMessage"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI Symbol"
+                   Text="0px" />
+      </StackPanel>
+      <StackPanel x:Name="RightPanel"
+                  Margin="0,0,0,40"
+                  VerticalAlignment="Stretch"
+                  DockPanel.Dock="Right"
+                  MouseLeftButtonUp="RightPanel_MouseLeftButtonUp"
+                  MouseRightButtonUp="RightPanel_MouseRightButtonUp"
+                  Orientation="Horizontal">
+
+        <TextBlock x:Name="RightMessage"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI Symbol"
+                   Text="0px" />
+        <TextBlock HorizontalAlignment="Right"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI Symbol"
+                   Text="→" />
+      </StackPanel>
+      <StackPanel x:Name="BottomPanel"
+                  VerticalAlignment="Stretch"
+                  Background="#01FFFFFF"
+                  DockPanel.Dock="Bottom"
+                  MouseLeftButtonUp="BottomPanel_MouseLeftButtonUp"
+                  MouseRightButtonUp="BottomPanel_MouseRightButtonUp">
+
+        <TextBlock x:Name="BottomMessage"
+                   HorizontalAlignment="Center"
+                   FontFamily="Segoe"
+                   Text="0px" />
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe UI Symbol"
+                   Text="↓" />
+      </StackPanel>
+      <Grid Height="230"
+            Margin="0,-0.2"
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Center" MouseRightButtonUp="Grid_MouseRightButtonUp">
+        <Ellipse Width="38"
+                 Height="38"
+                 Fill="White"
+                 Stroke="LightGray"
+                 StrokeThickness="1" />
+        <TextBlock x:Name="LetterTextBlock"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontFamily="Segoe"
+                   FontSize="22"
+                   Text="A" />
+       
+      </Grid>
+    </DockPanel>
+  </Grid>
+
+</UserControl>
+
+<!-- ↑↓← -->
