@@ -10,9 +10,9 @@
       Title="LinePage">
 
   <Grid>
-    <Line Fill="Red"
+    <Line
           Stroke="Orange"
-          StrokeThickness="12"
+          StrokeThickness="20"
           X2="40"
           Y2="60" />
 
@@ -22,6 +22,20 @@
           Y1="150"
           X2="200"
           Y2="60" />
+
+    <Line Stroke="LightSteelBlue"
+          StrokeThickness="5"
+          X1="200"
+          Y1="60"
+          X2="150"
+          Y2="150" />
+
+    <Line Stroke="LightGray"
+          StrokeThickness="5"
+          X1="150"
+          Y1="150"
+          X2="100"
+          Y2="150" />
 
   </Grid>
 </Page>
