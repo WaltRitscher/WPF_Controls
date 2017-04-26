@@ -13,20 +13,16 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfControls.Pages
+namespace WpfControls
 {
   /// <summary>
-  /// Interaction logic for RectanglePage.xaml
+  /// Interaction logic for CreatePathPage.xaml
   /// </summary>
-  public partial class RectanglePage : Page
+  public partial class CreatePathPage : Page
   {
-    public RectanglePage()
+    public CreatePathPage()
     {
       InitializeComponent();
-      var gt = Rect1.GeometryTransform;
-      var rt = Rect1.RenderedGeometry;
-
-
     }
   }
 }

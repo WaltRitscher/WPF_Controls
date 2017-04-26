@@ -57,8 +57,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Pages\EllipsePage.xaml.cs">
-      <DependentUpon>EllipsePage.xaml</DependentUpon>
+    <Compile Include="CreatePathPage.xaml.cs">
+      <DependentUpon>CreatePathPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ShapeStretchPage.xaml.cs">
+      <DependentUpon>ShapeStretchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\FillPage.xaml.cs">
       <DependentUpon>FillPage.xaml</DependentUpon>
@@ -69,14 +72,14 @@
     <Compile Include="Pages\LinePage.xaml.cs">
       <DependentUpon>LinePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PathPage.xaml.cs">
+      <DependentUpon>PathPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\PolygonPage.xaml.cs">
       <DependentUpon>PolygonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PolylinePage.xaml.cs">
       <DependentUpon>PolylinePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\RectanglePage.xaml.cs">
-      <DependentUpon>RectanglePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
@@ -90,7 +93,11 @@
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
-    <Page Include="Pages\EllipsePage.xaml">
+    <Page Include="CreatePathPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ShapeStretchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -106,15 +113,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\PathPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\PolygonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\PolylinePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\RectanglePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

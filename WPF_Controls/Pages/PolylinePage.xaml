@@ -87,10 +87,9 @@
                           Color="#FFEBFFEE" />
           </LinearGradientBrush>
         </Grid.Background>
-       
 
         <Polyline x:Name="ChartLine"
-                  
+                  StrokeLineJoin="Round"
                   Stroke="#FF2D723D"
                   StrokeThickness="7">
           <Polyline.RenderTransform>

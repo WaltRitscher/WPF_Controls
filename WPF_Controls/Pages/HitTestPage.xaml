@@ -10,7 +10,7 @@
       Title="HitTestPage">
 
   <Grid>
-    
+
     <Polygon x:Name="Poly1"
              Margin="26"
              HorizontalAlignment="Center"

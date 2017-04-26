@@ -8,22 +8,22 @@
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Ellipse"
-             page="/Pages/EllipsePage.xaml" />
-
-    <menu header ="Rectangle"
-         page="/Pages/RectanglePage.xaml" />
+    <menu header ="Use the Shape Stretch property"
+             page="/Pages/ShapeStretchPage.xaml" />
 
     <menu header ="Line"
         page="/Pages/LinePage.xaml" />
-    <menu header ="Stroke Attributes"
-        page="/Pages/StrokeAttributesPage.xaml" />
-
     <menu header ="Polyline"
       page="/Pages/PolylinePage.xaml" />
     <menu header ="Polygon"
-    page="/Pages/PolygonPage.xaml" />
+   page="/Pages/PolygonPage.xaml" />
+    <menu header ="StrokeDashArray and EndCap"
+           page="/Pages/StrokeAttributesPage.xaml" />
 
+    <menu header ="Create Icon with Path"
+               page="/Pages/PathPage.xaml" />
+    <menu header ="Create drawings with Path"
+                  page="/Pages/PathPage.xaml" />
     <menu header ="Hit test with geometries"
     page="/Pages/HitTestPage.xaml" />
   </category>

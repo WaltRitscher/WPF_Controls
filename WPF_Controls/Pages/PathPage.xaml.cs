@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for EllipsePage.xaml
+  /// Interaction logic for PathPage.xaml
   /// </summary>
-  public partial class EllipsePage : Page
+  public partial class PathPage : Page
   {
-    public EllipsePage()
+    public PathPage()
     {
       InitializeComponent();
     }

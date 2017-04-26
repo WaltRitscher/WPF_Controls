@@ -26,9 +26,7 @@
               X2="230"
               Y1="180"
               Y2="90" />
-
       </Grid>
-
     </TabItem>
     <TabItem Header="Pattern">
       <StackPanel>
@@ -40,8 +38,8 @@
               X2="260"
               Y1="0"
               Y2="0"
-              Margin="20,50" 
-              StrokeDashArray="2,2, 3,3"/>
+              Margin="20,50"
+              StrokeDashArray="2,2, 3,3" />
 
         <Rectangle Width="120"
                    Height="120"

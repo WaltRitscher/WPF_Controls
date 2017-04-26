@@ -1,16 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfControls.Pages
@@ -54,12 +45,14 @@ namespace WpfControls.Pages
         Poly1.Stroke = Brushes.LightSeaGreen;
       }
     }
+
     private void Poly1_MouseLeave(object sender, MouseEventArgs e)
     {
       Poly1.Fill = Brushes.SteelBlue;
       Poly1.Stroke = Brushes.Gray;
     }
-    public static Pen GetPenFromStroke( Shape shape)
+
+    public static Pen GetPenFromStroke(Shape shape)
     {
       return new Pen()
       {
@@ -77,7 +70,5 @@ namespace WpfControls.Pages
         MiterLimit = shape.StrokeMiterLimit
       };
     }
-
-   
   }
 }

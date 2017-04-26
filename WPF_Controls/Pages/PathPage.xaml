@@ -1,0 +1,37 @@
+﻿<Page x:Class="WpfControls.Pages.PathPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="PathPage">
+
+    <Grid>
+    <Path Stroke="Red"
+          StrokeThickness="2">
+      <Path.Data>
+        <PathGeometry>
+          <PathGeometry.Figures>
+            <PathFigureCollection>
+              <PathFigure StartPoint="10,100">
+                <PathFigure.Segments>
+                  <PathSegmentCollection>
+                    <BezierSegment Point1="100,0"
+                                   Point2="200,200"
+                                   Point3="300,100" />
+                    <BezierSegment Point1="100,110"
+                                   Point2="200,200"
+                                   Point3="100,100" />
+                    <ArcSegment Point="0,0" />
+                  </PathSegmentCollection>
+                </PathFigure.Segments>
+              </PathFigure>
+            </PathFigureCollection>
+          </PathGeometry.Figures>
+        </PathGeometry>
+      </Path.Data>
+    </Path>
+  </Grid>
+</Page>
