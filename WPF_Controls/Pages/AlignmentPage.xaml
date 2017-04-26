@@ -35,7 +35,7 @@
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="Auto" />
       <ColumnDefinition Width="3" />
-      <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="160" />
       <ColumnDefinition Width="3" />
       <ColumnDefinition Width="3*" />
     </Grid.ColumnDefinitions>
@@ -60,7 +60,9 @@
       <Button x:Name="LeftActionButton"
               Width="120"
               Height="30"
+              HorizontalAlignment='Left'
               Template="{StaticResource TravelButtonTemplate}" />
+    
       <Button Width="120"
               Height="30"
               Margin="0,32,0,16"
