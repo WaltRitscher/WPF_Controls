@@ -19,8 +19,7 @@
               X2="200"
               Y2="60" />
         <Line Stroke="LightSteelBlue"
-              StrokeEndLineCap="Round"
-              StrokeStartLineCap="Triangle"
+            
               StrokeThickness="20"
               X1="130"
               Y1="180"
@@ -32,9 +31,7 @@
       <StackPanel>
         <Line Margin="20,50"
               Stroke="LightSteelBlue"
-              StrokeDashArray="2,2, 3,3"
-              StrokeEndLineCap="Triangle"
-              StrokeStartLineCap="Triangle"
+             
               StrokeThickness="10"
               X1="0"
               Y1="0"
@@ -45,7 +42,7 @@
                    Height="120"
                    Fill="SteelBlue"
                    Stroke="Orange"
-                   StrokeDashArray="2,1"
+                  
                    StrokeThickness="10" />
       </StackPanel>
     </TabItem>
