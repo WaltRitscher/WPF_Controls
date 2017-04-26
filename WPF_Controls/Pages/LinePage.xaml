@@ -4,10 +4,10 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      Title="LinePage"
       d:DesignHeight="300"
       d:DesignWidth="300"
-      mc:Ignorable="d">
+      mc:Ignorable="d"
+      Title="LinePage">
 
   <Grid>
     <Line Fill="Red"
@@ -19,8 +19,8 @@
     <Line Stroke="SteelBlue"
           StrokeThickness="5"
           X1="100"
-          X2="200"
           Y1="150"
+          X2="200"
           Y2="60" />
 
   </Grid>
