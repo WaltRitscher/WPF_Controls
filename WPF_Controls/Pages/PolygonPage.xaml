@@ -9,12 +9,12 @@
       Title="PolygonPage">
 
     <Grid>
-    <!--<Polygon x:Name="Poly1"
+    <Polygon x:Name="Poly1"
              Margin="26"
              HorizontalAlignment="Center"
              Fill="#FFA954C9"
              Points="0,200,100,0,200,200, 100,160"
              Stroke="Gray"
-             StrokeThickness="8" />-->
+             StrokeThickness="8" />
   </Grid>
 </Page>
