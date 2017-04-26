@@ -9,6 +9,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -27,8 +28,8 @@ namespace WpfControls.Pages
 
     private void Canvas_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
     {
-      var currentPositnio = (Point)e.MouseDevice.GetPosition(MainCanvas);
-      DynamicPolyline.Points.Add(currentPositnio);
+      var currentPosition = (Point)e.MouseDevice.GetPosition(MainCanvas);
+      DynamicPolyline.Points.Add(currentPosition);
 
     }
 
@@ -37,13 +38,38 @@ namespace WpfControls.Pages
       DynamicPolyline.Points.Clear();
 
     }
+    private double _range = 10;
+    static Random random = new Random();
 
     private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-      if (MainTabControl.SelectedIndex== 3)
+      if (MainTabControl.SelectedIndex == 3)
       {
-        
+        for (int counter = 0; counter < 20; counter++)
+        {
+          ChartLine.Points.Add(new Point(counter * _range, random.Next(5, 70)));
+        }
+       
+       
+
+        var animation = new DoubleAnimation
+        {
+          To = -30,
+          Duration = TimeSpan.FromMilliseconds(300),
+          // FillBehavior = FillBehavior.Stop
+        };
+
+        animation.Completed += (s, a) =>
+        {
+          animation.To-=10;
+          ChartLine.Points.Add(new Point(ChartLine.Points.Count * _range, random.Next(5, 70)));
+         // ChartLine.Points.RemoveAt(0);
+          ChartTranslateTransform.BeginAnimation(TranslateTransform.XProperty, animation);
+        };
+
+        ChartTranslateTransform.BeginAnimation(TranslateTransform.XProperty, animation);
       }
     }
   }
 }
+
