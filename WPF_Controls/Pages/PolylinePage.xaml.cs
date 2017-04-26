@@ -63,7 +63,6 @@ namespace WpfControls.Pages
         {
           animation.To-=10;
           ChartLine.Points.Add(new Point(ChartLine.Points.Count * _range, random.Next(5, 70)));
-         // ChartLine.Points.RemoveAt(0);
           ChartTranslateTransform.BeginAnimation(TranslateTransform.XProperty, animation);
         };
 
