@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       d:DesignHeight="300"
       d:DesignWidth="400"
-      Title="EllipsePage">
+      Title="EllipsePage" >
 
   <Grid>
     <Grid.RowDefinitions>
@@ -51,17 +51,17 @@
              Stretch="UniformToFill"
              Grid.Row="2" />
 
-    <TextBlock Text="Stretch=Fill"
+    <TextBlock Text="Stretch = Fill"
                Grid.Row="0"
                Grid.Column="0" />
-    <TextBlock Text="Stretch=None"
+    <TextBlock Text="Stretch = None"
                Grid.Row="0"
                Grid.Column="1" />
-    <TextBlock Text="Stretch=Uniform"
+    <TextBlock Text="Stretch = Uniform"
                Grid.Row="0"
                Grid.Column="2" />
-    <TextBlock Text="Stretch=UniformToFill"
-               Grid.Row="0"
+    <TextBlock Text="Stretch = UniformToFill"
+               Grid.Row="0" TextWrapping='Wrap'
                Grid.Column="3" />
   </Grid>
 </Page>
