@@ -12,19 +12,26 @@
   <TabControl>
     <TabItem Header="End Caps">
       <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width='47*' />
+          <ColumnDefinition Width='100*' />
+        </Grid.ColumnDefinitions>
         <Line Stroke="SteelBlue"
               StrokeThickness="5"
               X1="100"
               Y1="150"
               X2="200"
-              Y2="60" />
+              Y2="60"
+              Grid.ColumnSpan='2' />
         <Line Stroke="LightCoral"
-             
+              StrokeEndLineCap='Triangle'
+              StrokeStartLineCap='Round'
               StrokeThickness="20"
               X1="130"
               Y1="180"
               X2="230"
-              Y2="90" />
+              Y2="90"
+              Grid.ColumnSpan='2' />
       </Grid>
     </TabItem>
     <TabItem Header="Pattern">
@@ -37,19 +44,20 @@
               StrokeEndLineCap="Triangle"
               StrokeStartLineCap="Triangle"
               StrokeThickness="8"
+              StrokeDashArray='1.4, 0.4'
               X1="0"
               Y1="0"
               X2="200"
-              Y2="0" Margin='0,10'
-              HorizontalAlignment='Center'
-              />
+              Y2="0"
+              Margin='0,10'
+              HorizontalAlignment='Center' />
 
         <Rectangle Width="120"
                    Height="120"
                    Fill="SteelBlue"
                    Stroke="LightCoral"
-                   StrokeThickness="10"
-                  
+                   StrokeThickness="8"
+                   StrokeDashArray='1.4, 0.4, 2.5, .1'
                    Grid.Row='1' />
       </Grid>
     </TabItem>
