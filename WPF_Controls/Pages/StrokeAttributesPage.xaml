@@ -19,7 +19,8 @@
               X2="200"
               Y2="60" />
         <Line Stroke="LightSteelBlue"
-            
+              StrokeEndLineCap='Triangle'
+              StrokeStartLineCap='Round'
               StrokeThickness="20"
               X1="130"
               Y1="180"
@@ -28,23 +29,30 @@
       </Grid>
     </TabItem>
     <TabItem Header="Pattern">
-      <StackPanel>
-        <Line Margin="20,50"
-              Stroke="LightSteelBlue"
-             
-              StrokeThickness="10"
+      <Grid Margin='20'>
+        <Grid.RowDefinitions>
+          <RowDefinition Height='1*' />
+          <RowDefinition Height='4*' />
+        </Grid.RowDefinitions>
+        <Line Stroke="LightSteelBlue"
+              StrokeEndLineCap="Triangle"
+              StrokeStartLineCap="Triangle"
+              StrokeThickness="8"
               X1="0"
               Y1="0"
-              X2="260"
-              Y2="0" />
+              X2="200"
+              Y2="0" Margin='0,10'
+              HorizontalAlignment='Center'
+              />
 
         <Rectangle Width="120"
                    Height="120"
                    Fill="SteelBlue"
                    Stroke="Orange"
+                   StrokeThickness="10"
                   
-                   StrokeThickness="10" />
-      </StackPanel>
+                   Grid.Row='1' />
+      </Grid>
     </TabItem>
   </TabControl>
 </Page>
