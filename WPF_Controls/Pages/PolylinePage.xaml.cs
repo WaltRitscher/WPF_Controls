@@ -19,7 +19,7 @@ namespace WpfControls.Pages
 
     private void Canvas_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
     {
-      var currentPosition = (Point)e.MouseDevice.GetPosition(MainCanvas);
+      var currentPosition = e.MouseDevice.GetPosition(MainCanvas);
       DynamicPolyline.Points.Add(currentPosition);
     }
 
