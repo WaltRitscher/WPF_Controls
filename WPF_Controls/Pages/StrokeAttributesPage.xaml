@@ -18,9 +18,8 @@
               Y1="150"
               X2="200"
               Y2="60" />
-        <Line Stroke="LightSteelBlue"
-              StrokeEndLineCap='Triangle'
-              StrokeStartLineCap='Round'
+        <Line Stroke="LightCoral"
+             
               StrokeThickness="20"
               X1="130"
               Y1="180"
@@ -34,7 +33,7 @@
           <RowDefinition Height='1*' />
           <RowDefinition Height='4*' />
         </Grid.RowDefinitions>
-        <Line Stroke="LightSteelBlue"
+        <Line Stroke="LightCoral"
               StrokeEndLineCap="Triangle"
               StrokeStartLineCap="Triangle"
               StrokeThickness="8"
@@ -48,7 +47,7 @@
         <Rectangle Width="120"
                    Height="120"
                    Fill="SteelBlue"
-                   Stroke="Orange"
+                   Stroke="LightCoral"
                    StrokeThickness="10"
                   
                    Grid.Row='1' />
