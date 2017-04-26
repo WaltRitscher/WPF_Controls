@@ -1,0 +1,96 @@
+﻿<Page x:Class="WpfControls.Pages.PolylinePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d"
+      Title="PolylinePage">
+
+  <TabControl x:Name="MainTabControl"
+              SelectionChanged="TabControl_SelectionChanged">
+    <TabItem Header="In XAML">
+      <Polyline Points="90,50 20,30 30,90 60,120 10,200 200,200                       140,120 170,90 180,30 110,50"
+                Stroke="Orange"
+                StrokeThickness="7">
+        <!-- add a drop shadow -->
+        <!--<Polyline.Effect>
+          <DropShadowEffect />
+        </Polyline.Effect>-->
+      </Polyline>
+    </TabItem>
+    <TabItem Header="Joins">
+      <TabItem.Resources>
+        <Style TargetType="Polyline">
+          <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+        <Style TargetType="TextBlock">
+          <Setter Property="HorizontalAlignment" Value="Center" />
+        </Style>
+      </TabItem.Resources>
+      <UniformGrid MaxWidth="300"
+                   HorizontalAlignment="Left"
+                   Columns="3"
+                   Rows="2">
+        <Polyline Points="10, 90 30,50,60,90"
+                  Stroke="Orange"
+                  StrokeThickness="13" />
+        <Polyline Points="10, 90 30,50,60,90"
+                  Stroke="Orange"
+                  StrokeLineJoin="Bevel"
+                  StrokeThickness="13" />
+
+        <Polyline Points="10, 90 30,50,60,90"
+                  Stroke="Orange"
+                  StrokeLineJoin="Round"
+                  StrokeThickness="13" />
+        <TextBlock Text="Default (Miter)"
+                   TextWrapping="Wrap" />
+        <TextBlock Text="Bevel" />
+
+        <TextBlock Text="Round" />
+      </UniformGrid>
+    </TabItem>
+    <TabItem Header="Click to Add">
+      <Canvas x:Name="MainCanvas"
+              MouseLeftButtonUp="Canvas_MouseLeftButtonUp"
+              MouseRightButtonUp="Canvas_MouseRightButtonUp">
+        <Canvas.Background>
+          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Offset="0" Color="#FF92BE9C" />
+            <GradientStop Offset="1" Color="#FFEBFFEE" />
+          </LinearGradientBrush>
+        </Canvas.Background>
+        <TextBlock Text="Click to draw the line. Right click to clear" />
+        <Polyline x:Name="DynamicPolyline"
+                  Stroke="#FF2D723D"
+                  StrokeLineJoin="Round"
+                  StrokeMiterLimit="1"
+                  StrokeThickness="5">
+          <Polyline.Effect>
+
+            <DropShadowEffect />
+          </Polyline.Effect>
+        </Polyline>
+      </Canvas>
+    </TabItem>
+    <TabItem Header="LiveChart">
+      <Grid x:Name="ChartGrid">
+        <Grid.Background>
+          <LinearGradientBrush StartPoint="0.5,0"
+                               EndPoint="0.5,1">
+            <GradientStop Offset="0"
+                          Color="#FF92BE9C" />
+            <GradientStop Offset="1"
+                          Color="#FFEBFFEE" />
+          </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RenderTransform>
+          <TranslateTransform x:Name="ChartTranslateTransform" />
+        </Grid.RenderTransform>
+      </Grid>
+    </TabItem>
+  </TabControl>
+</Page>

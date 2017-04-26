@@ -1,0 +1,24 @@
+﻿<Page x:Class="WpfControls.Pages.HitTestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d"
+      Title="HitTestPage">
+
+  <Grid>
+    
+    <Polygon x:Name="Poly1"
+             Margin="26"
+             HorizontalAlignment="Center"
+             Fill="SteelBlue"
+             MouseLeave="Poly1_MouseLeave"
+             MouseMove="Poly1_MouseMove"
+             Points="0,200,100,0,200,200, 100,160"
+             Stroke="Gray"
+             StrokeThickness="15" />
+  </Grid>
+</Page>

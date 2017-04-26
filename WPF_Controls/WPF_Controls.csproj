@@ -57,8 +57,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\EllipsePage.xaml.cs">
+      <DependentUpon>EllipsePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FillPage.xaml.cs">
+      <DependentUpon>FillPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HitTestPage.xaml.cs">
+      <DependentUpon>HitTestPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LinePage.xaml.cs">
+      <DependentUpon>LinePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PolygonPage.xaml.cs">
+      <DependentUpon>PolygonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PolylinePage.xaml.cs">
+      <DependentUpon>PolylinePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RectanglePage.xaml.cs">
+      <DependentUpon>RectanglePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\StrokeAttributesPage.xaml.cs">
+      <DependentUpon>StrokeAttributesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -66,7 +90,39 @@
     <Compile Include="XmlMenu\XmlCategory.cs" />
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
+    <Page Include="Pages\EllipsePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FillPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HitTestPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LinePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PolygonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PolylinePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RectanglePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\StrokeAttributesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +170,7 @@
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\BasicElements.cd" />
+    <None Include="Class Diagrams\Shape.cd" />
     <None Include="Class Diagrams\Shapes.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

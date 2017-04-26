@@ -4,32 +4,27 @@
     <menu header ="Start Here..."
 					page="/Pages/StartHere.xaml" />
   </category>
-  <category categoryName="Properties">
+  <category categoryName="Shapes">
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Cursors"
-             page="/Pages/CursorsPage.xaml" />
-  
-    <menu header ="Basic Tooltip"
-         page="/Pages/TooltipBasicPage.xaml" />
+    <menu header ="Ellipse"
+             page="/Pages/EllipsePage.xaml" />
 
-    <menu header ="Enhanced Tooltip"
-        page="/Pages/TooltipEnhancedPage.xaml" />
-  </category>
+    <menu header ="Rectangle"
+         page="/Pages/RectanglePage.xaml" />
 
-  <category categoryName="Size Members">
-    
-    <menu header ="Size vs. Actual Size"
-         page="/Pages/SizesPage.xaml">
-    </menu>
-    <menu header ="Minimum and Maximum Size"
-        page="/Pages/MinMaxPage.xaml">
-    </menu>
-    <menu header ="Alignment"
-           page="/Pages/AlignmentPage.xaml" />
-    <menu header ="Margin"
-					page="/Pages/MarginPage.xaml" />
-    
+    <menu header ="Line"
+        page="/Pages/LinePage.xaml" />
+    <menu header ="Stroke Attributes"
+        page="/Pages/StrokeAttributesPage.xaml" />
+
+    <menu header ="Polyline"
+      page="/Pages/PolylinePage.xaml" />
+    <menu header ="Polygon"
+    page="/Pages/PolygonPage.xaml" />
+
+    <menu header ="Hit test with geometries"
+    page="/Pages/HitTestPage.xaml" />
   </category>
 </menus>
