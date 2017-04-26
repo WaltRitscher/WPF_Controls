@@ -10,9 +10,20 @@
       Title="FillPage">
 
   <Grid>
-    <Ellipse StrokeThickness="5">
-      
-
+    <Ellipse StrokeThickness="15">
+      <Ellipse.Fill>
+        <ImageBrush ImageSource='/WpfControls;component/Images/Flowers.jpg'
+                    Viewport='0,0,0.25,0.25'
+                    TileMode='FlipXY' />
+      </Ellipse.Fill>
+      <Ellipse.Stroke>
+        <LinearGradientBrush EndPoint='0.5,1'
+                             StartPoint='0.5,0'>
+          <GradientStop Color='Black'
+                        Offset='1' />
+          <GradientStop Color='White' />
+        </LinearGradientBrush>
+      </Ellipse.Stroke>
     </Ellipse>
   </Grid>
 </Page>
