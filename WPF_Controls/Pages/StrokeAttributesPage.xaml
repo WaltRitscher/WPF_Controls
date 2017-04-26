@@ -15,37 +15,38 @@
         <Line Stroke="SteelBlue"
               StrokeThickness="5"
               X1="100"
-              X2="200"
               Y1="150"
+              X2="200"
               Y2="60" />
         <Line Stroke="LightSteelBlue"
               StrokeEndLineCap="Round"
               StrokeStartLineCap="Triangle"
               StrokeThickness="20"
               X1="130"
-              X2="230"
               Y1="180"
+              X2="230"
               Y2="90" />
       </Grid>
     </TabItem>
     <TabItem Header="Pattern">
       <StackPanel>
-        <Line Stroke="LightSteelBlue"
+        <Line Margin="20,50"
+              Stroke="LightSteelBlue"
+              StrokeDashArray="2,2, 3,3"
               StrokeEndLineCap="Triangle"
               StrokeStartLineCap="Triangle"
               StrokeThickness="10"
               X1="0"
-              X2="260"
               Y1="0"
-              Y2="0"
-              Margin="20,50"
-              StrokeDashArray="2,2, 3,3" />
+              X2="260"
+              Y2="0" />
 
         <Rectangle Width="120"
                    Height="120"
                    Fill="SteelBlue"
                    Stroke="Orange"
-                   StrokeThickness="10" StrokeDashArray ="2,1" />
+                   StrokeDashArray="2,1"
+                   StrokeThickness="10" />
       </StackPanel>
     </TabItem>
   </TabControl>

@@ -79,18 +79,15 @@
     <TabItem Header="LiveChart">
       <Grid x:Name="ChartGrid">
         <Grid.Background>
-          <LinearGradientBrush StartPoint="0.5,0"
-                               EndPoint="0.5,1">
-            <GradientStop Offset="0"
-                          Color="#FF92BE9C" />
-            <GradientStop Offset="1"
-                          Color="#FFEBFFEE" />
+          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Offset="0" Color="#FF92BE9C" />
+            <GradientStop Offset="1" Color="#FFEBFFEE" />
           </LinearGradientBrush>
         </Grid.Background>
 
         <Polyline x:Name="ChartLine"
-                  StrokeLineJoin="Round"
                   Stroke="#FF2D723D"
+                  StrokeLineJoin="Round"
                   StrokeThickness="7">
           <Polyline.RenderTransform>
             <TranslateTransform x:Name="ChartTranslateTransform" X="-20" Y="40" />
