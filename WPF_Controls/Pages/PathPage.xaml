@@ -18,7 +18,7 @@
   </Page.Resources>
   <TabControl Margin="20">
     <TabItem Header="Path 1">
-      <Path StrokeThickness="6">
+      <Path StrokeThickness="6" Margin='40,0'>
         <Path.Stroke>
           <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
             <GradientStop Offset="0" Color="#FF189DE3" />
@@ -40,9 +40,13 @@
                                      Point2="200,200"
                                      Point3="100,100" />
                       <ArcSegment Point="-1,220"
-                                  RotationAngle="-1"
+                                  
                                   Size="5,5"
                                   SweepDirection="Clockwise" />
+                      <!--<LineSegment />
+                      <QuadraticBezierSegment />
+                      <PolyLineSegment />-->
+
                     </PathSegmentCollection>
                   </PathFigure.Segments>
                 </PathFigure>
