@@ -60,6 +60,9 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DrawPathPage.xaml.cs">
+      <DependentUpon>DrawPathPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ShapeStretchPage.xaml.cs">
       <DependentUpon>ShapeStretchPage.xaml</DependentUpon>
     </Compile>
@@ -94,6 +97,10 @@
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
     <Page Include="CreatePathPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DrawPathPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

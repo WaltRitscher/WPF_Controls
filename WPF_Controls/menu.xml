@@ -23,7 +23,7 @@
     <menu header ="Create Icon with Path"
                page="/Pages/PathPage.xaml" />
     <menu header ="Create drawings with Path"
-                  page="/Pages/PathPage.xaml" />
+                  page="/Pages/DrawPathPage.xaml" />
     <menu header ="Hit test with geometries"
     page="/Pages/HitTestPage.xaml" />
   </category>
