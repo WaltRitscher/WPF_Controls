@@ -177,8 +177,7 @@
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\BasicElements.cd" />
-    <None Include="Class Diagrams\Shape.cd" />
-    <None Include="Class Diagrams\Shapes.cd" />
+    <None Include="Class Diagrams\Decorator.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
