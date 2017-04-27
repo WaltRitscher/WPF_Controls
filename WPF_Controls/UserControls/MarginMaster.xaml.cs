@@ -165,6 +165,7 @@ namespace WpfControls.UserControls
     {
       this.Margin = new Thickness(0);
       UpdateTransforms();
-    }
+			RightMessage.Text= LeftMessage.Text= TopMessage.Text= BottomMessage.Text = "0px";
+		}
   }
 }
