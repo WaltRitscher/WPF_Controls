@@ -102,26 +102,7 @@
                   Data="M 223.872,311.795C 223.872,217.536 300.281,141.127 394.539,141.127C 488.797,141.127 565.205,217.536 565.205,311.795C 565.205,406.052 488.797,482.461 394.539,482.461C 300.281,482.461 223.872,406.052 223.872,311.795 Z "
                   Fill="#FF003300"
                   Stretch="Fill" />
-            <!--<Path x:Name="Path2"
-                  Canvas.Left="231.456"
-                  Canvas.Top="150.223"
-                  Width="278.872"
-                  Height="250.051"
-                  Data="F1 M 257.339,400.273C 240.963,374.945 231.456,344.76 231.456,312.356C 231.456,222.811 304.044,150.223 393.588,150.223C 439.375,150.223 480.728,169.2 510.328,199.72C 372.593,242.488 288.261,309.341 257.339,400.273 Z "
-                  Stretch="Fill">
 
-              <Path.Fill>
-
-                <LinearGradientBrush StartPoint="0.585771,0.123176" EndPoint="0.326985,0.837523">
-                  <LinearGradientBrush.GradientStops>
-                    <GradientStop Offset="0" Color="#FFDAF7D4" />
-                    <GradientStop Offset="0.738556" Color="#FF00CC00" />
-                    <GradientStop Offset="0.825607" Color="#FF46AF59" />
-                    <GradientStop Offset="1" Color="#FF46AF59" />
-                  </LinearGradientBrush.GradientStops>
-                </LinearGradientBrush>
-              </Path.Fill>
-            </Path>-->
             <Path x:Name="Path3"
                   Canvas.Left="232.407"
                   Canvas.Top="149.661"
