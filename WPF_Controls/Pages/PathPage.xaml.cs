@@ -36,14 +36,14 @@ namespace WpfControls.Pages
 
     private void GradientPathButton_Checked(object sender, RoutedEventArgs e)
     {
-      Path3.Opacity = 1;
-      ShowPathData(Path3);
+			GradentCirclePath.Opacity = 1;
+      ShowPathData(GradentCirclePath);
     }
 
     private void GradientPathButton_Unchecked(object sender, RoutedEventArgs e)
     {
-      Path3.Opacity = 0;
-      ShowPathData(Path3);
+			GradentCirclePath.Opacity = 0;
+      ShowPathData(GradentCirclePath);
     }
 
     private void Path4Button_Checked(object sender, RoutedEventArgs e)
