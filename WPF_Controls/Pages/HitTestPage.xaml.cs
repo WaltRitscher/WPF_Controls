@@ -20,21 +20,17 @@ namespace WpfControls.Pages
 
     private void Poly1_Loaded(object sender, RoutedEventArgs e)
     {
-      Poly1.ToolTip = $"Area size for Poly1: {Poly1.RenderedGeometry.GetArea()}";
-    }
+      Message1TextBlock.Text= $"Area size for Poly1: {Poly1.RenderedGeometry.GetArea()}";
+			Message2TextBlock.Text = $"Area size for AbstractPath: {AbstractPath.RenderedGeometry.GetArea()}";
+			_firstColor = AbstractGradientBrush.GradientStops[0].Color;
+			_secondColor = AbstractGradientBrush.GradientStops[1].Color;
+		}
 
     private void Poly1_MouseMove(object sender, MouseEventArgs e)
     {
-      // check whehter the mouse pointer is in the stroke or fill portion of shape
+      // check whether the mouse pointer is in the strokeportion of shape
       var point = e.GetPosition(Poly1);
-      if (Poly1.RenderedGeometry.FillContains(point))
-      {
-        Poly1.Fill = Brushes.Orange;
-      }
-      else
-      {
-        Poly1.Fill = Brushes.SteelBlue;
-      }
+     
       var pen = GetPenFromStroke(Poly1);
       if (Poly1.RenderedGeometry.StrokeContains(pen, point))
       {
@@ -42,16 +38,11 @@ namespace WpfControls.Pages
       }
       else
       {
-        Poly1.Stroke = Brushes.LightSeaGreen;
+        Poly1.Stroke = Brushes.Gray;
       }
     }
 
-    private void Poly1_MouseLeave(object sender, MouseEventArgs e)
-    {
-      Poly1.Fill = Brushes.SteelBlue;
-      Poly1.Stroke = Brushes.Gray;
-    }
-
+   
     public static Pen GetPenFromStroke(Shape shape)
     {
       return new Pen()
@@ -70,5 +61,37 @@ namespace WpfControls.Pages
         MiterLimit = shape.StrokeMiterLimit
       };
     }
-  }
+		private Color _firstColor;
+		private Color _secondColor;
+		private void AbstractPath_MouseMove(object sender, MouseEventArgs e)
+		{
+			
+			// check whether the mouse pointer is in the strokeportion of shape
+			var point = e.GetPosition(AbstractPath);
+
+			var pen = GetPenFromStroke(AbstractPath);
+			if (AbstractPath.RenderedGeometry.StrokeContains(pen, point))
+			{
+				AbstractGradientBrush.GradientStops[0].Color = Colors.Orange;
+				AbstractGradientBrush.GradientStops[1].Color = Colors.Purple;
+
+			}
+			else
+			{
+				AbstractGradientBrush.GradientStops[0].Color = _firstColor;
+				AbstractGradientBrush.GradientStops[1].Color = _secondColor;
+			}
+		}
+
+		private void Poly1_MouseLeave(object sender, MouseEventArgs e)
+		{
+			Poly1.Stroke = Brushes.Gray;
+		}
+
+		private void AbstractPath_MouseLeave(object sender, MouseEventArgs e)
+		{
+			AbstractGradientBrush.GradientStops[0].Color = _firstColor;
+			AbstractGradientBrush.GradientStops[1].Color = _secondColor;
+		}
+	}
 }
