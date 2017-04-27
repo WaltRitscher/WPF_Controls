@@ -4,27 +4,15 @@
     <menu header ="Start Here..."
 					page="/Pages/StartHere.xaml" />
   </category>
-  <category categoryName="Shapes">
+  <category categoryName="Decorators">
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Use the Shape Stretch property"
-             page="/Pages/ShapeStretchPage.xaml" />
+    <menu header ="Border"
+             page="/Pages/BorderPage.xaml" />
 
-    <menu header ="Line"
-        page="/Pages/LinePage.xaml" />
-    <menu header ="Polyline"
-      page="/Pages/PolylinePage.xaml" />
-    <menu header ="Polygon"
-   page="/Pages/PolygonPage.xaml" />
-    <menu header ="StrokeDashArray and EndCap"
-           page="/Pages/StrokeAttributesPage.xaml" />
-
-    <menu header ="Create Icon with Path"
-               page="/Pages/PathPage.xaml" />
-    <menu header ="Create drawings with Path"
-                  page="/Pages/PathPage.xaml" />
-    <menu header ="Hit test with geometries"
-    page="/Pages/HitTestPage.xaml" />
+    <menu header ="Viewbox"
+        page="/Pages/ViewboxPage.xaml" />
+   
   </category>
 </menus>

@@ -60,6 +60,9 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BorderPage.xaml.cs">
+      <DependentUpon>BorderPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ShapeStretchPage.xaml.cs">
       <DependentUpon>ShapeStretchPage.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,9 @@
     <Compile Include="Pages\StrokeAttributesPage.xaml.cs">
       <DependentUpon>StrokeAttributesPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ViewboxPage.xaml.cs">
+      <DependentUpon>ViewboxPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
     </Compile>
@@ -94,6 +100,10 @@
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
     <Page Include="CreatePathPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\BorderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +140,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\StrokeAttributesPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ViewboxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

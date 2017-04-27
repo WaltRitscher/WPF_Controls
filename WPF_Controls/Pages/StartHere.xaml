@@ -41,7 +41,7 @@
                FontFamily="Calibri"
                FontSize="107"
                Foreground="PowderBlue"
-               Text="Shapes"
+               Text="Decorators"
                TextWrapping="Wrap" />
   </Grid>
 </Page>
