@@ -1,31 +1,40 @@
 ﻿<Page x:Class="WpfControls.Pages.ViewboxPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="600"
+      d:DesignWidth="400 "
       mc:Ignorable="d"
-      d:DesignHeight="500"
-      d:DesignWidth="500"
       Title="ViewboxPage">
 
-  <StackPanel>
-    <Slider x:Name='SizeSlider' Margin='20,3'
-            ValueChanged='SizeSlider_ValueChanged' />
-    <Grid x:Name="MainGrid">
+  <Grid x:Name="MainGrid">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="1*" />
 
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="1*" />
-        <ColumnDefinition Width="1*" />
-      </Grid.ColumnDefinitions>
-      <Grid HorizontalAlignment='Left'>
-        <Path Margin="8.25,6.55,109.85,111.55"
+    </Grid.RowDefinitions>
+    <Slider x:Name="SizeSlider"
+            Margin="20,3"
+            ValueChanged="SizeSlider_ValueChanged" />
+    <Grid x:Name="SizeableGrid" >
+      <Grid.RowDefinitions>
+        <RowDefinition Height="1*" />
+        <RowDefinition Height="1*" />
+      </Grid.RowDefinitions>
+
+      <Canvas Width="186.399993896484"
+            Height="186.399993896484"
+            Grid.Row="0">
+        <Path d:LayoutOverrides="Width, Height"
               Data="M93.200002,4.5 L151.09482,25.897058 L181.9,80.076311 L171.20147,141.68668 L124.00519,181.9 L62.394814,181.9 L15.198529,141.68668 L4.5,80.076311 L35.305187,25.897058 z"
               Fill="#FFF7E994"
               Stretch="Fill"
               Stroke="#FFE1B5A3"
               StrokeThickness="9" />
-        <Path Margin="19.6,27.5,121.2,132.5"
+        <Path d:LayoutOverrides="Width, Height"
+              Margin="11.35,20.95,15.85,25.45"
               Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
               Fill="#FFE44355"
               RenderTransformOrigin="0.49999996179526,0.5"
@@ -39,13 +48,14 @@
             </TransformGroup>
           </Path.RenderTransform>
         </Path>
-        <Path Margin="19.6,27.5,121.2,132.5"
+        <Path d:LayoutOverrides="Width, Height"
+              Margin="11.35,20.95,15.85,25.45"
               Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
               Fill="#FFE47343"
               Stretch="Fill" />
         <Path Width="30.4"
               Height="30.4"
-              Margin="84,82.3,0,0"
+              Margin="75.751,75.75,0,0"
               HorizontalAlignment="Left"
               VerticalAlignment="Top"
               Fill="#FFF7E994"
@@ -89,18 +99,21 @@
             </PathGeometry>
           </Path.Data>
         </Path>
-
-      </Grid>
-
-      <Viewbox Grid.Column="1">
-        <Grid HorizontalAlignment='Left'>
-          <Path Margin="8.25,6.55,109.85,111.55"
+      </Canvas>
+      <Viewbox Grid.Row="1"
+               Canvas.Left="9.504"
+               Canvas.Top="6.55"
+               Stretch="Uniform">
+        <Canvas Width="186.399993896484"
+              Height="186.399993896484">
+          <Path d:LayoutOverrides="Width, Height"
                 Data="M93.200002,4.5 L151.09482,25.897058 L181.9,80.076311 L171.20147,141.68668 L124.00519,181.9 L62.394814,181.9 L15.198529,141.68668 L4.5,80.076311 L35.305187,25.897058 z"
                 Fill="#FFF7E994"
                 Stretch="Fill"
                 Stroke="#FFE1B5A3"
                 StrokeThickness="9" />
-          <Path Margin="19.6,27.5,121.2,132.5"
+          <Path d:LayoutOverrides="Width, Height"
+                Margin="11.35,20.95,15.85,25.45"
                 Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
                 Fill="#FFE44355"
                 RenderTransformOrigin="0.49999996179526,0.5"
@@ -114,13 +127,14 @@
               </TransformGroup>
             </Path.RenderTransform>
           </Path>
-          <Path Margin="19.6,27.5,121.2,132.5"
+          <Path d:LayoutOverrides="Width, Height"
+                Margin="11.35,20.95,15.85,25.45"
                 Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
                 Fill="#FFE47343"
                 Stretch="Fill" />
           <Path Width="30.4"
                 Height="30.4"
-                Margin="84,82.3,0,0"
+                Margin="75.751,75.75,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Top"
                 Fill="#FFF7E994"
@@ -164,11 +178,14 @@
               </PathGeometry>
             </Path.Data>
           </Path>
-
-        </Grid>
+        </Canvas>
       </Viewbox>
+     
+       
+      
     </Grid>
    
-  </StackPanel>
+
+  </Grid>
 
 </Page>

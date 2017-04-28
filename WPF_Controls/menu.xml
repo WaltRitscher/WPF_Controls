@@ -13,6 +13,9 @@
 
     <menu header ="Viewbox"
         page="/Pages/ViewBoxPage.xaml" />
+
+    <menu header ="Trial"
+       page="/Pages/Trial.xaml" />
    
   </category>
 </menus>

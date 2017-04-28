@@ -9,163 +9,80 @@
       mc:Ignorable="d"
       Title="Trial">
 
-  <StackPanel>
-    <Grid x:Name="MainGrid">
-
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="1*" />
-        <ColumnDefinition Width="1*" />
-      </Grid.ColumnDefinitions>
-      <Grid>
-        <Path Margin="8.25,6.55,109.85,111.55"
-              Data="M93.200002,4.5 L151.09482,25.897058 L181.9,80.076311 L171.20147,141.68668 L124.00519,181.9 L62.394814,181.9 L15.198529,141.68668 L4.5,80.076311 L35.305187,25.897058 z"
-              Fill="#FFF7E994"
-              Stretch="Fill"
-              Stroke="#FFE1B5A3"
-              StrokeThickness="9" />
-        <Path Margin="19.6,27.5,121.2,132.5"
-              Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
-              Fill="#FFE44355"
-              RenderTransformOrigin="0.49999996179526,0.5"
-              Stretch="Fill">
-          <Path.RenderTransform>
-            <TransformGroup>
-              <ScaleTransform />
-              <SkewTransform />
-              <RotateTransform Angle="20" />
-              <TranslateTransform />
-            </TransformGroup>
-          </Path.RenderTransform>
-        </Path>
-        <Path Margin="19.6,27.5,121.2,132.5"
-              Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
-              Fill="#FFE47343"
-              Stretch="Fill" />
-        <Path Width="30.4"
-              Height="30.4"
-              Margin="84,82.3,0,0"
-              HorizontalAlignment="Left"
-              VerticalAlignment="Top"
-              Fill="#FFF7E994"
-              Stretch="Fill">
-          <Path.Data>
-            <PathGeometry>
-              <PathFigure IsClosed="True"
-                          StartPoint="0,15.2">
-                <BezierSegment IsSmoothJoin="True"
-                               Point1="0,6.80527114868164"
-                               Point2="6.80527210235596,0"
-                               Point3="15.2000007629395,0" />
-                <BezierSegment Point1="23.5947284698486,0"
-                               Point2="30.3999996185303,6.80527114868164"
-                               Point3="30.3999996185303,15.1999998092651" />
-                <BezierSegment IsSmoothJoin="True"
-                               Point1="30.3999996185303,23.5947284698486"
-                               Point2="23.5947265625,30.3999996185303"
-                               Point3="15.1999988555908,30.3999996185303" />
-                <BezierSegment Point1="6.80527019500732,30.3999996185303"
-                               Point2="0,23.5947284698486"
-                               Point3="0,15.1999998092651" />
-              </PathFigure>
-              <PathFigure IsClosed="True"
-                          StartPoint="7.00000000000001,15.2">
-                <BezierSegment IsSmoothJoin="True"
-                               Point1="7,19.7287349700928"
-                               Point2="10.6712656021118,23.3999996185303"
-                               Point3="15.1999998092651,23.3999996185303" />
-                <BezierSegment Point1="19.7287349700928,23.3999996185303"
-                               Point2="23.3999996185303,19.7287349700928"
-                               Point3="23.3999996185303,15.1999998092651" />
-                <BezierSegment IsSmoothJoin="True"
-                               Point1="23.3999996185303,10.6712646484375"
-                               Point2="19.7287349700928,7"
-                               Point3="15.1999998092651,7" />
-                <BezierSegment Point1="10.6712646484375,7"
-                               Point2="7,10.6712646484375"
-                               Point3="7,15.1999998092651" />
-              </PathFigure>
-            </PathGeometry>
-          </Path.Data>
-        </Path>
-
-      </Grid>
-
-      <Viewbox Grid.Column="1">
-        <Grid>
-          <Path Margin="8.25,6.55,109.85,111.55"
-                Data="M93.200002,4.5 L151.09482,25.897058 L181.9,80.076311 L171.20147,141.68668 L124.00519,181.9 L62.394814,181.9 L15.198529,141.68668 L4.5,80.076311 L35.305187,25.897058 z"
-                Fill="#FFF7E994"
-                Stretch="Fill"
-                Stroke="#FFE1B5A3"
-                StrokeThickness="9" />
-          <Path Margin="19.6,27.5,121.2,132.5"
-                Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
-                Fill="#FFE44355"
-                RenderTransformOrigin="0.49999996179526,0.5"
-                Stretch="Fill">
-            <Path.RenderTransform>
-              <TransformGroup>
-                <ScaleTransform />
-                <SkewTransform />
-                <RotateTransform Angle="20" />
-                <TranslateTransform />
-              </TransformGroup>
-            </Path.RenderTransform>
-          </Path>
-          <Path Margin="19.6,27.5,121.2,132.5"
-                Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
-                Fill="#FFE47343"
-                Stretch="Fill" />
-          <Path Width="30.4"
-                Height="30.4"
-                Margin="84,82.3,0,0"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Fill="#FFF7E994"
-                Stretch="Fill">
-            <Path.Data>
-              <PathGeometry>
-                <PathFigure IsClosed="True"
-                            StartPoint="0,15.2">
-                  <BezierSegment IsSmoothJoin="True"
-                                 Point1="0,6.80527114868164"
-                                 Point2="6.80527210235596,0"
-                                 Point3="15.2000007629395,0" />
-                  <BezierSegment Point1="23.5947284698486,0"
-                                 Point2="30.3999996185303,6.80527114868164"
-                                 Point3="30.3999996185303,15.1999998092651" />
-                  <BezierSegment IsSmoothJoin="True"
-                                 Point1="30.3999996185303,23.5947284698486"
-                                 Point2="23.5947265625,30.3999996185303"
-                                 Point3="15.1999988555908,30.3999996185303" />
-                  <BezierSegment Point1="6.80527019500732,30.3999996185303"
-                                 Point2="0,23.5947284698486"
-                                 Point3="0,15.1999998092651" />
-                </PathFigure>
-                <PathFigure IsClosed="True"
-                            StartPoint="7.00000000000001,15.2">
-                  <BezierSegment IsSmoothJoin="True"
-                                 Point1="7,19.7287349700928"
-                                 Point2="10.6712656021118,23.3999996185303"
-                                 Point3="15.1999998092651,23.3999996185303" />
-                  <BezierSegment Point1="19.7287349700928,23.3999996185303"
-                                 Point2="23.3999996185303,19.7287349700928"
-                                 Point3="23.3999996185303,15.1999998092651" />
-                  <BezierSegment IsSmoothJoin="True"
-                                 Point1="23.3999996185303,10.6712646484375"
-                                 Point2="19.7287349700928,7"
-                                 Point3="15.1999998092651,7" />
-                  <BezierSegment Point1="10.6712646484375,7"
-                                 Point2="7,10.6712646484375"
-                                 Point3="7,15.1999998092651" />
-                </PathFigure>
-              </PathGeometry>
-            </Path.Data>
-          </Path>
-
-        </Grid>
-      </Viewbox>
-    </Grid>
-    <Slider x:Name='SizeSlider' ValueChanged='SizeSlider_ValueChanged'/>
-  </StackPanel>
+  <Canvas>
+    <Path Data="M93.200002,4.5 L151.09482,25.897058 L181.9,80.076311 L171.20147,141.68668 L124.00519,181.9 L62.394814,181.9 L15.198529,141.68668 L4.5,80.076311 L35.305187,25.897058 z"
+          Fill="#FFF7E994"
+          Stretch="Fill"
+          Stroke="#FFE1B5A3"
+          StrokeThickness="9"
+          Canvas.Left="9.504"
+          Canvas.Top="6.55" />
+    <Path Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
+          Fill="#FFE44355"
+          RenderTransformOrigin="0.49999996179526,0.5"
+          Stretch="Fill"
+          Canvas.Left="20.854"
+          Canvas.Top="27.5">
+      <Path.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform />
+          <SkewTransform />
+          <RotateTransform Angle="20" />
+          <TranslateTransform />
+        </TransformGroup>
+      </Path.RenderTransform>
+    </Path>
+    <Path Data="M79.600003,0 L91.86429,42.08723 L131.55521,16.886066 L110.65427,56.166279 L159.20001,59.643085 L114.91361,77.736632 L149.59907,108.26457 L102.64932,96.705283 L107.24479,140 L79.600003,104.19659 L51.955212,140 L56.550682,96.705283 L9.600935,108.26457 L44.286394,77.736632 L-4.2641265E-08,59.643085 L48.545736,56.166279 L27.644791,16.886066 L67.335715,42.08723 z"
+          Fill="#FFE47343"
+          Stretch="Fill"
+          Canvas.Left="20.854"
+          Canvas.Top="27.5" />
+    <Path Width="30.4"
+          Height="30.4"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top"
+          Fill="#FFF7E994"
+          Stretch="Fill"
+          Canvas.Left="85.255"
+          Canvas.Top="82.3">
+      <Path.Data>
+        <PathGeometry>
+          <PathFigure IsClosed="True"
+                      StartPoint="0,15.2">
+            <BezierSegment IsSmoothJoin="True"
+                           Point1="0,6.80527114868164"
+                           Point2="6.80527210235596,0"
+                           Point3="15.2000007629395,0" />
+            <BezierSegment Point1="23.5947284698486,0"
+                           Point2="30.3999996185303,6.80527114868164"
+                           Point3="30.3999996185303,15.1999998092651" />
+            <BezierSegment IsSmoothJoin="True"
+                           Point1="30.3999996185303,23.5947284698486"
+                           Point2="23.5947265625,30.3999996185303"
+                           Point3="15.1999988555908,30.3999996185303" />
+            <BezierSegment Point1="6.80527019500732,30.3999996185303"
+                           Point2="0,23.5947284698486"
+                           Point3="0,15.1999998092651" />
+          </PathFigure>
+          <PathFigure IsClosed="True"
+                      StartPoint="7.00000000000001,15.2">
+            <BezierSegment IsSmoothJoin="True"
+                           Point1="7,19.7287349700928"
+                           Point2="10.6712656021118,23.3999996185303"
+                           Point3="15.1999998092651,23.3999996185303" />
+            <BezierSegment Point1="19.7287349700928,23.3999996185303"
+                           Point2="23.3999996185303,19.7287349700928"
+                           Point3="23.3999996185303,15.1999998092651" />
+            <BezierSegment IsSmoothJoin="True"
+                           Point1="23.3999996185303,10.6712646484375"
+                           Point2="19.7287349700928,7"
+                           Point3="15.1999998092651,7" />
+            <BezierSegment Point1="10.6712646484375,7"
+                           Point2="7,10.6712646484375"
+                           Point3="7,15.1999998092651" />
+          </PathFigure>
+        </PathGeometry>
+      </Path.Data>
+    </Path>
+  </Canvas>
 </Page>
