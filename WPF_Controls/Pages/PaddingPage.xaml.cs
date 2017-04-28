@@ -16,27 +16,13 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for Trial.xaml
+  /// Interaction logic for PaddingPage.xaml
   /// </summary>
-  public partial class Trial : Page
+  public partial class PaddingPage : Page
   {
-    public Trial()
+    public PaddingPage()
     {
       InitializeComponent();
-      this.Loaded += Trial_Loaded;
-    }
-
-    private void Trial_Loaded(object sender, RoutedEventArgs e)
-    {
-      SizeSlider.Maximum = MainGrid.ActualWidth;
-      SizeSlider.Value = MainGrid.ActualWidth;
-    }
-
-   
-
-    private void SizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-    {
-      MainGrid.Width = SizeSlider.Value;
     }
 
     

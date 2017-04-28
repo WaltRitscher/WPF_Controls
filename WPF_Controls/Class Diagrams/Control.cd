@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="System.Windows.Controls.Control" Collapsed="true">
-    <Position X="3.25" Y="1.25" Width="1.5" />
+  <Class Name="System.Windows.Controls.Control">
+    <Position X="3.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="10" />

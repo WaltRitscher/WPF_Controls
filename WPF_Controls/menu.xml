@@ -8,11 +8,13 @@
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Border"
-             page="/Pages/BorderPage.xaml" />
+    <menu header ="Tab Order"
+             page="/Pages/TabOrderPage.xaml" />
 
-    <menu header ="Viewbox"
-        page="/Pages/ViewBoxPage.xaml" />
+    <menu header ="Padding"
+        page="/Pages/PaddingPage.xaml" />
+    <menu header ="Fonts"
+        page="/Pages/FontsPage.xaml" />
    
   </category>
 </menus>

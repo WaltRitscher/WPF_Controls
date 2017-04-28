@@ -60,17 +60,17 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\BorderPage.xaml.cs">
-      <DependentUpon>BorderPage.xaml</DependentUpon>
+    <Compile Include="Pages\FontsPage.xaml.cs">
+      <DependentUpon>FontsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PaddingPage.xaml.cs">
+      <DependentUpon>PaddingPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Trial.xaml.cs">
-      <DependentUpon>Trial.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ViewboxPage.xaml.cs">
-      <DependentUpon>ViewboxPage.xaml</DependentUpon>
+    <Compile Include="Pages\TabOrderPage.xaml.cs">
+      <DependentUpon>TabOrderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -82,7 +82,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\BorderPage.xaml">
+    <Page Include="Pages\FontsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PaddingPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,11 +94,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Trial.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\ViewboxPage.xaml">
+    <Page Include="Pages\TabOrderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

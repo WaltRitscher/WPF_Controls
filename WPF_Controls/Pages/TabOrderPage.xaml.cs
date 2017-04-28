@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for BorderPage.xaml
+  /// Interaction logic for TabOrderPage.xaml
   /// </summary>
-  public partial class BorderPage : Page
+  public partial class TabOrderPage : Page
   {
-    public BorderPage()
+    public TabOrderPage()
     {
       InitializeComponent();
     }
