@@ -18,9 +18,9 @@ namespace WpfControls.Pages
 	/// <summary>
 	/// Interaction logic for Trial.xaml
 	/// </summary>
-	public partial class Trial : Page
+	public partial class ButtonInViewboxPage : Page
 	{
-		public Trial()
+		public ButtonInViewboxPage()
 		{
 			InitializeComponent();
 

@@ -10,12 +10,12 @@
     </menu>
     <menu header ="Border"
              page="/Pages/BorderPage.xaml" />
+    <menu header ="Button in ViewBox"
+          page="/Pages/ButtonInViewboxPage.xaml" />
 
-    <menu header ="Viewbox"
+    <menu header ="Shapes in Viewbox"
         page="/Pages/ViewBoxPage.xaml" />
 
-    <menu header ="Trial"
-       page="/Pages/Trial.xaml" />
    
   </category>
 </menus>

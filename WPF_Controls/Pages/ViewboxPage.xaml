@@ -15,14 +15,9 @@
       <RowDefinition Height="1*" />
 
     </Grid.RowDefinitions>
-    <Slider x:Name="SizeSlider"
-            Margin="20,3"
-            ValueChanged="SizeSlider_ValueChanged" />
-    <Grid x:Name="SizeableGrid" >
-      <Grid.RowDefinitions>
-        <RowDefinition Height="1*" />
-        <RowDefinition Height="1*" />
-      </Grid.RowDefinitions>
+    
+    <StackPanel x:Name="SizeableGrid" >
+     
 
       <Canvas Width="186.399993896484"
             Height="186.399993896484"
@@ -183,7 +178,7 @@
      
        
       
-    </Grid>
+    </StackPanel>
    
 
   </Grid>

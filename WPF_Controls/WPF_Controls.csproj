@@ -66,8 +66,8 @@
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Trial.xaml.cs">
-      <DependentUpon>Trial.xaml</DependentUpon>
+    <Compile Include="Pages\ButtonInViewboxPage.xaml.cs">
+      <DependentUpon>ButtonInViewboxPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\ViewboxPage.xaml.cs">
       <DependentUpon>ViewboxPage.xaml</DependentUpon>
@@ -90,7 +90,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Trial.xaml">
+    <Page Include="Pages\ButtonInViewboxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
