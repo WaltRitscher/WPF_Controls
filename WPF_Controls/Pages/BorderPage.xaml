@@ -31,18 +31,20 @@
       <Ellipse Fill="LightBlue" />
       <Ellipse Fill="LightBlue" />
       <Ellipse Fill="LightBlue" />
+      <Rectangle Width="50"
+                 Height="50"
+                 Fill="LightBlue" />
     </StackPanel>
     <Rectangle Grid.Column="2"
                Fill="LightCoral" />
-    <Border Grid.Column="2"
-            BorderBrush="Red"
-            BorderThickness="5" Margin='6' Padding='3' CornerRadius='4,20,4,20'>
-      <StackPanel x:Name="WithBorderStackPanel"
-                  Width="120">
-        <Ellipse Fill="White" />
-        <Ellipse Fill="White" />
-        <Ellipse Fill="White" />
-      </StackPanel>
-    </Border>
+
+    <StackPanel x:Name="WithBorderStackPanel"
+                Grid.Column="2"
+                Width="120">
+      <Ellipse Fill="White" />
+      <Ellipse Fill="White" />
+      <Ellipse Fill="White" />
+    </StackPanel>
+
   </Grid>
 </Page>
