@@ -19,6 +19,7 @@
         <ColumnDefinition Width="1*" />
       </Grid.ColumnDefinitions>
       <Grid HorizontalAlignment='Left'>
+        <Canvas>
         <Path Margin="8.25,6.55,109.85,111.55"
               Data="M93.200002,4.5 L151.09482,25.897058 L181.9,80.076311 L171.20147,141.68668 L124.00519,181.9 L62.394814,181.9 L15.198529,141.68668 L4.5,80.076311 L35.305187,25.897058 z"
               Fill="#FFF7E994"
@@ -89,7 +90,7 @@
             </PathGeometry>
           </Path.Data>
         </Path>
-
+        </Canvas>
       </Grid>
 
       <Viewbox Grid.Column="1">
