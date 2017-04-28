@@ -28,15 +28,15 @@ namespace WpfControls.Pages
 
     private void Trial_Loaded(object sender, RoutedEventArgs e)
     {
-      SizeSlider.Maximum = MainGrid.ActualWidth;
-      SizeSlider.Value = MainGrid.ActualWidth;
+      SizeSlider.Maximum = SizeableGrid.ActualWidth;
+      SizeSlider.Value = SizeableGrid.ActualWidth;
     }
 
 
 
     private void SizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
     {
-      MainGrid.Width = SizeSlider.Value;
+			SizeableGrid.Width = SizeSlider.Value;
     }
 
   }
