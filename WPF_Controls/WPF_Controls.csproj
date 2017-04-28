@@ -141,8 +141,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
-    <None Include="Class Diagrams\BasicElements.cd" />
-    <None Include="Class Diagrams\Decorator.cd" />
+    <None Include="Class Diagrams\AllControls.cd" />
+    <None Include="Class Diagrams\BaseClass.cd" />
+    <None Include="Class Diagrams\Control.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
