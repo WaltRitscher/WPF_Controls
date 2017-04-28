@@ -23,6 +23,21 @@ namespace WpfControls.Pages
     public ViewboxPage()
     {
       InitializeComponent();
+      this.Loaded += Trial_Loaded;
     }
+
+    private void Trial_Loaded(object sender, RoutedEventArgs e)
+    {
+      SizeSlider.Maximum = MainGrid.ActualWidth;
+      SizeSlider.Value = MainGrid.ActualWidth;
+    }
+
+
+
+    private void SizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+    {
+      MainGrid.Width = SizeSlider.Value;
+    }
+
   }
 }

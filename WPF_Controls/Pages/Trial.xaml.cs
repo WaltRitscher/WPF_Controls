@@ -16,13 +16,29 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for FillPage.xaml
+  /// Interaction logic for Trial.xaml
   /// </summary>
-  public partial class FillPage : Page
+  public partial class Trial : Page
   {
-    public FillPage()
+    public Trial()
     {
       InitializeComponent();
+      this.Loaded += Trial_Loaded;
     }
+
+    private void Trial_Loaded(object sender, RoutedEventArgs e)
+    {
+      SizeSlider.Maximum = MainGrid.ActualWidth;
+      SizeSlider.Value = MainGrid.ActualWidth;
+    }
+
+   
+
+    private void SizeSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+    {
+      MainGrid.Width = SizeSlider.Value;
+    }
+
+    
   }
 }

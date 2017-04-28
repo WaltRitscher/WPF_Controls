@@ -12,7 +12,7 @@
              page="/Pages/BorderPage.xaml" />
 
     <menu header ="Viewbox"
-        page="/Pages/ViewboxPage.xaml" />
+        page="/Pages/ViewBoxPage.xaml" />
    
   </category>
 </menus>
