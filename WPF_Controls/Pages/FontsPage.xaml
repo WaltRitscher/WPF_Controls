@@ -7,7 +7,8 @@
       d:DesignHeight="300"
       d:DesignWidth="300"
       mc:Ignorable="d"
-      Title="FontsPage">
+      Title="FontsPage"
+      >
   <StackPanel>
     <StackPanel>
       <Button Content="Example A" />
@@ -16,7 +17,7 @@
       <Button Content="Example D" />
       <Button Content="Example D" />
     </StackPanel>
-    <StackPanel Margin="29">
+    <StackPanel Margin="20">
       <Button Content="Example X" />
       <Button Content="Example Y" />
       <Button Content="Example Z" />
