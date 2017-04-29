@@ -43,11 +43,8 @@
     </StackPanel>
     <StackPanel Grid.Row="0"
                 Grid.Column="1">
-      <TextBox IsTabStop="False"
-               Text="D" />
-      <TextBox IsEnabled="False"
-               Text="E" />
-
+      <TextBox Text="D" />
+      <TextBox Text="E" />
 
     </StackPanel>
 
@@ -62,8 +59,7 @@
                 Grid.ColumnSpan="3"
                 HorizontalAlignment="Center"
                 Orientation="Horizontal">
-      <Button Content="OK"
-              TabIndex="2" />
+      <Button Content="OK" />
       <Button Content="Save" />
       <Button Content="Cancel" />
     </StackPanel>
