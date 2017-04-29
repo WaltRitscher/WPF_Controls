@@ -12,10 +12,12 @@
 
     <Style x:Key="TravelButtonStyle"
            TargetType="Button">
-      <Setter Property="HorizontalContentAlignment" Value="Center" />
-      <Setter Property="Margin" Value="0,3" />
+      <Setter Property="HorizontalContentAlignment"
+              Value="Center" />
+      <Setter Property="Margin"
+              Value="0,3" />
     </Style>
-    
+
   </Page.Resources>
   <Grid>
     <Grid.RowDefinitions>
@@ -24,8 +26,15 @@
       <RowDefinition Height="1*" />
     </Grid.RowDefinitions>
 
-    <Button Content="Hello" />
+    <Button Content="Hello again"
+            FontSize="24"
+            Padding="10"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center" />
     <Button Grid.Row="1"
+            Padding="10,20,4,40"
+            VerticalContentAlignment="Stretch"
+            HorizontalContentAlignment="Stretch"
             Style="{StaticResource TravelButtonStyle}">
       <StackPanel HorizontalAlignment="Stretch"
                   Background="LightGray"
@@ -40,6 +49,7 @@
       </StackPanel>
     </Button>
     <TextBox Grid.Row="2"
+             HorizontalContentAlignment="Right"
              Text="Goodbye" />
   </Grid>
 </Page>
