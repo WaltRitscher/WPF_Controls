@@ -8,11 +8,38 @@
       d:DesignWidth="300"
       mc:Ignorable="d"
       Title="PaddingPage">
+  <Page.Resources>
 
-  <StackPanel>
+    <Style x:Key="TravelButtonStyle"
+           TargetType="Button">
+      <Setter Property="HorizontalContentAlignment" Value="Center" />
+      <Setter Property="Margin" Value="0,3" />
+    </Style>
+    
+  </Page.Resources>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="1*" />
+      <RowDefinition Height="1*" />
+      <RowDefinition Height="1*" />
+    </Grid.RowDefinitions>
 
-    <Button Content="Hello"
-            />
+    <Button Content="Hello" />
+    <Button Grid.Row="1"
+            Style="{StaticResource TravelButtonStyle}">
+      <StackPanel HorizontalAlignment="Stretch"
+                  Background="LightGray"
+                  Orientation="Horizontal">
 
-  </StackPanel>
+        <Image Source="/WpfControls;component/Images/TravelLogo.jpg"
+               Stretch="None" />
+        <TextBlock Margin="7,0"
+                   VerticalAlignment="Center"
+                   Text="Global Travel Assistance" />
+
+      </StackPanel>
+    </Button>
+    <TextBox Grid.Row="2"
+             Text="Goodbye" />
+  </Grid>
 </Page>

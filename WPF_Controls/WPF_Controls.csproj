@@ -153,6 +153,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Notes\DefaultContentAlignment.txt" />
     <Resource Include="Images\FullScreenHS.png" />
     <Resource Include="Images\River.jpg" />
     <Resource Include="Images\Splash.png" />
