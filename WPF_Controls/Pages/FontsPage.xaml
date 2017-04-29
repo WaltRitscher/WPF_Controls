@@ -11,8 +11,8 @@
   <StackPanel>
     <StackPanel>
       <Button Content="Example A"
-              FontWeight="Light" />
-      <Button Content="Example B" />
+             />
+      <Button Content="Example B"  />
       <Button Content="Example C" />
 
     </StackPanel>
