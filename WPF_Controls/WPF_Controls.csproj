@@ -60,17 +60,29 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\FontsPage.xaml.cs">
-      <DependentUpon>FontsPage.xaml</DependentUpon>
+    <Compile Include="Pages\ButtonPage.xaml.cs">
+      <DependentUpon>ButtonPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\PaddingPage.xaml.cs">
-      <DependentUpon>PaddingPage.xaml</DependentUpon>
+    <Compile Include="Pages\CheckboxPage.xaml.cs">
+      <DependentUpon>CheckboxPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ClickModePage.xaml.cs">
+      <DependentUpon>ClickModePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DefaultButtonPage.xaml.cs">
+      <DependentUpon>DefaultButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RadioButtonPage.xaml.cs">
+      <DependentUpon>RadioButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RepeatButtonPage.xaml.cs">
+      <DependentUpon>RepeatButtonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\TabOrderPage.xaml.cs">
-      <DependentUpon>TabOrderPage.xaml</DependentUpon>
+    <Compile Include="Pages\ToggleButtonPage.xaml.cs">
+      <DependentUpon>ToggleButtonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -82,11 +94,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\FontsPage.xaml">
+    <Page Include="Pages\ButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\PaddingPage.xaml">
+    <Page Include="Pages\CheckboxPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ClickModePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DefaultButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RadioButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RepeatButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,7 +122,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\TabOrderPage.xaml">
+    <Page Include="Pages\ToggleButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,7 +171,10 @@
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\AllControls.cd" />
     <None Include="Class Diagrams\BaseClass.cd" />
-    <None Include="Class Diagrams\Control.cd" />
+    <None Include="Class Diagrams\Button.cd" />
+    <None Include="Class Diagrams\Buttons.cd" />
+    <None Include="Class Diagrams\RepeatButton.cd" />
+    <None Include="Class Diagrams\ToggleButton.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for TabOrderPage.xaml
+  /// Interaction logic for ClickModePage.xaml
   /// </summary>
-  public partial class TabOrderPage : Page
+  public partial class ClickModePage : Page
   {
-    public TabOrderPage()
+    public ClickModePage()
     {
       InitializeComponent();
     }

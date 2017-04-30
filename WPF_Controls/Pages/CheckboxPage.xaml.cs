@@ -16,15 +16,13 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for PaddingPage.xaml
+  /// Interaction logic for CheckboxPage.xaml
   /// </summary>
-  public partial class PaddingPage : Page
+  public partial class CheckboxPage : Page
   {
-    public PaddingPage()
+    public CheckboxPage()
     {
       InitializeComponent();
     }
-
-    
   }
 }

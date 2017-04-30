@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for FontsPage.xaml
+  /// Interaction logic for ButtonPage.xaml
   /// </summary>
-  public partial class FontsPage : Page
+  public partial class ButtonPage : Page
   {
-    public FontsPage()
+    public ButtonPage()
     {
       InitializeComponent();
     }

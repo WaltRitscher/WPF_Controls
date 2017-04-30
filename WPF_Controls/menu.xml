@@ -8,13 +8,22 @@
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Tab Order"
+    <menu header ="Button"
              page="/Pages/TabOrderPage.xaml" />
 
-    <menu header ="Padding"
-        page="/Pages/PaddingPage.xaml" />
-    <menu header ="Fonts"
-        page="/Pages/FontsPage.xaml" />
+    <menu header ="IsDefault"
+        page="/Pages/IsDefaultPage.xaml" />
+    <menu header ="Click Mode"
+    page="/Pages/ClickModePage.xaml" />
+    <menu header ="Repeat Button"
+        page="/Pages/RepeatButtonPage.xaml" />
+    <menu header ="Toggle Button"
+      page="/Pages/ToggleButtonPage.xaml" />
+    <menu header ="Checkbox"
+     page="/Pages/CheckboxPage.xaml" />
+    <menu header ="Checkbox"
+     page="/Pages/CheckboxPage.xaml" />
+   
    
   </category>
 </menus>
