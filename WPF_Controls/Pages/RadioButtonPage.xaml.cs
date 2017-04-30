@@ -24,5 +24,16 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
+
+    private void StackPanel_Checked(object sender, RoutedEventArgs e)
+    {
+      var currentRadio = e.OriginalSource as RadioButton;
+      MessageTextBlock.Text = "Checked: " + currentRadio.Content.ToString();
+    }
+
+    private void StackPanel_Unchecked(object sender, RoutedEventArgs e)
+    {
+
+    }
   }
 }

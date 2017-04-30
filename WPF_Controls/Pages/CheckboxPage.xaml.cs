@@ -24,5 +24,22 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
+
+   
+
+    private void ActiveCustomerCheckBox_Checked(object sender, RoutedEventArgs e)
+    {
+      MessageTextBlock.Text = "Paddington's Pastries is an active customer.";
+    }
+
+    private void ActiveCustomerCheckBox_Unchecked(object sender, RoutedEventArgs e)
+    {
+      MessageTextBlock.Text = "Paddington's Pastries is not an active customer.";
+    }
+
+    private void ActiveCustomerCheckBox_Indeterminate(object sender, RoutedEventArgs e)
+    {
+      MessageTextBlock.Text = "Cannot determine Paddington's Pastries customer status.";
+    }
   }
 }
