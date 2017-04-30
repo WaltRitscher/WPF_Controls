@@ -24,5 +24,23 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+      var currentButton = sender as Button;
+      MessageTextBlock.Foreground = currentButton.Foreground;
+      if (currentButton.IsDefault)
+      {
+        MessageTextBlock.Text = "Default button clicked";
+      }
+      else if (currentButton.IsCancel)
+      {
+        MessageTextBlock.Text = "Cancel button clicked";
+      }
+      else {
+        MessageTextBlock.Text = currentButton.Content.ToString();
+      }
+     
+    }
   }
 }

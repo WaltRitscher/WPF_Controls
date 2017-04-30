@@ -20,9 +20,15 @@ namespace WpfControls.Pages
   /// </summary>
   public partial class ClickModePage : Page
   {
-    public ClickModePage()
+    public ClickModePage()d
     {
       InitializeComponent();
+    }
+
+    private void Button_Click(object sender, RoutedEventArgs e)
+    {
+      BorderTranslateTransform.X += 5;
+      BorderTranslateTransform.Y += 5;
     }
   }
 }
