@@ -7,7 +7,7 @@
       d:DesignHeight="500"
       d:DesignWidth="300"
       mc:Ignorable="d"
-      Title="ToggleButtonPage">
+      Title="ToggleButtonPage" FontSize="16">
   <Page.Resources>
     <Style TargetType="ToggleButton">
       <Setter Property="Margin" Value="6" />
