@@ -20,7 +20,7 @@ namespace WpfControls.Pages
   /// </summary>
   public partial class ClickModePage : Page
   {
-    public ClickModePage()d
+    public ClickModePage()
     {
       InitializeComponent();
     }

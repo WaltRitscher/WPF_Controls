@@ -8,6 +8,7 @@
     <Position X="4.75" Y="3" Width="2.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
