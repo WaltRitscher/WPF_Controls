@@ -43,9 +43,9 @@
     </StackPanel>
     <StackPanel Grid.Row="0"
                 Grid.Column="1">
-      <TextBox IsTabStop="False"
+      <TextBox 
                Text="D" />
-      <TextBox IsEnabled="False"
+      <TextBox 
                Text="E" />
 
 
