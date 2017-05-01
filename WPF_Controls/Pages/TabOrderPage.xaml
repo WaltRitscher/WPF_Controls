@@ -11,16 +11,23 @@
       FontSize="16">
   <Page.Resources>
     <Style TargetType="Button">
-      <Setter Property="Margin" Value="10,3,5,3" />
-      <Setter Property="MinWidth" Value="60" />
-      <Setter Property="Padding" Value="10" />
+      <Setter Property="Margin"
+              Value="10,3,5,3" />
+      <Setter Property="MinWidth"
+              Value="60" />
+      <Setter Property="Padding"
+              Value="10" />
 
     </Style>
     <Style TargetType="TextBox">
-      <Setter Property="Margin" Value="10,3,5,3" />
-      <Setter Property="MinWidth" Value="60" />
-      <Setter Property="Padding" Value="10" />
-      <Setter Property="TextAlignment" Value="Center" />
+      <Setter Property="Margin"
+              Value="10,3,5,3" />
+      <Setter Property="MinWidth"
+              Value="60" />
+      <Setter Property="Padding"
+              Value="10" />
+      <Setter Property="TextAlignment"
+              Value="Center" />
 
     </Style>
   </Page.Resources>
@@ -36,18 +43,16 @@
     </Grid.ColumnDefinitions>
     <StackPanel Grid.Row="0"
                 Grid.Column="0">
-      <TextBox Text="A" />
+      <TextBox Text="A" IsTabStop="True"/>
       <TextBox Text="B" />
       <TextBox Text="C" />
+      <TextBlock Text="" />
 
     </StackPanel>
     <StackPanel Grid.Row="0"
                 Grid.Column="1">
-      <TextBox 
-               Text="D" />
-      <TextBox 
-               Text="E" />
-
+      <TextBox Text="D" />
+      <TextBox Text="E" />
 
     </StackPanel>
 
@@ -62,8 +67,7 @@
                 Grid.ColumnSpan="3"
                 HorizontalAlignment="Center"
                 Orientation="Horizontal">
-      <Button Content="OK"
-              TabIndex="2" />
+      <Button Content="OK" />
       <Button Content="Save" />
       <Button Content="Cancel" />
     </StackPanel>
