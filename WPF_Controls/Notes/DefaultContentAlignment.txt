@@ -1,0 +1,20 @@
+﻿Each control as a different default value for the HorizontalContentAlignment and VerticalContentAlignment properties.
+
+[Example]
+Button – Center, Center
+CheckBox – Left, Top
+DataGrid – Left, Top
+Expander – Stretch, Stretch
+Label – Left, Top
+ListBox – Left, Center
+Menu – Left, Top
+PasswordBox – Left, Top
+ProgressBar – Left, Top
+RadioButton – Left, Top
+RepeatButton – Center, Center
+RichTextBox – Left, Top
+Slider – Left, Top
+StatusBar – Left, Top
+TabControl – Center, Center
+TextBox – Left, Top
+TreeView – Left, Center
