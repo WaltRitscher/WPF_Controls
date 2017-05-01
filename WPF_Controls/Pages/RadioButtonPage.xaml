@@ -19,9 +19,20 @@
     </Grid.ColumnDefinitions>
     <StackPanel Background="LightSteelBlue">
       <StackPanel>
-        <RadioButton Content="Blue" />
-        <RadioButton Content="Yellow" />
-        <RadioButton Content="Green" />
+        <RadioButton Content="Blue" IsChecked="True"
+                     GroupName="Colors"/>
+        <RadioButton Content="Yellow"
+                     GroupName="Colors" />
+        <RadioButton Content="Green"
+                     GroupName="Colors" />
+      </StackPanel>
+      <StackPanel>
+        <RadioButton Content="Red"
+                     GroupName="Colors" />
+        <RadioButton Content="Orange"
+                     GroupName="Colors" />
+        <RadioButton Content="Purple"
+                     GroupName="Colors" />
       </StackPanel>
 
     </StackPanel>
@@ -29,7 +40,7 @@
     <StackPanel Grid.Column="1"
                 Background="LightCoral">
       <RadioButton Content="Small" />
-      <RadioButton Content="Medium" />
+      <RadioButton Content="Medium" IsChecked="True" />
       <RadioButton Content="Large" />
     </StackPanel>
     <GroupBox Grid.Column="2"
