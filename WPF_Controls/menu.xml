@@ -8,23 +8,7 @@
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Button"
-             page="/Pages/ButtonPage.xaml" />
-
-    <menu header ="IsDefault"
-        page="/Pages/DefaultButtonPage.xaml" />
-    <menu header ="Click Mode"
-    page="/Pages/ClickModePage.xaml" />
-    <menu header ="Repeat Button"
-        page="/Pages/RepeatButtonPage.xaml" />
-    <menu header ="Toggle Button"
-      page="/Pages/ToggleButtonPage.xaml" />
-    <menu header ="Indeterminate"
-     page="/Pages/IndeterminatePage.xaml" />
-    <menu header ="Checkbox"
-     page="/Pages/CheckboxPage.xaml" />
-    <menu header ="RadioButton"
-     page="/Pages/RadioButtonPage.xaml" />
+   
    
    
   </category>

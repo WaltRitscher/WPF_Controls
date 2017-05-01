@@ -60,32 +60,8 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\ButtonPage.xaml.cs">
-      <DependentUpon>ButtonPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\CheckboxPage.xaml.cs">
-      <DependentUpon>CheckboxPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ClickModePage.xaml.cs">
-      <DependentUpon>ClickModePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\DefaultButtonPage.xaml.cs">
-      <DependentUpon>DefaultButtonPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\IndeterminatePage.xaml.cs">
-      <DependentUpon>IndeterminatePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\RadioButtonPage.xaml.cs">
-      <DependentUpon>RadioButtonPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\RepeatButtonPage.xaml.cs">
-      <DependentUpon>RepeatButtonPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ToggleButtonPage.xaml.cs">
-      <DependentUpon>ToggleButtonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -97,39 +73,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\ButtonPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\CheckboxPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\ClickModePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\DefaultButtonPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\IndeterminatePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\RadioButtonPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\RepeatButtonPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\StartHere.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\ToggleButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
