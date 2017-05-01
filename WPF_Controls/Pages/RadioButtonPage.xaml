@@ -7,7 +7,8 @@
       d:DesignHeight="300"
       d:DesignWidth="600"
       mc:Ignorable="d"
-      Title="RadioButtonPage" FontSize='16'>
+      Title="RadioButtonPage"
+      FontSize='16'>
 
   <Grid>
     <Grid.ColumnDefinitions>
@@ -18,14 +19,10 @@
     </Grid.ColumnDefinitions>
     <StackPanel Background="LightSteelBlue">
       <StackPanel>
-        <RadioButton Content="Blue"
-                     GroupName="Colors" />
-        <RadioButton Content="Yellow"
-                     GroupName="Colors" />
-        <RadioButton Content="Green"
-                     GroupName="Colors" />
+        <RadioButton Content="Blue" />
+        <RadioButton Content="Yellow" />
+        <RadioButton Content="Green" />
       </StackPanel>
-
 
     </StackPanel>
 
@@ -60,7 +57,9 @@
         <RadioButton Content="Retail" />
         <RadioButton Content="Distributer" />
         <RadioButton Content="Wholesale" />
-        <TextBlock x:Name='MessageTextBlock' Margin='0,30,0,0' Foreground='SteelBlue'/>
+        <TextBlock x:Name='MessageTextBlock'
+                   Margin='0,30,0,0'
+                   Foreground='SteelBlue' />
       </StackPanel>
     </GroupBox>
   </Grid>
