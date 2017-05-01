@@ -23,6 +23,7 @@ namespace WpfControls.Pages
     public TabOrderPage()
     {
       InitializeComponent();
+			FirstTextbox.Focus();
     }
   }
 }

@@ -11,16 +11,23 @@
       FontSize="16">
   <Page.Resources>
     <Style TargetType="Button">
-      <Setter Property="Margin" Value="10,3,5,3" />
-      <Setter Property="MinWidth" Value="60" />
-      <Setter Property="Padding" Value="10" />
+      <Setter Property="Margin"
+              Value="10,3,5,3" />
+      <Setter Property="MinWidth"
+              Value="60" />
+      <Setter Property="Padding"
+              Value="10" />
 
     </Style>
     <Style TargetType="TextBox">
-      <Setter Property="Margin" Value="10,3,5,3" />
-      <Setter Property="MinWidth" Value="60" />
-      <Setter Property="Padding" Value="10" />
-      <Setter Property="TextAlignment" Value="Center" />
+      <Setter Property="Margin"
+              Value="10,3,5,3" />
+      <Setter Property="MinWidth"
+              Value="60" />
+      <Setter Property="Padding"
+              Value="10" />
+      <Setter Property="TextAlignment"
+              Value="Center" />
 
     </Style>
   </Page.Resources>
@@ -36,9 +43,14 @@
     </Grid.ColumnDefinitions>
     <StackPanel Grid.Row="0"
                 Grid.Column="0">
-      <TextBox Text="A" />
+      <TextBox Text="A"
+               IsTabStop="True"
+               TabIndex="-1"
+               x:Name="FirstTextbox" />
       <TextBox Text="B" />
-      <TextBox Text="C" />
+      <TextBox Text="C"
+               TabIndex="0" />
+      <TextBlock Text="" />
 
     </StackPanel>
     <StackPanel Grid.Row="0"
