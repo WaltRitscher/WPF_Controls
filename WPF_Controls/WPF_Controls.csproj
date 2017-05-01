@@ -60,8 +60,17 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\LabelPage.xaml.cs">
+      <DependentUpon>LabelPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TextBlockPage.xaml.cs">
+      <DependentUpon>TextBlockPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TextBlockRunPage.xaml.cs">
+      <DependentUpon>TextBlockRunPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -73,7 +82,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\LabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TextBlockPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TextBlockRunPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,11 +142,11 @@
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\AllControls.cd" />
-    <None Include="Class Diagrams\BaseClass.cd" />
-    <None Include="Class Diagrams\Button.cd" />
-    <None Include="Class Diagrams\Buttons.cd" />
-    <None Include="Class Diagrams\RepeatButton.cd" />
-    <None Include="Class Diagrams\ToggleButton.cd" />
+    <None Include="Class Diagrams\FlowDocument.cd" />
+    <None Include="Class Diagrams\Run.cd" />
+    <None Include="Class Diagrams\TextBlock.cd" />
+    <None Include="Class Diagrams\TextDisplay.cd" />
+    <None Include="Class Diagrams\TextEditor.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
