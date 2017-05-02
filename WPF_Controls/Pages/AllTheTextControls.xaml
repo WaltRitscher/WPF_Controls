@@ -1,0 +1,113 @@
+﻿<Page x:Class="WpfControls.Pages.AllTheTextControls"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="600"
+      d:DesignWidth="600"
+      mc:Ignorable="d"
+      Title="AllTheTextControls" FontSize='16'>
+
+  <TabControl>
+    <TabItem Header='Read-Only Text Display'>
+      <StackPanel>
+        <!-- Each Text control has 
+             properties for setting text content -->
+        <Label Content="String data for Label content" />
+        <TextBlock Text="String data for TextBlock text" />
+        <AccessText Text="String data with _keyboard shortcut" />
+
+        <!-- TextBox/Label support other kind of content -->
+
+        <TextBlock>
+      <TextBlock>
+            <TextBlock.Inlines>
+              <Bold>
+                Inlines are tags similar to HTML tags.
+              </Bold>
+              <LineBreak />
+              <Italic>
+                Inlines are tags similar to HTML tags.
+              </Italic>
+            </TextBlock.Inlines>
+      </TextBlock>
+    </TextBlock>
+
+      
+        <Label>
+          <StackPanel Orientation="Horizontal">
+            <Rectangle Width="16"
+                       Height="16"
+                       Margin="2"
+                       Fill="SteelBlue" />
+            <TextBlock Text="Use XAML elements as content"
+                       Margin='3,0' />
+            <Rectangle Width="16"
+                       Height="16"
+                       Margin="2"
+                       Fill="SteelBlue" />
+          </StackPanel>
+        </Label>
+      
+      </StackPanel>
+    </TabItem>
+    <TabItem Header='Read-Only FlowDocuments'>
+      <StackPanel>
+        <FlowDocumentPageViewer>
+          <FlowDocumentPageViewer.Document>
+            <FlowDocument>
+              <Paragraph>
+                <Bold>
+                  Inlines are used in FlowDocument too.
+                </Bold>
+              </Paragraph>
+            </FlowDocument>
+          </FlowDocumentPageViewer.Document>
+        </FlowDocumentPageViewer>
+        <FlowDocumentScrollViewer>
+          <FlowDocumentScrollViewer.Document>
+            <FlowDocument>
+              <Paragraph>
+                <Bold>
+                  Inlines are used in FlowDocument too.
+                </Bold>
+              </Paragraph>
+            </FlowDocument>
+          </FlowDocumentScrollViewer.Document>
+        </FlowDocumentScrollViewer>
+        <FlowDocumentReader>
+          <FlowDocumentReader.Document>
+            <FlowDocument>
+              <Paragraph>
+                <Bold>
+                  Inlines are used in FlowDocument too.
+                </Bold>
+              </Paragraph>
+            </FlowDocument>
+          </FlowDocumentReader.Document>
+        </FlowDocumentReader>
+      </StackPanel>
+    </TabItem>
+    <TabItem Header='Editors'>
+      <StackPanel>
+        <TextBox Text='String data for TextBox text' />
+       
+        <PasswordBox Password='Secret word' />
+
+        <RichTextBox>
+          <RichTextBox.Document>
+            <FlowDocument>
+              <Paragraph>
+                <Bold>
+                  Inlines are used in RichTextBox too.
+                </Bold>
+              </Paragraph>
+            </FlowDocument>
+          </RichTextBox.Document>
+
+        </RichTextBox>
+      </StackPanel>
+    </TabItem>
+  </TabControl>
+</Page>

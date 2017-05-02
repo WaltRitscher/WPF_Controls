@@ -10,12 +10,34 @@
       Title="TextBlockRunPage">
 
   <Grid>
-    <Border Margin="40,20,40,20"
+
+    <Border Margin="30,15"
             BorderBrush="DarkGray"
             BorderThickness="2">
       <StackPanel Margin="20">
+        <TextBlock Text="Lorem Ipsum" />
         <TextBlock>
+          <TextBlock.Inlines>
+            <Bold>
+              Bolded Text
+            </Bold>
+            <LineBreak />
+            <Italic>
+              Italic Text
+            </Italic>
 
+          </TextBlock.Inlines>
+        </TextBlock>
+        <TextBlock>
+          <Underline>
+            Use without the .Inlines tag
+          </Underline>
+        </TextBlock>
+        <TextBlock>
+          <Run>
+            Contains text only,  no child Inlines
+          </Run>
+          <LineBreak />
           <Run FontSize="50"
                FontWeight="Bold"
                Foreground="Orange"
@@ -25,16 +47,18 @@
 
         </TextBlock>
         <TextBlock>
-          <Run FontSize="20"
-               FontWeight="Light">
-            ABC
-          </Run>
-          <LineBreak />
-          <Bold FontSize="20"
-                FontWeight="Bold">
-            ABC
-          </Bold>
-          <LineBreak />
+          <Span FontSize="20"
+                FontWeight="Light"
+                Foreground="SteelBlue">
+            Contains text and inlines
+            <LineBreak />
+            <Bold FontSize="20"
+                  FontWeight="Bold">
+              ABC
+            </Bold>
+            <LineBreak />
+          </Span>
+
         </TextBlock>
       </StackPanel>
     </Border>

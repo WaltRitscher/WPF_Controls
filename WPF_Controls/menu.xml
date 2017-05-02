@@ -5,14 +5,15 @@
 					page="/Pages/StartHere.xaml" />
   </category>
   <category categoryName="Examples">
-    <menu header ="Overview"
-					page="/Pages/Page1.xaml">
+    <menu header ="Overview - All the Text Controls"
+					page="/Pages/AllTheTextControls.xaml">
     </menu>
+    
     <menu header ="TextBlock"
            page="/Pages/TextBlockPage.xaml">
     </menu>
-    <menu header ="TextBlock Run"
-					page="/Pages/TextBlockRunPage.xaml">
+    <menu header ="TextBlock Inlines"
+					page="/Pages/TextBlockInlinesPage.xaml">
     </menu>
 
     <menu header ="Label"

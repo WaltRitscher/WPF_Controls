@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace WpfControls.Pages
 {
   /// <summary>
-  /// Interaction logic for OverflowPage.xaml
+  /// Interaction logic for AllTheTextControls.xaml
   /// </summary>
-  public partial class OverflowPage : Page
+  public partial class AllTheTextControls : Page
   {
-    public OverflowPage()
+    public AllTheTextControls()
     {
       InitializeComponent();
     }
