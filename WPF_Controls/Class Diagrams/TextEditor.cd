@@ -2,6 +2,11 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="System.Windows.Controls.Primitives.TextBoxBase" Collapsed="true">
     <Position X="2.5" Y="1.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.TextBox" Collapsed="true">
@@ -10,7 +15,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="System.Windows.Controls.RichTextBox" Collapsed="true">
-    <Position X="3.5" Y="3.25" Width="1.5" />
+    <Position X="3.5" Y="3.25" Width="2.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
@@ -19,7 +24,7 @@
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Controls.PasswordBox" Collapsed="true">
-    <Position X="5.75" Y="3.25" Width="1.5" />
+    <Position X="6.75" Y="3.25" Width="1.5" />
     <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="10" />

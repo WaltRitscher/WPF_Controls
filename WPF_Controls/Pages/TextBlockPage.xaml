@@ -21,6 +21,14 @@
 
     <TextBlock  TextTrimming='CharacterEllipsis' />
 
-    <TextBlock   />
+    <TextBlock>
+      <TextBlock.Inlines>
+        <Bold>
+          <Italic>
+            Hello
+          </Italic>
+        </Bold>
+      </TextBlock.Inlines>
+    </TextBlock>
   </StackPanel>
 </Page>

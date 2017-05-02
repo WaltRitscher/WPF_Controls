@@ -1,0 +1,91 @@
+﻿<Page x:Class="WpfControls.Pages.DisplayTextPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="300"
+      Title="DisplayTextPage">
+
+  <Border BorderThickness='20'
+          BorderBrush='Black'>
+    <Grid
+          Margin="2">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="TextBlock Plain"
+                 Grid.Row="0"
+                 Margin="0,4"
+                 FontSize='24' />
+      <TextBlock x:Name="simpleTextBlock"
+                 Text=""
+                 Grid.Row="0"
+                 Grid.Column="1"
+                 Margin="4" />
+      <StackPanel Orientation='Horizontal'
+                  Grid.Row="1"
+                  Grid.Column="1" />
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text=""
+                 x:Name='messageText'
+                 Foreground='Orange'
+                 Grid.Row="3"
+                 Margin="0,4" />
+      <StackPanel Margin="5,5,5,0"
+                  Grid.Column="1"
+                  Grid.Row="3"
+                  Orientation="Horizontal"
+                  HorizontalAlignment="Right" />
+      <!--<RichEditBox Grid.Row='4'
+							 Margin='0,20'
+							 Grid.Column='1'
+							 Text='abc def ghi jkl mno pqr stu vwx yz' />-->
+
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="Rich Text in TextBlock"
+                 Grid.Row="5"
+                 Margin='5,0'
+                 FontSize='24' />
+
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Grid.Row="5"
+                 Grid.Column='1'
+                 Margin='5'>
+				
+				<Run FontStyle="Italic"
+             FontSize="20"
+             FontFamily="Cambria"
+             Foreground="DarkBlue">Mix Fonts and Colors in TextBlock </Run>
+					
+			 <Run FontFamily="Consolas"
+            Foreground="DarkOrange"
+            FontSize="60"
+            >AAA</Run>
+		<Run FontFamily="Calibri"
+         FontSize='24'
+         Foreground="Yellow">BBB </Run>
+
+      </TextBlock>
+
+    </Grid>
+  </Border>
+</Page>

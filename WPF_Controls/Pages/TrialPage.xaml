@@ -1,0 +1,120 @@
+﻿<Page x:Class="WpfControls.Pages.TrialPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="600"
+      Title="TrialPage"
+      FontSize='18'>
+
+  <Grid >
+
+    <Grid x:Name="LayoutRoot"
+          Margin="2">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition />
+      </Grid.ColumnDefinitions>
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+
+      </Grid.RowDefinitions>
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="Textbox"
+                 Grid.Row="0"
+                 Margin="0,4"
+                 FontSize='24' />
+      <TextBox x:Name="simpleTextBox"
+               Text=""
+               Grid.Row="0"
+               Grid.Column="1"
+               Margin="4" />
+
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Top"
+                 Text="Password"
+                 Grid.Row="1"
+                 Margin="0,4,0,0"
+                 FontSize='24' />
+      <StackPanel Orientation='Horizontal'
+                  Grid.Row="1"
+                  Grid.Column="1">
+        <PasswordBox x:Name="passwordBox"
+                     Margin="4"
+                     MinWidth='120'
+                     Grid.RowSpan="1"
+                     VerticalAlignment="Top" />
+        <PasswordBox x:Name="passwordBox2"
+                     Margin="4"
+                     MinWidth='120'
+                     Grid.RowSpan="1"
+                     PasswordChar='ǂ'
+                     VerticalAlignment="Top" />
+      </StackPanel>
+
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="Text Selection"
+                 Grid.Row="2"
+                 Margin="0,4"
+                 FontSize='24' />
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text=""
+                 x:Name='messageText'
+                 Foreground='Orange'
+                 Grid.Row="3"
+                 Margin="0,4" />
+      <TextBox x:Name="selectionTextbox"
+               Grid.Row="2"
+               Grid.Column="1"
+               Margin="4"
+               AcceptsReturn="True"
+               Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras elementum, felis a molestie pharetra, metus dui consectetur sem, ut varius lorem tortor ut metus. Vestibulum id sapien lorem, vel semper."
+               TextWrapping="Wrap"
+               Height='60' />
+      <StackPanel Margin="5,5,5,0"
+                  Grid.Column="1"
+                  Grid.Row="3"
+                  Orientation="Horizontal"
+                  HorizontalAlignment="Right">
+
+        <Button x:Name="getSelectedButton"
+                Content="Get Selected"
+                Click="GetSelectedButton_Click"
+                Margin="5,0"
+                VerticalAlignment='Top' />
+        <Button x:Name="setSelectedButton"
+                Content="Set Selected"
+                Click="SetSelectedButton_Click"
+                Margin="5,0" />
+        <Button x:Name="selectAllButton"
+                Content="Select All"
+                Click="SelectAllButton_Click"
+                Margin="5,0" />
+      </StackPanel>
+
+      <TextBlock HorizontalAlignment="Left"
+                 VerticalAlignment="Center"
+                 Text="SpellCheck and Prediction"
+                 Grid.Row="4"
+                 TextWrapping='Wrap'
+                 Width='120'
+                 Margin='5,0'
+                 FontSize='24' />
+
+      <TextBox 
+               Grid.Row="4"
+               Grid.Column='1' />
+
+    </Grid>
+  </Grid>
+</Page>

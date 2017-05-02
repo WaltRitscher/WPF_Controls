@@ -18,7 +18,13 @@
     <menu header ="Label"
          page="/Pages/LabelPage.xaml">
     </menu>
-   
+
+    <menu header ="Trial"
+       page="/Pages/TrialPage.xaml">
+    </menu>
+    <menu header ="Display Text"
+       page="/Pages/DisplayTextPage.xaml">
+    </menu>
    
   </category>
 </menus>

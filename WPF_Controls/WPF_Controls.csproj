@@ -60,8 +60,14 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DisplayTextPage.xaml.cs">
+      <DependentUpon>DisplayTextPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LabelPage.xaml.cs">
       <DependentUpon>LabelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\OverflowPage.xaml.cs">
+      <DependentUpon>OverflowPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
@@ -71,6 +77,9 @@
     </Compile>
     <Compile Include="Pages\TextBlockRunPage.xaml.cs">
       <DependentUpon>TextBlockRunPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TrialPage.xaml.cs">
+      <DependentUpon>TrialPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -82,7 +91,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\DisplayTextPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\LabelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\OverflowPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -95,6 +112,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\TextBlockRunPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TrialPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -143,7 +164,7 @@
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\AllControls.cd" />
     <None Include="Class Diagrams\FlowDocument.cd" />
-    <None Include="Class Diagrams\Run.cd" />
+    <None Include="Class Diagrams\Inlines.cd" />
     <None Include="Class Diagrams\TextBlock.cd" />
     <None Include="Class Diagrams\TextDisplay.cd" />
     <None Include="Class Diagrams\TextEditor.cd" />
