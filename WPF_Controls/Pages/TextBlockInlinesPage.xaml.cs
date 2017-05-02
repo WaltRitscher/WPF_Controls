@@ -18,9 +18,9 @@ namespace WpfControls.Pages
   /// <summary>
   /// Interaction logic for TextBlockRunPage.xaml
   /// </summary>
-  public partial class TextBlockRunPage : Page
+  public partial class TextBlockInlinesPage : Page
   {
-    public TextBlockRunPage()
+    public TextBlockInlinesPage()
     {
       InitializeComponent();
     }

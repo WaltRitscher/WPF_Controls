@@ -75,8 +75,8 @@
     <Compile Include="Pages\TextBlockPage.xaml.cs">
       <DependentUpon>TextBlockPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\TextBlockRunPage.xaml.cs">
-      <DependentUpon>TextBlockRunPage.xaml</DependentUpon>
+    <Compile Include="Pages\TextBlockInlinesPage.xaml.cs">
+      <DependentUpon>TextBlockInlinesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\TrialPage.xaml.cs">
       <DependentUpon>TrialPage.xaml</DependentUpon>
@@ -111,7 +111,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\TextBlockRunPage.xaml">
+    <Page Include="Pages\TextBlockInlinesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
