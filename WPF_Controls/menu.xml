@@ -24,12 +24,7 @@
         page="/Pages/AccessKeysPage.xaml">
     </menu>
 
-    <menu header ="Trial"
-       page="/Pages/TrialPage.xaml">
-    </menu>
-    <menu header ="Display Text"
-       page="/Pages/DisplayTextPage.xaml">
-    </menu>
+   
    
   </category>
 </menus>
