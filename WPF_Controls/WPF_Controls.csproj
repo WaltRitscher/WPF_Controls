@@ -130,8 +130,6 @@
     <None Include="Class Diagrams\AllControls.cd" />
     <None Include="Class Diagrams\FlowDocument.cd" />
     <None Include="Class Diagrams\Inlines.cd" />
-    <None Include="Class Diagrams\TextBlock.cd" />
-    <None Include="Class Diagrams\TextDisplay.cd" />
     <None Include="Class Diagrams\TextEditor.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
