@@ -13,7 +13,7 @@
       <Setter Property='Margin'
               Value='6' />
       <Setter Property='Text'
-              Value='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rutrum justo a nibh hendrerit, sed convallis ipsum ornare. Donec semper metus nisi, vitae sagittis lacus viverra quis.' />
+              Value='Watch, learn, and be inspired by professional watercolorist, Sally Fischer,in this video from her master class at the Orange Valley Contemporary Arts Museum. ' />
     </Style>
   </Page.Resources>
   <StackPanel>

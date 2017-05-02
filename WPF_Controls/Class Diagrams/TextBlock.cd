@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="System.Windows.Controls.TextBlock">
-    <Position X="1" Y="0.5" Width="2.75" />
+    <Position X="2.5" Y="0.75" Width="2.75" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
       <Compartment Name="Methods" Collapsed="true" />
@@ -10,17 +10,22 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="System.Windows.Documents.Run">
-    <Position X="5.75" Y="3" Width="2" />
+    <Position X="7.25" Y="2.75" Width="2" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Documents.Inline" Collapsed="true">
-    <Position X="5.75" Y="1.75" Width="2" />
+    <Position X="7.25" Y="1.5" Width="2" />
     <TypeIdentifier />
   </Class>
   <Class Name="System.Windows.Documents.TextElement" Collapsed="true">
-    <Position X="5.75" Y="0.75" Width="2" />
+    <Position X="7.25" Y="0.5" Width="2" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.FrameworkElement" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Font Name="Segoe UI" Size="10" />
 </ClassDiagram>
