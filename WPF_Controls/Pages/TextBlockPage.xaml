@@ -18,20 +18,7 @@
   </Page.Resources>
   <StackPanel>
     <TextBlock />
-    <!--<TextBlock TextWrapping='WrapWithOverflow' />
 
-    --><!-- set right margin to 60--><!--
-    <TextBlock  TextWrapping='WrapWithOverflow'
-                IsHyphenationEnabled='True'
-                 />
-
-    <TextBlock  TextWrapping='WrapWithOverflow'
-                LineHeight='27' />
-
-    <TextBlock  TextTrimming='CharacterEllipsis' />-->
-
-    <TextBlock  TextWrapping='WrapWithOverflow'
-                TextDecorations='Baseline' />
 
   </StackPanel>
 </Page>
