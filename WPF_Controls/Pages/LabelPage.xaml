@@ -1,54 +1,45 @@
 ﻿<Page x:Class="WpfControls.Pages.LabelPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="500"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="500"
+      d:DesignWidth="500"
+      mc:Ignorable="d"
       Title="LabelPage">
 
   <Page.Resources>
-    <Style TargetType='Control'>
-      <Setter Property='Margin'
-              Value='10' />
+    <Style TargetType="Control">
+      <Setter Property="Margin" Value="10" />
     </Style>
   </Page.Resources>
-  <Border BorderBrush='DarkGray'
-          BorderThickness='2'
-          Margin='40,20,40,20'>
-    <StackPanel  Margin='20'>
-      <TextBlock>The underscore char within a label designates the Accelerator key.</TextBlock>
-      <TextBlock>Use Target property to set destination of accelerator.</TextBlock>
-      <Label Target="{Binding ElementName=aTextBox}">Choose _A</Label>
-      <TextBox Name="aTextBox"></TextBox>
-      <Label Target="{Binding ElementName=bTextBox}">Choose _B</Label>
-      <TextBox Name="bTextBox"></TextBox>
-      <Label Target="{Binding ElementName=cTextBox}">_Double up the __ underscore</Label>
-      <TextBox Name="cTextBox"></TextBox>
-      <Button Content='Also _works on Buttons'
-              Margin='20'
-              Click='Button_Click' />
+  <Border Margin="40,20,40,20"
+          BorderBrush="DarkGray"
+          BorderThickness="2">
+    <StackPanel Margin="20">
+      <Label Content="Lorem Ipsum (Simple text is shown in internal TextBlock.">
+      </Label>
       <Label>
-        <StackPanel Orientation='Horizontal'>
-          <Rectangle Width='10'
-                     Height='10'
-                     Fill='SteelBlue'
-                     Margin='2' />
-          <Rectangle Width='16'
-                     Height='16'
-                     Fill='SteelBlue'
-                     Margin='2' />
-          <TextBlock Text='More complex content' />
-          <Rectangle Width='16'
-                     Height='16'
-                     Fill='SteelBlue'
-                     Margin='2' />
-          <Rectangle Width='10'
-                     Height='10'
-                     Fill='SteelBlue'
-                     Margin='2' />
-          <TextBox Text='Hello' />
+        <StackPanel Orientation="Horizontal">
+          <Rectangle Width="10"
+                     Height="10"
+                     Margin="2"
+                     Fill="SteelBlue" />
+          <Rectangle Width="16"
+                     Height="16"
+                     Margin="2"
+                     Fill="SteelBlue" />
+          <TextBlock Text="More complex content" VerticalAlignment='Center'/>
+          <Rectangle Width="16"
+                     Height="16"
+                     Margin="2"
+                     Fill="SteelBlue" />
+          <Rectangle Width="10"
+                     Height="10"
+                     Margin="2"
+                     Fill="SteelBlue" />
+
         </StackPanel>
       </Label>
     </StackPanel>

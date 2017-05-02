@@ -60,11 +60,11 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AccessKeysPage.xaml.cs">
+      <DependentUpon>AccessKeysPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AllTheTextControls.xaml.cs">
       <DependentUpon>AllTheTextControls.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\DisplayTextPage.xaml.cs">
-      <DependentUpon>DisplayTextPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LabelPage.xaml.cs">
       <DependentUpon>LabelPage.xaml</DependentUpon>
@@ -77,9 +77,6 @@
     </Compile>
     <Compile Include="Pages\TextBlockInlinesPage.xaml.cs">
       <DependentUpon>TextBlockInlinesPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\TrialPage.xaml.cs">
-      <DependentUpon>TrialPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -95,11 +92,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\AllTheTextControls.xaml">
+    <Page Include="Pages\AccessKeysPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\DisplayTextPage.xaml">
+    <Page Include="Pages\AllTheTextControls.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -116,10 +113,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\TextBlockInlinesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\TrialPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

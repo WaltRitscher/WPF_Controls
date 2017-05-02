@@ -20,6 +20,10 @@
          page="/Pages/LabelPage.xaml">
     </menu>
 
+    <menu header ="Keyboard Access Keys and Label"
+        page="/Pages/AccessKeysPage.xaml">
+    </menu>
+
     <menu header ="Trial"
        page="/Pages/TrialPage.xaml">
     </menu>
