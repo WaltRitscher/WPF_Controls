@@ -60,23 +60,8 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\DisplayTextPage.xaml.cs">
-      <DependentUpon>DisplayTextPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\LabelPage.xaml.cs">
-      <DependentUpon>LabelPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\OverflowPage.xaml.cs">
-      <DependentUpon>OverflowPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\TextBlockPage.xaml.cs">
-      <DependentUpon>TextBlockPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\TextBlockInlinesPage.xaml.cs">
-      <DependentUpon>TextBlockInlinesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\TrialPage.xaml.cs">
       <DependentUpon>TrialPage.xaml</DependentUpon>
@@ -91,27 +76,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\DisplayTextPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\LabelPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\OverflowPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\StartHere.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\TextBlockPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\TextBlockInlinesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
