@@ -12,9 +12,12 @@
 
   <Page.Resources>
     <Style TargetType="Button">
-      <Setter Property="Margin" Value="5,10" />
-      <Setter Property="MinWidth" Value="120" />
-      <Setter Property="Padding" Value="10" />
+      <Setter Property="Margin"
+              Value="5,10" />
+      <Setter Property="MinWidth"
+              Value="120" />
+      <Setter Property="Padding"
+              Value="10" />
     </Style>
   </Page.Resources>
   <Border Margin="40,20,40,20"
@@ -23,10 +26,12 @@
     <StackPanel Margin="20">
       <TextBlock>The underscore char within a label designates the Access key.</TextBlock>
       <TextBlock>Use Target property to set destination of Access key.</TextBlock>
-      <Label Content="Choose A" />
+      <Label Content="Choose _A"
+             Target="{Binding ElementName=aTextBox}" />
       <TextBox Name="aTextBox" />
 
-      <Label Content="Choose B" />
+      <Label Content="Choose _B"
+             Target="{Binding ElementName=bTextBox}" />
 
       <TextBox Name="bTextBox" />
       <StackPanel Margin="10,6">
@@ -47,12 +52,14 @@
                 Click="SaveButton_Click"
                 Content="_Save" />
       </StackPanel>
-      <TextBlock x:Name="MessageTextBlock" Margin="0,10"/>
+      <TextBlock x:Name="MessageTextBlock"
+                 Margin="0,10" />
       <StackPanel Orientation="Horizontal">
         <TextBox x:Name="cTextBox"
                  MinWidth="260" />
         <Label HorizontalContentAlignment="Right"
-               Content="Choose C" />
+               Content="Choose _C"
+               Target="{Binding ElementName=cTextBox}" />
 
       </StackPanel>
     </StackPanel>
