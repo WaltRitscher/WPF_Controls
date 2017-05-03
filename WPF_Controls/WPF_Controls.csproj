@@ -201,6 +201,7 @@
     <Resource Include="Images\grapes.jpg" />
     <Resource Include="Images\Flowers.jpg" />
     <Resource Include="Images\TravelLogo.jpg" />
+    <Resource Include="Images\TravelLogo_full.jpg" />
     <Content Include="menu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>

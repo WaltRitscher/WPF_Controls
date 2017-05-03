@@ -19,7 +19,8 @@
   <TabControl>
     <TabItem Header="Content">
       <StackPanel>
-        <Button Click="Button_Click" />
+        <Button Click="Button_Click"
+                Content="Tailor-made Tour Stops"/>
         <Button Click="Button_Click">
           <TextBlock Text="Tailor-made Tour Stops" />
         </Button>
