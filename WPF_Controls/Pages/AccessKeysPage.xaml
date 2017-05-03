@@ -7,7 +7,7 @@
       d:DesignHeight="400"
       d:DesignWidth="600"
       mc:Ignorable="d"
-      Title="AccessKeys">
+      Title="AccessKeys" FontSize="18">
 
   <Page.Resources>
     <Style TargetType="Button">
@@ -18,7 +18,7 @@
   </Page.Resources>
   <Border Margin="40,20,40,20"
           BorderBrush="DarkGray"
-          BorderThickness="2">
+          BorderThickness="2" >
     <StackPanel Margin="20">
       <TextBlock>The underscore char within a label designates the Access key.</TextBlock>
       <TextBlock>Use Target property to set destination of Access key.</TextBlock>
