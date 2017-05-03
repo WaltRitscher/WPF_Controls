@@ -11,8 +11,10 @@
       FontSize="18">
   <Page.Resources>
     <Style TargetType="TextBox">
-      <Setter Property="Margin" Value="6" />
-      <Setter Property="Text" Value="Watch, learn, and be inspired by professional watercolorist, Sally Fischer,in this video from her master class  at the Orange Valley Contemporary Arts Museum. Sally is a master at painting the environment in which we live. Her brilliant watercolors, with their pronounced broad strokes and fluid tonality, have made her one of the most successful watercolorists of our time." />
+      <Setter Property="Margin"
+              Value="6" />
+      <Setter Property="Text"
+              Value="Watch, learn, and be inspired by professional watercolorist, Sally Fischer,in this video from her master class  at the Orange Valley Contemporary Arts Museum. Sally is a master at painting the environment in which we live. Her brilliant watercolors, with their pronounced broad strokes and fluid tonality, have made her one of the most successful watercolorists of our time." />
     </Style>
   </Page.Resources>
   <Grid>
@@ -30,7 +32,13 @@
                Text="Textbox" />
     <TextBox x:Name="simpleTextBox"
              Grid.Row="0"
-             Grid.Column="1" />
+             FontSize="24"
+             Grid.Column="1"
+             TextWrapping="Wrap"
+             MinLines="2"
+             MaxLines="3"
+             AcceptsReturn="False"
+             ScrollViewer.VerticalScrollBarVisibility="Visible" />
 
   </Grid>
 </Page>
