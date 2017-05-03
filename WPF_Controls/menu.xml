@@ -8,22 +8,35 @@
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="TextBlock"
-           page="/Pages/TextBlockPage.xaml">
+    <menu header ="Text Input"
+           page="/Pages/TextInputPage.xaml">
     </menu>
-    <menu header ="TextBlock Run"
-					page="/Pages/TextBlockRunPage.xaml">
-    </menu>
-
-    <menu header ="Label"
-         page="/Pages/LabelPage.xaml">
+    <menu header ="Select Text"
+					page="/Pages/SelectTextPage.xaml">
     </menu>
 
-    <menu header ="Trial"
-       page="/Pages/TrialPage.xaml">
+    <menu header ="Spell Check"
+         page="/Pages/SpellCheckPage.xaml">
     </menu>
-    <menu header ="Display Text"
-       page="/Pages/DisplayTextPage.xaml">
+
+    <menu header ="Changed Events"
+       page="/Pages/ChangedEventsPage.xaml">
+    </menu>
+    <menu header ="TextBox Methods"
+       page="/Pages/MethodsPage.xaml">
+    </menu>
+    <menu header ="TextBox Methods"
+      page="/Pages/MethodsPage.xaml">
+    </menu>
+
+    <menu header ="Load file content into RichTextBox"
+     page="/Pages/LoadRichTextPage.xaml">
+    </menu>
+    <menu header ="Edit RichTextBox content"
+    page="/Pages/EditRichTextPage.xaml">
+    </menu>
+    <menu header ="Password"
+   page="/Pages/PasswordPage.xaml">
     </menu>
    
   </category>

@@ -60,8 +60,32 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ChangedEventsPage.xaml.cs">
+      <DependentUpon>ChangedEventsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\EditRichTextPage.xaml.cs">
+      <DependentUpon>EditRichTextPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoadRichTextPage.xaml.cs">
+      <DependentUpon>LoadRichTextPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MethodsPage.xaml.cs">
+      <DependentUpon>MethodsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PasswordPage.xaml.cs">
+      <DependentUpon>PasswordPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SelectTextPage.xaml.cs">
+      <DependentUpon>SelectTextPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\SpellCheckPage.xaml.cs">
+      <DependentUpon>SpellCheckPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\TextInputPage.xaml.cs">
+      <DependentUpon>TextInputPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\TrialPage.xaml.cs">
       <DependentUpon>TrialPage.xaml</DependentUpon>
@@ -76,7 +100,43 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Documents\Moon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\ChangedEventsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\EditRichTextPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LoadRichTextPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MethodsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PasswordPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SelectTextPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SpellCheckPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\StartHere.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\TextInputPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +190,7 @@
     <None Include="Class Diagrams\AllControls.cd" />
     <None Include="Class Diagrams\FlowDocument.cd" />
     <None Include="Class Diagrams\Inlines.cd" />
+    <None Include="Class Diagrams\TextBox.cd" />
     <None Include="Class Diagrams\TextEditor.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
