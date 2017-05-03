@@ -26,14 +26,11 @@
     <TextBlock Grid.Row="0"
                Margin="20,6,10,0"
                HorizontalAlignment="Left"
-               VerticalAlignment="Center"
+               VerticalAlignment="Top"
                Text="Textbox" />
     <TextBox x:Name="simpleTextBox"
              Grid.Row="0"
-             Grid.Column="1"
-             MaxLines="3"
-             MinLines="2" 
-             TextWrapping="Wrap" />
+             Grid.Column="1" />
 
   </Grid>
 </Page>
