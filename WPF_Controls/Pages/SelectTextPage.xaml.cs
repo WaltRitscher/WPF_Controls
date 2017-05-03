@@ -23,6 +23,7 @@ namespace WpfControls.Pages
 		public SelectTextPage()
 		{
 			InitializeComponent();
+			var editedText = SourceTextBox.Text;
 		}
 		private void GetSelectedButton_Click(object sender, RoutedEventArgs e)
 		{
