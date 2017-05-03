@@ -10,22 +10,20 @@
       Title="ButtonPage">
   <Page.Resources>
     <Style TargetType="Button">
-      <Setter Property="Margin"
-              Value="6" />
-      <Setter Property="Padding"
-              Value="6" />
+      <Setter Property="Margin" Value="6" />
+      <Setter Property="Padding" Value="6" />
     </Style>
   </Page.Resources>
   <TabControl>
     <TabItem Header="Content">
       <StackPanel>
-        <Button Content="Tailor-made Tour Stops" />
+        <Button />
         <Button>
-          <TextBlock Text="Tailor-made Tour Stops" />
+
         </Button>
 
         <Button HorizontalContentAlignment="Stretch">
-          <StackPanel Orientation="Horizontal">
+          <!--<StackPanel Orientation="Horizontal">
             <Image Height="50"
                    HorizontalAlignment="Left"
                    Source="/WpfControls;component/Images/TravelLogo_full.jpg" />
@@ -39,7 +37,7 @@
                          Text="Tour Stops"
                          TextAlignment="Center" />
             </StackPanel>
-          </StackPanel>
+          </StackPanel>-->
         </Button>
       </StackPanel>
     </TabItem>
@@ -53,33 +51,33 @@
                 Content="_Save"
                 MouseLeftButtonDown="All_MouseLeftButtonDown"
                 MouseLeftButtonUp="All_MouseLeftButtonUp"
-                TouchDown='All_TouchDown'
-                TouchUp='All_TouchUp' />
+                TouchDown="All_TouchDown"
+                TouchUp="All_TouchUp" />
         <Rectangle Height="36"
                    Margin="6"
                    Fill="SteelBlue"
-                   Stretch="Fill"
                    MouseLeftButtonDown="All_MouseLeftButtonDown"
-                   MouseLeftButtonUp="All_MouseLeftButtonUp" 
-                   TouchDown='All_TouchDown'
-                   TouchUp='All_TouchUp'/>
-        <StackPanel Orientation='Horizontal'>
-          <TextBlock Text='Click: '
-                     MinWidth='80' />
+                   MouseLeftButtonUp="All_MouseLeftButtonUp"
+                   Stretch="Fill"
+                   TouchDown="All_TouchDown"
+                   TouchUp="All_TouchUp" />
+        <StackPanel Orientation="Horizontal">
+          <TextBlock MinWidth="80"
+                     Text="Click: " />
           <TextBlock x:Name="ClickEventMessageTextBlock" />
         </StackPanel>
-        <StackPanel Orientation='Horizontal'>
-          <TextBlock Text='Mouse: '
-                     MinWidth='80' />
-          
+        <StackPanel Orientation="Horizontal">
+          <TextBlock MinWidth="80"
+                     Text="Mouse: " />
+
           <TextBlock x:Name="MouseMessageTextBlock" />
         </StackPanel>
-        <StackPanel Orientation='Horizontal'>
-          <TextBlock Text='Touch: '
-                     MinWidth='80' />
+        <StackPanel Orientation="Horizontal">
+          <TextBlock MinWidth="80"
+                     Text="Touch: " />
           <TextBlock x:Name="TouchEventMessageTextBlock" />
         </StackPanel>
-        
+
       </StackPanel>
     </TabItem>
   </TabControl>
