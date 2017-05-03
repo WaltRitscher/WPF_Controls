@@ -4,7 +4,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      d:DesignHeight="400"
+      d:DesignHeight="600"
       d:DesignWidth="600"
       mc:Ignorable="d"
       Title="AccessKeys"
@@ -12,12 +12,9 @@
 
   <Page.Resources>
     <Style TargetType="Button">
-      <Setter Property="Margin"
-              Value="5,10" />
-      <Setter Property="MinWidth"
-              Value="120" />
-      <Setter Property="Padding"
-              Value="10" />
+      <Setter Property="Margin" Value="5,10" />
+      <Setter Property="MinWidth" Value="120" />
+      <Setter Property="Padding" Value="10" />
     </Style>
   </Page.Resources>
   <Border Margin="40,20,40,20"
@@ -26,12 +23,18 @@
     <StackPanel Margin="20">
       <TextBlock>The underscore char within a label designates the Access key.</TextBlock>
       <TextBlock>Use Target property to set destination of Access key.</TextBlock>
-      <Label Content="Choose _A" />
-      <TextBox Name="aTextBox"  />
+      <Label Content="Choose A" />
+      <TextBox Name="aTextBox" />
 
-      <Label Content="Choose _B" />
+      <Label Content="Choose B" />
 
       <TextBox Name="bTextBox" />
+      <StackPanel Margin="10,6">
+        <RadioButton VerticalContentAlignment="Center"
+                     Content="_Red" />
+        <RadioButton VerticalContentAlignment="Center"
+                     Content="_Green" />
+      </StackPanel>
 
       <StackPanel Orientation="Horizontal">
         <Button x:Name="AccessButton"
@@ -44,11 +47,13 @@
                 Click="SaveButton_Click"
                 Content="_Save" />
       </StackPanel>
-      <TextBlock x:Name="MessageTextBlock" />
+      <TextBlock x:Name="MessageTextBlock" Margin="0,10"/>
       <StackPanel Orientation="Horizontal">
-        <TextBox x:Name="cTextBox"  MinWidth="260"/><Label Content="Choose _C"
-               HorizontalContentAlignment="Right" />
-        
+        <TextBox x:Name="cTextBox"
+                 MinWidth="260" />
+        <Label HorizontalContentAlignment="Right"
+               Content="Choose C" />
+
       </StackPanel>
     </StackPanel>
   </Border>
