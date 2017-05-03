@@ -17,14 +17,14 @@
   <TabControl>
     <TabItem Header="Content">
       <StackPanel>
-        <Button Click="Button_Click"  />
+        <Button Click="Button_Click" Content="Tailor-made Tour Stops"  />
         <Button Click="Button_Click">
-         
+          <TextBlock Text="Tailor-made Tour Stops" />
         </Button>
 
         <Button HorizontalContentAlignment="Stretch"
                 Click="Button_Click">
-          <!--<StackPanel Orientation="Horizontal">
+          <StackPanel Orientation="Horizontal">
             <Image Height="50"
                    HorizontalAlignment="Left"
                    Source="/WpfControls;component/Images/TravelLogo_full.jpg" />
@@ -38,7 +38,7 @@
                          Text="Tour Stops"
                          TextAlignment="Center" />
             </StackPanel>
-          </StackPanel>-->
+          </StackPanel>
 
         </Button>
 

@@ -50,7 +50,7 @@ namespace WpfControls.Pages
     private void All_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
     {
       ClearMessages();
-      MouseMessageTextBlock.Text = $"Mouse Up {DateTime.Now.Second}";
+      MouseMessageTextBlock.Text = $"Mouse Down {DateTime.Now.Second}";
     }
 
     private void ClearMessages()
