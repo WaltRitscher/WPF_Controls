@@ -24,8 +24,11 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
-
-    private void OpenButton_Click(object sender, RoutedEventArgs e)
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			ContentMessageTextBlock.Text = $"Clicked on Button content: {DateTime.Now.Second}";
+		}
+		private void OpenButton_Click(object sender, RoutedEventArgs e)
     {
       // RoutedEventArgs 
 
@@ -69,5 +72,7 @@ namespace WpfControls.Pages
       ClearMessages();
       TouchEventMessageTextBlock.Text = $"Touch Up {DateTime.Now.Second}";
     }
-  }
+
+		
+	}
 }

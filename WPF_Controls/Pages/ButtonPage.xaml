@@ -17,12 +17,13 @@
   <TabControl>
     <TabItem Header="Content">
       <StackPanel>
-        <Button />
-        <Button>
-
+        <Button Click="Button_Click"  />
+        <Button Click="Button_Click">
+         
         </Button>
 
-        <Button HorizontalContentAlignment="Stretch">
+        <Button HorizontalContentAlignment="Stretch"
+                Click="Button_Click">
           <!--<StackPanel Orientation="Horizontal">
             <Image Height="50"
                    HorizontalAlignment="Left"
@@ -38,7 +39,10 @@
                          TextAlignment="Center" />
             </StackPanel>
           </StackPanel>-->
+
         </Button>
+
+        <TextBlock x:Name="ContentMessageTextBlock" />
       </StackPanel>
     </TabItem>
     <TabItem Header="Click Event">
