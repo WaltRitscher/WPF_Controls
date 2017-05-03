@@ -1,11 +1,12 @@
 ﻿<Page x:Class="WpfControls.Pages.ButtonPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d"
       Title="ButtonPage">
   <Page.Resources>
     <Style TargetType="Button">
@@ -15,7 +16,75 @@
               Value="6" />
     </Style>
   </Page.Resources>
-  <StackPanel>
-    <Button />
-  </StackPanel>
+  <TabControl>
+    <TabItem Header="Content">
+      <StackPanel>
+        <Button Click="Button_Click" />
+        <Button Click="Button_Click">
+          <TextBlock Text="Tailor-made Tour Stops" />
+        </Button>
+
+        <Button HorizontalContentAlignment="Stretch"
+                Click="Button_Click">
+          <StackPanel Orientation="Horizontal">
+            <Image Height="50"
+                   HorizontalAlignment="Left"
+                   Source="/WpfControls;component/Images/TravelLogo_full.jpg" />
+            <StackPanel Margin="6">
+              <TextBlock FontSize="18"
+                         Foreground="#FF668686"
+                         Text="Tailor-made"
+                         TextAlignment="Center"
+                         TextDecorations="Underline" />
+              <TextBlock Foreground="#FF668686"
+                         Text="Tour Stops"
+                         TextAlignment="Center" />
+            </StackPanel>
+          </StackPanel>
+
+        </Button>
+
+        <TextBlock x:Name="ContentMessageTextBlock" />
+      </StackPanel>
+    </TabItem>
+    <TabItem Header="Click Event">
+      <StackPanel>
+        <Button x:Name="OpenButton"
+                Click="OpenButton_Click"
+                Content="_Open" />
+        <Button x:Name="SaveButton"
+                Click="SaveButton_Click"
+                Content="_Save"
+                MouseLeftButtonDown="All_MouseLeftButtonDown"
+                MouseLeftButtonUp="All_MouseLeftButtonUp"
+                TouchDown="All_TouchDown"
+                TouchUp="All_TouchUp" />
+        <Rectangle Height="36"
+                   Margin="6"
+                   Fill="SteelBlue"
+                   MouseLeftButtonDown="All_MouseLeftButtonDown"
+                   MouseLeftButtonUp="All_MouseLeftButtonUp"
+                   Stretch="Fill"
+                   TouchDown="All_TouchDown"
+                   TouchUp="All_TouchUp" />
+        <StackPanel Orientation="Horizontal">
+          <TextBlock MinWidth="80"
+                     Text="Click: " />
+          <TextBlock x:Name="ClickEventMessageTextBlock" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock MinWidth="80"
+                     Text="Mouse: " />
+
+          <TextBlock x:Name="MouseMessageTextBlock" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+          <TextBlock MinWidth="80"
+                     Text="Touch: " />
+          <TextBlock x:Name="TouchEventMessageTextBlock" />
+        </StackPanel>
+
+      </StackPanel>
+    </TabItem>
+  </TabControl>
 </Page>
