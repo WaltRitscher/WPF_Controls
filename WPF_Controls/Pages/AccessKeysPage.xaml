@@ -7,44 +7,49 @@
       d:DesignHeight="400"
       d:DesignWidth="600"
       mc:Ignorable="d"
-      Title="AccessKeys" FontSize="18">
+      Title="AccessKeys"
+      FontSize="18">
 
   <Page.Resources>
     <Style TargetType="Button">
-      <Setter Property="Margin" Value="5,10" />
-      <Setter Property="MinWidth" Value="120" />
-      <Setter Property="Padding" Value="10" />
+      <Setter Property="Margin"
+              Value="5,10" />
+      <Setter Property="MinWidth"
+              Value="120" />
+      <Setter Property="Padding"
+              Value="10" />
     </Style>
   </Page.Resources>
   <Border Margin="40,20,40,20"
           BorderBrush="DarkGray"
-          BorderThickness="2" >
+          BorderThickness="2">
     <StackPanel Margin="20">
       <TextBlock>The underscore char within a label designates the Access key.</TextBlock>
       <TextBlock>Use Target property to set destination of Access key.</TextBlock>
-      <Label Content="Choose _A"
-             Target="{Binding ElementName=aTextBox}" />
-      <TextBox Name="aTextBox">
-      </TextBox>
-      <Label Content="Choose _B"
-             Target="{Binding ElementName=bTextBox}" />
+      <Label Content="Choose _A" />
+      <TextBox Name="aTextBox"  />
 
-      <TextBox Name="bTextBox">
-      </TextBox>
-      <Label Content="_Double up the __ underscore"
-             Target="{Binding ElementName=cTextBox}" />
+      <Label Content="Choose _B" />
 
-      <TextBox Name="cTextBox">
-      </TextBox>
+      <TextBox Name="bTextBox" />
+
       <StackPanel Orientation="Horizontal">
-        <Button Click="AccessButton_Click" x:Name='AccessButton'
-                Content="Access _key on Button" />
-        <Button Click="OkButton_Click" x:Name='OkButton'
+        <Button x:Name="AccessButton"
+                Click="AccessButton_Click"
+                Content="Access ke_y on Button" />
+        <Button x:Name="OkButton"
+                Click="OkButton_Click"
                 Content="_OK" />
-        <Button Click="SaveButton_Click" x:Name='SaveButton'
+        <Button x:Name="SaveButton"
+                Click="SaveButton_Click"
                 Content="_Save" />
       </StackPanel>
-      <TextBlock x:Name='MessageTextBlock' />
+      <TextBlock x:Name="MessageTextBlock" />
+      <StackPanel Orientation="Horizontal">
+        <TextBox x:Name="cTextBox"  MinWidth="260"/><Label Content="Choose _C"
+               HorizontalContentAlignment="Right" />
+        
+      </StackPanel>
     </StackPanel>
   </Border>
 </Page>
