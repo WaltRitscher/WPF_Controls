@@ -18,7 +18,8 @@
           BorderBrush="DarkGray"
           BorderThickness="2">
     <StackPanel Margin="20">
-      <Label Content="Lorem Ipsum (Simple text is shown in internal TextBlock.">
+      <TextBlock Text="Watch, learn, and be inspired..."/>
+      <Label Content="Watch, learn, and be inspired...">
       </Label>
       <Label>
         <StackPanel Orientation="Horizontal">
@@ -30,7 +31,7 @@
                      Height="16"
                      Margin="2"
                      Fill="SteelBlue" />
-          <TextBlock Text="More complex content" VerticalAlignment='Center'/>
+          <TextBlock Text="Nested XAML in Label" VerticalAlignment='Center'/>
           <Rectangle Width="16"
                      Height="16"
                      Margin="2"
@@ -42,6 +43,30 @@
 
         </StackPanel>
       </Label>
+
+      <Grid>
+        <StackPanel Orientation="Horizontal">
+          <Rectangle Width="10"
+                     Height="10"
+                     Margin="2"
+                     Fill="SteelBlue" />
+          <Rectangle Width="16"
+                     Height="16"
+                     Margin="2"
+                     Fill="SteelBlue" />
+          <TextBlock Text="Nested XAML in Grid"
+                     VerticalAlignment='Center' />
+          <Rectangle Width="16"
+                     Height="16"
+                     Margin="2"
+                     Fill="SteelBlue" />
+          <Rectangle Width="10"
+                     Height="10"
+                     Margin="2"
+                     Fill="SteelBlue" />
+
+        </StackPanel>
+      </Grid>
     </StackPanel>
   </Border>
 </Page>

@@ -9,10 +9,6 @@
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="System.Windows.Documents.Run">
-    <Position X="7.25" Y="2.75" Width="2" />
-    <TypeIdentifier />
-  </Class>
   <Class Name="System.Windows.Documents.Inline" Collapsed="true">
     <Position X="7.25" Y="1.5" Width="2" />
     <TypeIdentifier />
@@ -26,6 +22,14 @@
     <Position X="0.5" Y="0.75" Width="1.75" />
     <TypeIdentifier />
     <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Windows.Documents.Bold" Collapsed="true">
+    <Position X="7.25" Y="3.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Documents.Span" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="2" />
+    <TypeIdentifier />
   </Class>
   <Font Name="Segoe UI" Size="10" />
 </ClassDiagram>
