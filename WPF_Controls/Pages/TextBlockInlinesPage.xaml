@@ -52,8 +52,7 @@
                 Foreground="SteelBlue">
             Contains text and inlines
             <LineBreak />
-            <Bold FontSize="20"
-                  FontWeight="Bold">
+            <Bold FontSize="20">
               ABC
             </Bold>
             <LineBreak />
