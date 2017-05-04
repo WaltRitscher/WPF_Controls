@@ -8,8 +8,15 @@
     <menu header ="Overview"
 					page="/Pages/Page1.xaml">
     </menu>
-    <menu header ="Use the Shape Stretch property"
-             page="/Pages/ShapeStretchPage.xaml" />
+    <menu header ="Slider"
+          page="/Pages/SliderPage.xaml" />
+    <menu header ="ProgressBar"
+      page="/Pages/ProgressBarPage.xaml" />
+    <menu header ="Date and Time"
+     page="/Pages/DatePage.xaml" />
+    <menu header ="Expander"
+    page="/Pages/ExpanderPage.xaml" />
+
 
   </category>
 </menus>
