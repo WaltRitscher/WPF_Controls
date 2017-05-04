@@ -23,11 +23,11 @@
       <ColumnDefinition Width="1*" />
     </Grid.ColumnDefinitions>
     <Expander Name="ExpanderControl"
-              HorizontalAlignment="Left"
+            
               Background="LightBlue"
               FontWeight="Bold"
               Foreground="SteelBlue"
-              Header="Expander One">
+              Header="Expander 1">
 
       <StackPanel>
         <TextBlock FontSize="12"
@@ -37,32 +37,28 @@
         <TextBlock FontSize="14"
                    FontWeight="Light"
                    Foreground="Black"
-                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button., all contents will be wrapped. At run-time, you m"
+                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button."
                    TextWrapping="Wrap" />
       </StackPanel>
 
     </Expander>
     <Expander Grid.Row="0"
-              Grid.Column="1"
+              Grid.Column="1" ExpandDirection='Left'
               FontWeight="Bold"
               Foreground="SteelBlue"
-              Header="Expander 2.">
+              Background="#FF4DDA6C"
+              Header="Expander 2">
 
       <StackPanel>
-        <TextBlock FontSize="12"
-                   FontWeight="Bold"
-                   Foreground="Black"
-                   Text="Header content" />
-        <TextBlock FontSize="14"
-                   FontWeight="Light"
-                   Foreground="Black"
-                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button., all contents will be wrapped. At run-time, you m"
-                   TextWrapping="Wrap" />
+        <Button Content='Button' />
+        <Button Content='Button' />
+        <Button Content='Button' />
+        <Button Content='Button' />
       </StackPanel>
 
     </Expander>
-    <Expander Grid.Row="1"
-              HorizontalAlignment="Left"
+    <Expander Grid.Row="1" ExpandDirection='Left'
+             VerticalAlignment='Bottom'
               Background="LightBlue"
               FontSize="18"
               FontWeight="Bold"
@@ -77,16 +73,23 @@
         <TextBlock FontSize="14"
                    FontWeight="Light"
                    Foreground="Black"
-                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button., all contents will be wrapped. At run-time, you m"
+                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button."
                    TextWrapping="Wrap" />
       </StackPanel>
 
     </Expander>
     <Expander Grid.Row="1"
               Grid.Column="1"
+              ExpandDirection='Up'
               Background="LightBlue"
               Foreground="SteelBlue"
-              Header="Expander 4">
+              IsExpanded='True'>
+      <Expander.Header>
+        <StackPanel Orientation='Horizontal'>
+          <TextBlock Text='Custom Header Content' Style='{x:Null}'/>
+          <Image Source='/WpfControls;component/Images/TravelLogo.jpg'  Width='60'/>
+        </StackPanel>
+      </Expander.Header>
 
       <StackPanel>
         <TextBlock FontSize="12"
@@ -96,7 +99,7 @@
         <TextBlock FontSize="14"
                    FontWeight="Light"
                    Foreground="Black"
-                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button., all contents will be wrapped. At run-time, you m"
+                   Text=" The Expander is a content control. Show/hide content by clicking the small arrow button."
                    TextWrapping="Wrap" />
       </StackPanel>
 
