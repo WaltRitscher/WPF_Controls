@@ -31,6 +31,8 @@ namespace WpfControls.Pages
 
     private void ChooseFileButton_Click(object sender, RoutedEventArgs e)
     {
+      //MainFlowViewer.Document = null;
+      //MainRichText.Document = null;
       var openDialog = new Microsoft.Win32.OpenFileDialog();
       openDialog.Filter = "XAML Files (*.xaml)|*.xaml|RichText Files (*.rtf)|*.rtf|All Files (*.*)|*.*";
       var exePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
@@ -39,23 +41,25 @@ namespace WpfControls.Pages
       if (openDialog.ShowDialog() == true)
       {
 
-        //FileStream xamlFile = System.IO.File.Open(String.Format(openDialog.FileName), FileMode.Open);
-        //MainRichText.Document = (FlowDocument)XamlReader.Load(xamlFile);
 
-      // Create a TextRange around the entire document.
-                TextRange documentTextRange = new TextRange(
-                    MainRichText.Document.ContentStart, MainRichText.Document.ContentEnd);
+
+        // Create a TextRange around the entire document.
+        TextRange docTextRange = new TextRange(MainRichText.Document.ContentStart, MainRichText.Document.ContentEnd);
+
 
         using (FileStream fs = File.Open(openDialog.FileName, FileMode.Open))
         {
           if (System.IO.Path.GetExtension(openDialog.FileName).ToLower() == ".rtf")
           {
-            documentTextRange.Load(fs, DataFormats.Rtf);
+            docTextRange.Load(fs, DataFormats.Rtf);
+
           }
           else
           {
-            documentTextRange.Load(fs, DataFormats.Xaml);
+            docTextRange.Load(fs, DataFormats.Xaml);
           }
+
+          _flowDoc = MainRichText.Document;
         }
       }
     }
@@ -89,43 +93,27 @@ namespace WpfControls.Pages
 
 
     }
-    private void Test()
+
+    private FlowDocument _flowDoc;
+    private void MainTabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-      //// from the Microsoft sample
-      //var contentToSave = MainRichText.Document;
-
-      //if (DoesDocumentContainUIElements())
-      //{
-      //  MessageBox.Show("Saving documents with UIElements is not supported");
-      //  return;
-      //}
-
-      //var dialog = new SaveFileDialog();
-      //dialog.DefaultExt = ".sav";
-      //dialog.Filter = "Saved Files|*.sav|All Files|*.*";
-
-      //if (dialog.ShowDialog() == true)
-      //{
-      //  using (var fs = (FileStream)dialog.OpenFile())
-      //  {
-      //    var enc = new System.Text.UTF8Encoding();
-      //    byte[] buffer = enc.GetBytes(contentToSave);
-      //    fs.Write(buffer, 0, buffer.Length);
-      //    fs.Close();
-      //  }
-      //}
-    }
-    private bool DoesDocumentContainUIElements()
-    {
-      //Check if the file contains any UIElements
-      var q = from block in MainRichText.Document.Blocks
-              from inline in (block as Paragraph).Inlines
-              where inline.GetType() == typeof(InlineUIContainer)
-              select inline;
-
-      //If the file contains any UIElements, it will not be saved
-      return q.Count() != 0;
-
+      if (_flowDoc==null)
+      {
+        return;
+      }
+      switch (MainTabControl.SelectedIndex)
+      {
+        case 0:
+          MainFlowViewer.Document = new FlowDocument(); 
+          MainRichText.Document = _flowDoc;
+          break;
+        case 1:
+          MainRichText.Document = new FlowDocument();
+          MainFlowViewer.Document = _flowDoc;
+          break;
+        default:
+          break;
+      }
     }
   }
 }

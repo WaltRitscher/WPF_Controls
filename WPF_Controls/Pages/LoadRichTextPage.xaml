@@ -27,13 +27,22 @@
               Click='SaveFileButton_Click'>Save File...</Button>
 
     </StackPanel>
-    <Border BorderBrush="SteelBlue" Margin='3'
-            BorderThickness="4"
-            Grid.Row='1'>
-      <RichTextBox Name="MainRichText"
-                   AcceptsReturn="True" >
+    <TabControl x:Name='MainTabControl' SelectionChanged='MainTabControl_SelectionChanged'
+                Grid.Row='1'>
+      <TabItem Header='RichTextBox'>
+        <Border BorderBrush="SteelBlue"
+                Margin='3'
+                BorderThickness="4"
+               >
+          <RichTextBox Name="MainRichText"
+                       AcceptsReturn="True">
 
-      </RichTextBox>
-    </Border>
+          </RichTextBox>
+        </Border>
+      </TabItem>
+      <TabItem Header='Flow Document Page Viewer'>
+        <FlowDocumentPageViewer x:Name='MainFlowViewer' />
+      </TabItem>
+    </TabControl>
   </Grid>
 </Page>
