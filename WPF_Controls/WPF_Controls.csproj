@@ -60,35 +60,8 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\DrawPathPage.xaml.cs">
-      <DependentUpon>DrawPathPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\ShapeStretchPage.xaml.cs">
-      <DependentUpon>ShapeStretchPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\FillPage.xaml.cs">
-      <DependentUpon>FillPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\HitTestPage.xaml.cs">
-      <DependentUpon>HitTestPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\LinePage.xaml.cs">
-      <DependentUpon>LinePage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\PathPage.xaml.cs">
-      <DependentUpon>PathPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\PolygonPage.xaml.cs">
-      <DependentUpon>PolygonPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\PolylinePage.xaml.cs">
-      <DependentUpon>PolylinePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\StartHere.xaml.cs">
       <DependentUpon>StartHere.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Pages\StrokeAttributesPage.xaml.cs">
-      <DependentUpon>StrokeAttributesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MarginMaster.xaml.cs">
       <DependentUpon>MarginMaster.xaml</DependentUpon>
@@ -100,43 +73,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\DrawPathPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\ShapeStretchPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\FillPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\HitTestPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\LinePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\PathPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\PolygonPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\PolylinePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\StartHere.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\StrokeAttributesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -183,9 +120,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
-    <None Include="Class Diagrams\BasicElements.cd" />
-    <None Include="Class Diagrams\Shape.cd" />
-    <None Include="Class Diagrams\Shapes.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -209,6 +143,8 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Class Diagrams\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
