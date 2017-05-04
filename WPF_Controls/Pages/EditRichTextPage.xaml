@@ -1,14 +1,141 @@
 ﻿<Page x:Class="WpfControls.Pages.EditRichTextPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300"
+      d:DesignWidth="700"
+      mc:Ignorable="d"
       Title="EditRichTextPage">
+  <Page.Resources>
+    <Style TargetType="Button">
+      <Setter Property="Margin" Value="6" />
+      <Setter Property="MinWidth" Value="40" />
+      <Setter Property="Padding" Value="6" />
+      <Setter Property="VerticalContentAlignment" Value="Center" />
+    </Style>
+  </Page.Resources>
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto">
+      </RowDefinition>
+      <RowDefinition>
+      </RowDefinition>
+      <RowDefinition Height="Auto">
+      </RowDefinition>
+      <RowDefinition>
+      </RowDefinition>
+    </Grid.RowDefinitions>
 
-    <Grid>
-        
-    </Grid>
+
+    <StackPanel Orientation="Horizontal">
+      <Button x:Name="BoldButton"
+              Click="BoldButton_Click"
+              Content="Bold">
+      </Button>
+      <Button x:Name='ItalicButton'
+              Click="ItalicButton_Click"
+              Content="Italic"
+              FontStyle="Italic" />
+      <Button x:Name="FontPlusButton"
+              Content="Font+" Click='FontPlusButton_Click'/>
+      <Button x:Name="FontMinusButton"
+              Content="Font-" Click='FontMinusButton_Click'/>
+
+      <Button x:Name="ColorButton"
+              Content="Orange"
+              FontWeight="Bold"
+              Foreground="DarkOrange" Click='ColorButton_Click' />
+    </StackPanel>
+
+
+    <RichTextBox Name="MainRichTextBox"
+                 Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility='Auto'
+                 >
+      <FlowDocument>
+        <Paragraph Margin="0,0,0,0"
+                   FontFamily="Calibri"
+                   FontSize="24"
+                   FontWeight="Bold">
+          <Span Foreground="#FF5F2D8C">
+            <Run>See and be seen in the West End</Run>
+          </Span>
+        </Paragraph>
+        <Paragraph Margin="0,0,0,0"
+                   FontFamily="Calibri"
+                   FontSize="16">
+          <Span>
+            <Run>Whether you</Run>
+          </Span>
+          <Span>
+            <Run>’</Run>
+          </Span>
+          <Span>
+            <Run>re a theater enthusiast, enjoy epic shopping, or love to stroll and people watch, you</Run>
+          </Span>
+          <Span>
+            <Run>’</Run>
+          </Span>
+          <Span>
+            <Run>ll find  London</Run>
+          </Span>
+          <Span>
+            <Run>’</Run>
+          </Span>
+          <Span>
+            <Run>s West End has an endless opportunity to partake in all these activities. The West End is the heart of  London</Run>
+          </Span>
+          <Span>
+            <Run>’s “</Run>
+          </Span>
+          <Span>
+            <Run>Theatre</Run>
+          </Span>
+          <Span>
+            <Run>land”</Run>
+          </Span>
+          <Span>
+            <Run>and offers the best in drama, comedy, and musical productions. There are over 40 theaters in the West End, and staying at the West End Landon will put you front and center to them all.</Run>
+          </Span>
+        </Paragraph>
+        <Paragraph Margin="0,0,0,0"
+                   FontFamily="Calibri"
+                   FontSize="16">
+        </Paragraph>
+        <Paragraph Margin="0,0,0,0"
+                   FontFamily="Calibri"
+                   FontSize="16">
+          <Span>
+            <Run>When not attending a show, you can wander through miles and miles of the best shopping in the world, including Oxford, Regent, and Bond Streets. Feast your eyes on the endless choices of global brands and locally-sources goods that abound in the upscale department stores, hip boutiques, and unique crafter stalls in the West End.</Run>
+          </Span>
+        </Paragraph>
+        <Paragraph Margin="0,0,0,0"
+                   FontFamily="Calibri"
+                   FontSize="16">
+        </Paragraph>
+        <Paragraph Margin="0,0,0,0"
+                   FontFamily="Times New Roman"
+                   FontSize="16">
+          <Span FontFamily="Calibri">
+            <Run>Then, at the end of the day, treat yourself to a relaxing and luxurious evening at the West End Landon. Enjoy a five-star meal, overlooking the city, at the Landon Rooftop Cafe, followed by a soak in your room</Run>
+          </Span>
+          <Span FontFamily="Calibri">
+            <Run>’</Run>
+          </Span>
+          <Span FontFamily="Calibri">
+            <Run>s private jacuzzi tub. Then top off the day with a comfortable and restful slumber that will have you ready for another day of exploring the many sights around the West End.</Run>
+          </Span>
+          <Span FontFamily="Calibri"
+                Typography.Variants="Subscript">
+            <Run>
+            </Run>
+          </Span>
+        </Paragraph>
+      </FlowDocument>
+    </RichTextBox>
+
+
+
+  </Grid>
 </Page>
