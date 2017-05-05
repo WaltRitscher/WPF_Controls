@@ -184,6 +184,7 @@
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
     <None Include="Class Diagrams\AllControls.cd" />
+    <None Include="Class Diagrams\SpellCheck.cd" />
     <None Include="Class Diagrams\FlowDocument.cd" />
     <None Include="Class Diagrams\Inlines.cd" />
     <None Include="Class Diagrams\TextBox.cd" />

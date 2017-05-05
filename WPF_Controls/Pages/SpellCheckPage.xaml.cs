@@ -32,12 +32,15 @@ namespace WpfControls.Pages
     private void SpellCheckButton_Checked(object sender, RoutedEventArgs e)
     {
       MainTextBox.SpellCheck.IsEnabled = true;
-    }
+			GermanTextBox.SpellCheck.IsEnabled = true;
+			
+		}
 
     private void SpellCheckButton_Unchecked(object sender, RoutedEventArgs e)
     {
       MainTextBox.SpellCheck.IsEnabled = false;
-    }
+			GermanTextBox.SpellCheck.IsEnabled = false;
+		}
 
     private void DictionaryButton_Checked(object sender, RoutedEventArgs e)
     {

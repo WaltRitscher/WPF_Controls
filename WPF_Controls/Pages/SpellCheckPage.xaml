@@ -5,7 +5,7 @@
       xmlns:local="clr-namespace:WpfControls.Pages"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       d:DesignHeight="300"
-      d:DesignWidth="300"
+      d:DesignWidth="500"
       mc:Ignorable="d"
       Title="SpellCheckPage"
       FontSize="18">
@@ -21,7 +21,7 @@
     </Style>
   </Page.Resources>
 
-  <Grid >
+  <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="Auto" />
       <RowDefinition Height="1*" />
@@ -40,8 +40,12 @@
                 Content="Enable Custom Dictionary"
                 Unchecked="DictionaryButton_Unchecked" />
     </StackPanel>
-    <TextBox x:Name="MainTextBox"
-             Grid.Row="1" />
+    <StackPanel Grid.Row="1">
+      <TextBox x:Name="MainTextBox" />
+      <TextBox x:Name="GermanTextBox"
+               Language="de-DE"
+               Text="Wie komme ich am besten zum Flughafen? Ich bin zu spät für meinen Flug" />
+    </StackPanel>
 
   </Grid>
 </Page>
