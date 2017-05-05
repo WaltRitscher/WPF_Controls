@@ -63,6 +63,9 @@
     <Compile Include="Pages\ExpanderPage.xaml.cs">
       <DependentUpon>ExpanderPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\NumberPage.xaml.cs">
+      <DependentUpon>NumberPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ProgressBarPage.xaml.cs">
       <DependentUpon>ProgressBarPage.xaml</DependentUpon>
     </Compile>
@@ -83,6 +86,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ExpanderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\NumberPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

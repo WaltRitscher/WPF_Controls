@@ -24,5 +24,25 @@ namespace WpfControls.Pages
     {
       InitializeComponent();
     }
-  }
+
+		private void AllSlider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+		{
+			var slider = e.OriginalSource as Slider ;
+			if (slider == null)
+			{
+				return;
+			}
+			try
+			{
+				MessageTextBlock.Text = slider.Value.ToString();
+			}
+			catch
+			{
+				// ignore
+			}
+			
+		}
+
+		
+	}
 }

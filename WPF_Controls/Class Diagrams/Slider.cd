@@ -12,9 +12,7 @@
     <Position X="1.25" Y="0.75" Width="2" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
-      <Compartment Name="Properties" Collapsed="true" />
       <Compartment Name="Methods" Collapsed="true" />
-      <Compartment Name="Events" Collapsed="true" />
     </Compartments>
     <TypeIdentifier />
   </Class>

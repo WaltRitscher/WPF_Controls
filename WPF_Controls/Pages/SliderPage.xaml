@@ -1,20 +1,65 @@
 ﻿<Page x:Class="WpfControls.Pages.SliderPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:WpfControls.Pages"
-      mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300"
+      d:DesignWidth="300"
+      mc:Ignorable="d"
       Title="SliderPage">
   <Page.Resources>
-    <Style TargetType='Slider'>
-      <Setter Property='Margin'
-              Value='10,6' />
+
+    <Style TargetType="Slider">
+      <Setter Property="Margin"
+              Value="10,6" />
     </Style>
   </Page.Resources>
-    <StackPanel>
-    <Slider />
-    <Slider />
-  </StackPanel>
+  <Grid MinWidth="200"
+        MaxWidth="500"
+        HorizontalAlignment="Left">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="2*" />
+      <ColumnDefinition Width="1*" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="4*" />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    <StackPanel MinWidth="200"
+                RangeBase.ValueChanged="AllSlider_ValueChanged">
+      <Slider />
+      <Slider Minimum="120"
+              Maximum="240"
+              Value="140" AutoToolTipPlacement="TopLeft" AutoToolTipPrecision="2" />
+      <Slider Minimum="1000"
+              Maximum="2000"
+              Value="1800"
+              TickFrequency="100"
+              TickPlacement="TopLeft"
+              AutoToolTipPlacement="TopLeft"
+              AutoToolTipPrecision="2" />
+      <Slider Minimum="2.0"
+              Maximum="2.5"
+              AutoToolTipPlacement="TopLeft"
+              AutoToolTipPrecision="2"
+              TickFrequency=".05"
+              IsSnapToTickEnabled="True"
+              TickPlacement="TopLeft"
+              IsSelectionRangeEnabled="True" />
+    </StackPanel>
+    <Slider Minimum="120"
+            Maximum="240"
+            Value="140"
+            Grid.Column="1"
+            Orientation="Vertical"
+            AutoToolTipPlacement="TopLeft"
+            AutoToolTipPrecision="2" />
+
+    <TextBlock x:Name="MessageTextBlock"
+               Grid.Row="1"
+               Margin="6"
+               Foreground="SteelBlue" />
+
+  </Grid>
 </Page>
