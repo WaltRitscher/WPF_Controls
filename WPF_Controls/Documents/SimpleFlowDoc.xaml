@@ -1,0 +1,50 @@
+﻿ <FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontSize="18" Foreground="Black">
+        <Paragraph Margin='0,0,0,0'
+                   FontFamily='Calibri'
+                   FontSize='24'
+                   FontWeight='Bold'>
+          <Span Foreground='#FF5F2D8C'>
+            <Run>See and be seen in the West End</Run>
+          </Span>
+        </Paragraph>
+        <Paragraph Margin='0,0,0,0'
+                   FontFamily='Calibri'
+                   FontSize='16'>
+          <Span>
+            <Run>Whether you're a theater enthusiast, enjoy epic shopping, or love to stroll and people watch, you'll find  London's West End has an endless opportunity to partake in all these activities. The West End is the heart of  London's Theatre district and offers the best in drama, comedy, and musical productions. There are over 40 theaters in the West End, and staying at the West End Landon will put you front and center to them all.</Run>
+          </Span>
+        </Paragraph>
+        <Paragraph Margin='0,0,0,0'
+                   FontFamily='Calibri'
+                   FontSize='16'>
+        </Paragraph>
+        <Paragraph Margin='0,0,0,0'
+                   FontFamily='Calibri'
+                   FontSize='16'>
+          <Span>
+            <Run>When not attending a show, you can wander through miles and miles of the best shopping in the world, including Oxford, Regent, and Bond Streets. Feast your eyes on the endless choices of global brands and locally-sources goods that abound in the upscale department stores, hip boutiques, and unique crafter stalls in the West End.</Run>
+          </Span>
+        </Paragraph>
+        <Paragraph Margin='0,0,0,0'
+                   FontFamily='Calibri'
+                   FontSize='16'>
+        </Paragraph>
+        <Paragraph Margin='0,0,0,0'
+                   FontFamily='Times New Roman'
+                   FontSize='16'>
+          <Span FontFamily='Calibri'>
+            <Run>Then, at the end of the day, treat yourself to a relaxing and luxurious evening at the West End Landon. Enjoy a five-star meal, overlooking the city, at the Landon Rooftop Cafe, followed by a soak in your room</Run>
+          </Span>
+          <Span FontFamily='Calibri'>
+            <Run>’</Run>
+          </Span>
+          <Span FontFamily='Calibri'>
+            <Run>s private jacuzzi tub. Then top off the day with a comfortable and restful slumber that will have you ready for another day of exploring the many sights around the West End.</Run>
+          </Span>
+          <Span FontFamily='Calibri'
+                Typography.Variants='Subscript'>
+            <Run>
+            </Run>
+          </Span>
+        </Paragraph>
+      </FlowDocument>

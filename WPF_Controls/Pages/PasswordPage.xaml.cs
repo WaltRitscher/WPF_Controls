@@ -27,12 +27,21 @@ namespace WpfControls.Pages
 
     private void Button_Click(object sender, RoutedEventArgs e)
     {
-      var pwd = passwordBox1.Password;
+			// note, Password property is read/write.
+			var pwd = PasswordBox1.Password;
+			PasswordBox2.Password = "surprise";
 
-      // note, Password property is read/write.
 
-      // The password value is return as normal string.
-      // the backing Type used for Password value is SecureString
+			// The password value is return as normal string.
+			// the backing Type used for Password value is SecureString
+			var securePassword = PasswordBox1.SecurePassword;
+			securePassword.ToString();
+		
+
+			
+
+			MessageTextBlock.Text = PasswordBox1.Password;
+			PasswordBox1.SecurePassword.Dispose();
     }
   }
 }

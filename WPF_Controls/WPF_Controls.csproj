@@ -214,6 +214,10 @@
     <Resource Include="Images\grapes.jpg" />
     <Resource Include="Images\Flowers.jpg" />
     <Resource Include="Images\TravelLogo.jpg" />
+    <Page Include="Documents\SimpleFlowDoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Content Include="menu.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <SubType>Designer</SubType>
