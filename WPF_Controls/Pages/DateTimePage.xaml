@@ -1,0 +1,31 @@
+﻿<Page x:Class="WpfControls.Pages.DateTimePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:WpfControls.Pages"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      d:DesignHeight="300"
+      d:DesignWidth="600"
+      mc:Ignorable="d"
+      Title="DateTimePage">
+
+  <StackPanel>
+    <Calendar FirstDayOfWeek="Monday"
+              SelectedDate="5.19.2017"
+              SelectionMode="SingleRange"
+              DisplayDateStart="1/1/2017"
+              DisplayDateEnd="7/31/2017">
+      <Calendar.BlackoutDates>
+        <CalendarDateRange End="6/5/2017"
+                           Start="5/25/2017" />
+
+      </Calendar.BlackoutDates>
+    </Calendar>
+  
+    <DatePicker MaxWidth="200" />
+
+    <TextBlock x:Name="MessageTextBlock"
+               Margin="6"
+               Foreground="SteelBlue" />
+  </StackPanel>
+</Page>

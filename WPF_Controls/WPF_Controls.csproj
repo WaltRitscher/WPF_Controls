@@ -60,6 +60,9 @@
     <Compile Include="CreatePathPage.xaml.cs">
       <DependentUpon>CreatePathPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\DateTimePage.xaml.cs">
+      <DependentUpon>DateTimePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ExpanderPage.xaml.cs">
       <DependentUpon>ExpanderPage.xaml</DependentUpon>
     </Compile>
@@ -82,6 +85,10 @@
     <Compile Include="XmlMenu\XmlExtraFile.cs" />
     <Compile Include="XmlMenu\XmlMenu.cs" />
     <Page Include="CreatePathPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DateTimePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -148,6 +155,7 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <Resource Include="Busy.ani" />
+    <None Include="Class Diagrams\DateTime.cd" />
     <None Include="Class Diagrams\Expander.cd" />
     <None Include="Class Diagrams\Slider.cd" />
     <None Include="Properties\Settings.settings">
