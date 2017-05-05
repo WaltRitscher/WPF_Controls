@@ -34,7 +34,7 @@ namespace WpfControls.Pages
       //MainFlowViewer.Document = null;
       //MainRichText.Document = null;
       var openDialog = new Microsoft.Win32.OpenFileDialog();
-      openDialog.Filter = "XAML Files (*.xaml)|*.xaml|RichText Files (*.rtf)|*.rtf|All Files (*.*)|*.*";
+      openDialog.Filter = "RichText Files (*.rtf)|*.rtf|XAML Files (*.xaml)|*.xaml|All Files (*.*)|*.*";
       var exePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
       openDialog.InitialDirectory = Directory.GetParent(Directory.GetParent(exePath).ToString()).ToString();
@@ -67,7 +67,7 @@ namespace WpfControls.Pages
     private void SaveFileButton_Click(object sender, RoutedEventArgs e)
     {
       var saveDialog = new SaveFileDialog();
-      saveDialog.Filter = "XAML Files (*.xaml)|*.xaml|RichText Files (*.rtf)|*.rtf|All Files (*.*)|*.*";
+      saveDialog.Filter = "RichText Files (*.rtf)|*.rtf|XAML Files (*.xaml)|*.xaml|All Files (*.*)|*.*";
       var exePath = System.IO.Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
       saveDialog.InitialDirectory = Directory.GetParent(exePath).ToString();
