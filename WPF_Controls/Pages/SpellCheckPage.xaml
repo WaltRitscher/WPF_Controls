@@ -41,7 +41,7 @@
                 Unchecked="DictionaryButton_Unchecked" />
     </StackPanel>
     <StackPanel Grid.Row="1">
-      <TextBox x:Name="MainTextBox" />
+      <TextBox x:Name="MainTextBox"  />
       <TextBox x:Name="GermanTextBox"
                Language="de-DE"
                Text="Wie komme ich am besten zum Flughafen? Ich bin zu spät für meinen Flug" />

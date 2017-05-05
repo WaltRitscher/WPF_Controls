@@ -7,7 +7,7 @@
     </Compartments>
     <TypeIdentifier />
   </Class>
-  <Class Name="System.Windows.Controls.TextBox">
+  <Class Name="System.Windows.Controls.TextBox" Collapsed="true">
     <Position X="3.25" Y="1.75" Width="3.25" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
