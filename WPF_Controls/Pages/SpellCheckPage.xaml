@@ -12,7 +12,7 @@
   <Page.Resources>
     <Style TargetType="TextBox">
       <Setter Property="Margin" Value="6" />
-      <Setter Property="Text" Value="Watch, leurn, and be inspired by profesional watercolorist, Sally Flischer, in this video from her master class  at the Margoon Valley Contemporary Arts Museum. Sally is a masterr at painting the environment in which we live. Her brilliant watercolors, with their pronounced broad strokes and fluid tonality, have made her one of the most sucessful watercolorists of our time." />
+      <Setter Property="Text" Value="Watch, leurn, and be inspired by profesional watercolorist, Sally Flischir, in this video from her master class  at the Margion Valley Contemporary Arts Museum. Sally is a masterr at painting the environment in which we live. Her brilliant watercolors, with their pronounced broad strokes and fluid tonality, have made her one of the most sucessful watercolorists of our time." />
       <Setter Property="TextWrapping" Value="Wrap" />
     </Style>
     <Style TargetType="CheckBox">
