@@ -56,7 +56,11 @@ namespace WpfControls.Pages
 
       theTransform.X = Math.Min(count * 10, 290);
 
-      if (count > 8)
+			if (count < 8)
+			{
+				messageTextBlock.Text = "Very Weak";
+			}
+			if (count >= 8)
       {
         messageTextBlock.Text = "Weak";
       }

@@ -89,7 +89,7 @@ namespace WpfControls.Pages
       // Begin the change block. Once BeginChange() is called
       // no text content or selection change events will be raised 
       // until EndChange is called. Also, all edits made within
-      // a BeginChange/EndChange block are wraped in a single undo block.
+      // a BeginChange/EndChange block are wrapped in a single undo block.
       MainTextBox.BeginChange();
 
      
