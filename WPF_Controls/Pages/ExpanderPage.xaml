@@ -9,24 +9,23 @@
       mc:Ignorable="d"
       Title="ExpanderPage">
   <Page.Resources>
-    <Style TargetType="Expander">
-      <Setter Property="FontSize" Value="18" />
-    </Style>
+
   </Page.Resources>
   <Grid>
     <Grid.RowDefinitions>
       <RowDefinition Height="1*" />
+      <RowDefinition Height="5" />
       <RowDefinition Height="1*" />
     </Grid.RowDefinitions>
     <Grid.ColumnDefinitions>
       <ColumnDefinition Width="1*" />
+      <ColumnDefinition Width="5" />
       <ColumnDefinition Width="1*" />
     </Grid.ColumnDefinitions>
     <Expander Name="ExpanderControl"
-            
               Background="LightBlue"
               FontWeight="Bold"
-              Foreground="SteelBlue"
+            
               Header="Expander 1">
 
       <StackPanel>
@@ -43,26 +42,25 @@
 
     </Expander>
     <Expander Grid.Row="0"
-              Grid.Column="1" ExpandDirection='Left'
-              FontWeight="Bold"
-              Foreground="SteelBlue"
+              Grid.Column="2"
               Background="#FF4DDA6C"
-              Header="Expander 2">
+              ExpandDirection="Up"
+             >
 
       <StackPanel>
-        <Button Content='Button' />
-        <Button Content='Button' />
-        <Button Content='Button' />
-        <Button Content='Button' />
+        <Button Content="Button" />
+        <Button Content="Button" />
+        <Button Content="Button" />
+        <Button Content="Button" />
       </StackPanel>
 
     </Expander>
-    <Expander Grid.Row="1" ExpandDirection='Left'
-             VerticalAlignment='Bottom'
+    <Expander Grid.Row="2"
+              VerticalAlignment="Bottom"
               Background="LightBlue"
-              FontSize="18"
+              ExpandDirection="Right"
               FontWeight="Bold"
-              Foreground="SteelBlue"
+            
               Header="Expander 3">
 
       <StackPanel>
@@ -78,20 +76,22 @@
       </StackPanel>
 
     </Expander>
-    <Expander Grid.Row="1"
-              Grid.Column="1"
-              ExpandDirection='Up'
+    <Expander Grid.Row="2"
+              Grid.Column="2"
               Background="LightBlue"
+              ExpandDirection="Right"
               Foreground="SteelBlue"
-              IsExpanded='True'>
+              IsExpanded="True">
       <Expander.Header>
-        <StackPanel Orientation='Horizontal'>
-          <TextBlock Text='Custom Header Content' Style='{x:Null}'/>
-          <Image Source='/WpfControls;component/Images/TravelLogo.jpg'  Width='60'/>
+        <StackPanel Width="60">
+          <TextBlock Style="{x:Null}" TextAlignment="Center"
+                     Text="Custom Header Content" TextWrapping="Wrap" />
+          <Image
+                 Source="/WpfControls;component/Images/TravelLogo.jpg" />
         </StackPanel>
       </Expander.Header>
 
-      <StackPanel>
+      <StackPanel Margin="10" Background="SteelBlue">
         <TextBlock FontSize="12"
                    FontWeight="Bold"
                    Foreground="Black"
