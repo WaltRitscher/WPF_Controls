@@ -25,7 +25,6 @@
     <Expander Name="ExpanderControl"
               Background="LightBlue"
               FontWeight="Bold"
-            
               Header="Expander 1">
 
       <StackPanel>
@@ -44,8 +43,7 @@
     <Expander Grid.Row="0"
               Grid.Column="2"
               Background="#FF4DDA6C"
-              ExpandDirection="Up"
-             >
+              ExpandDirection="Up">
 
       <StackPanel>
         <Button Content="Button" />
@@ -60,7 +58,6 @@
               Background="LightBlue"
               ExpandDirection="Right"
               FontWeight="Bold"
-            
               Header="Expander 3">
 
       <StackPanel>
@@ -84,14 +81,16 @@
               IsExpanded="True">
       <Expander.Header>
         <StackPanel Width="60">
-          <TextBlock Style="{x:Null}" TextAlignment="Center"
-                     Text="Custom Header Content" TextWrapping="Wrap" />
-          <Image
-                 Source="/WpfControls;component/Images/TravelLogo.jpg" />
+          <TextBlock Style="{x:Null}"
+                     Text="Custom Header Content"
+                     TextAlignment="Center"
+                     TextWrapping="Wrap" />
+          <Image Source="/WpfControls;component/Images/TravelLogo.jpg" />
         </StackPanel>
       </Expander.Header>
 
-      <StackPanel Margin="10" Background="SteelBlue">
+      <StackPanel Margin="10"
+                  Background="SteelBlue">
         <TextBlock FontSize="12"
                    FontWeight="Bold"
                    Foreground="Black"
