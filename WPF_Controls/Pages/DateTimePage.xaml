@@ -10,18 +10,8 @@
       Title="DateTimePage">
 
   <StackPanel>
-    <Calendar FirstDayOfWeek="Monday"
-              SelectedDate="5.19.2017"
-              SelectionMode="SingleRange"
-              DisplayDateStart="1/1/2017"
-              DisplayDateEnd="7/31/2017">
-      <Calendar.BlackoutDates>
-        <CalendarDateRange End="6/5/2017"
-                           Start="5/25/2017" />
-
-      </Calendar.BlackoutDates>
-    </Calendar>
-  
+    <Calendar />
+   
     <DatePicker MaxWidth="200" />
 
     <TextBlock x:Name="MessageTextBlock"
