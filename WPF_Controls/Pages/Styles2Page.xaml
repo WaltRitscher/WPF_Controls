@@ -37,7 +37,7 @@
                Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem quam, accumsan sed vulputate sodales, semper at lacus. Maecenas ac sem ante. Etiam finibus diam vitae ante ornare, at semper risus scelerisque. Maecenas dignissim vel augue in fermentum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus." />
     <TextBlock Style="{StaticResource BigAndBold}"
                Text="Pine" />
-    <TextBlock Style="{StaticResource SmallPrint}"
+    <TextBlock 
                Text="Ut dictum placerat ex, ut volutpat dolor bibendum in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem massa, posuere eget luctus vitae, tempus id odio. Aliquam erat volutpat. Nam vestibulum dui sem, id lobortis nisl eleifend eget. In ultricies semper felis id luctus. Etiam pretium convallis nisi feugiat eleifend. Nam at erat convallis, vehicula felis lobortis, congue quam." />
   </StackPanel>
 </Page>

@@ -11,7 +11,7 @@
   <Page.Resources>
     <Style x:Key="ShapeConstants">
       <Setter Property="Shape.Stroke" Value="PaleVioletRed" />
-      <Setter Property="Shape.StrokeThickness" Value="5" />
+      <Setter Property="Shape.StrokeThickness" Value="15" />
     </Style>
 
     <!--  Apply to all Ellipses within this page.  -->
