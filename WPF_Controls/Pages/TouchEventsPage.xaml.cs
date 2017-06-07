@@ -5,25 +5,20 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace WpfControls.Pages
-{
+namespace WpfControls.Pages {
   /// <summary>
   /// Interaction logic for TouchEventsPage.xaml
   /// </summary>
-  public partial class TouchEventsPage : Page
-  {
-    public TouchEventsPage()
-    {
+  public partial class TouchEventsPage : Page {
+    public TouchEventsPage(){
       InitializeComponent();
     }
 
     private Dictionary<TouchDevice, Ellipse> _orbs = new Dictionary<TouchDevice, Ellipse>();
 
-    private void MainRectangle_TouchDown(object sender, TouchEventArgs e)
-    {
-      Ellipse orb = CreateOrb();
-
+    private void MainRectangle_TouchDown(object sender, TouchEventArgs e) {
       TouchPoint point = e.GetTouchPoint(MainRectangle);
+      Ellipse orb = CreateOrb();    
       orb.RenderTransform = new TranslateTransform(point.Position.X, point.Position.Y);
 
       // add to dictionary
@@ -33,11 +28,9 @@ namespace WpfControls.Pages
       MainGrid.Children.Add(orb);
     }
 
-    private static Ellipse CreateOrb()
-    {
+    private static Ellipse CreateOrb() {
       Ellipse orb = new Ellipse();
       orb.Width = orb.Height = 21;
-
       orb.Fill = Brushes.Gray;
       orb.Stroke = Brushes.Orange;
       orb.HorizontalAlignment = HorizontalAlignment.Left;
@@ -46,8 +39,7 @@ namespace WpfControls.Pages
       return orb;
     }
 
-    private void MainRectangle_TouchMove(object sender, TouchEventArgs e)
-    {
+    private void MainRectangle_TouchMove(object sender, TouchEventArgs e) {
       Ellipse orb = _orbs[e.TouchDevice];
       TranslateTransform transform = orb.RenderTransform as TranslateTransform;
 
@@ -57,8 +49,7 @@ namespace WpfControls.Pages
       transform.Y = point.Position.Y;
     }
 
-    private void MainRectangle_TouchUp(object sender, TouchEventArgs e)
-    {
+    private void MainRectangle_TouchUp(object sender, TouchEventArgs e) {
       MainRectangle.ReleaseTouchCapture(e.TouchDevice);
 
       MainGrid.Children.Remove(_orbs[e.TouchDevice]);

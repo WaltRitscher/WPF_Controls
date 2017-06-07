@@ -60,7 +60,7 @@
                  Opacity="0" />
         <TextBlock Text="Opacity=0" />
       </StackPanel>
-      <StackPanel Opacity=".4">
+      <StackPanel Opacity="1">
         <Ellipse x:Name="Ellipse05" />
         <TextBlock Width="90"
                    Text="Apply to element and it's children"
